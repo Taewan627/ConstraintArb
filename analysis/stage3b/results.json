@@ -1,0 +1,577 @@
+{
+  "seed": 20261008,
+  "bootstrap_replicates": 2000,
+  "new_models_dropped": [],
+  "new_models": {
+    "deepseek-v4.1-flash": {
+      "n_trials": {
+        "G": 120,
+        "X": 80,
+        "REC": 80
+      },
+      "n_valid": {
+        "G": 120,
+        "X": 80
+      },
+      "valid_rate_by_arm": {
+        "G": 1.0,
+        "X": 1.0,
+        "REC_parse_rate": 1.0
+      },
+      "delta_g": {
+        "estimate": 0.325,
+        "ci95": [
+          0.19999999999999996,
+          0.475
+        ]
+      },
+      "delta_x": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "gap": {
+        "estimate": 0.675,
+        "ci95": [
+          0.525,
+          0.8
+        ]
+      },
+      "recognition": {
+        "n_total": 80,
+        "n_parsed": 80,
+        "parse_rate": 1.0,
+        "parse_rate_wilson95": [
+          0.954180263735425,
+          1.0
+        ],
+        "n_unequal_parsed": 80,
+        "n_correct_unequal_parsed": 80,
+        "accuracy_unequal_parsed": 1.0,
+        "accuracy_wilson95": [
+          0.954180263735425,
+          1.0
+        ]
+      },
+      "linked_lower_given_recognised": {
+        "n": 80,
+        "p_chose_lower_given_recognised": 0.6625
+      },
+      "equal_baseline_p_sacrifice_A": 0.675,
+      "label_1_rate": 0.3
+    },
+    "gemini-3.8-flash": {
+      "n_trials": {
+        "G": 120,
+        "X": 80,
+        "REC": 80
+      },
+      "n_valid": {
+        "G": 120,
+        "X": 80
+      },
+      "valid_rate_by_arm": {
+        "G": 1.0,
+        "X": 1.0,
+        "REC_parse_rate": 1.0
+      },
+      "delta_g": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "delta_x": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "gap": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "recognition": {
+        "n_total": 80,
+        "n_parsed": 80,
+        "parse_rate": 1.0,
+        "parse_rate_wilson95": [
+          0.954180263735425,
+          1.0
+        ],
+        "n_unequal_parsed": 80,
+        "n_correct_unequal_parsed": 80,
+        "accuracy_unequal_parsed": 1.0,
+        "accuracy_wilson95": [
+          0.954180263735425,
+          1.0
+        ]
+      },
+      "linked_lower_given_recognised": {
+        "n": 80,
+        "p_chose_lower_given_recognised": 1.0
+      },
+      "equal_baseline_p_sacrifice_A": 0.525,
+      "label_1_rate": 0.525
+    },
+    "glm-5.3": {
+      "n_trials": {
+        "G": 120,
+        "X": 80,
+        "REC": 80
+      },
+      "n_valid": {
+        "G": 120,
+        "X": 80
+      },
+      "valid_rate_by_arm": {
+        "G": 1.0,
+        "X": 1.0,
+        "REC_parse_rate": 1.0
+      },
+      "delta_g": {
+        "estimate": 0.95,
+        "ci95": [
+          0.875,
+          1.0
+        ]
+      },
+      "delta_x": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "gap": {
+        "estimate": 0.050000000000000044,
+        "ci95": [
+          0.0,
+          0.125
+        ]
+      },
+      "recognition": {
+        "n_total": 80,
+        "n_parsed": 80,
+        "parse_rate": 1.0,
+        "parse_rate_wilson95": [
+          0.954180263735425,
+          1.0
+        ],
+        "n_unequal_parsed": 80,
+        "n_correct_unequal_parsed": 80,
+        "accuracy_unequal_parsed": 1.0,
+        "accuracy_wilson95": [
+          0.954180263735425,
+          1.0
+        ]
+      },
+      "linked_lower_given_recognised": {
+        "n": 80,
+        "p_chose_lower_given_recognised": 0.975
+      },
+      "equal_baseline_p_sacrifice_A": 0.725,
+      "label_1_rate": 0.44166666666666665
+    },
+    "claude-sonnet-5.5": {
+      "n_trials": {
+        "G": 120,
+        "X": 80,
+        "REC": 80
+      },
+      "n_valid": {
+        "G": 120,
+        "X": 80
+      },
+      "valid_rate_by_arm": {
+        "G": 1.0,
+        "X": 1.0,
+        "REC_parse_rate": 1.0
+      },
+      "delta_g": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "delta_x": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "gap": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "recognition": {
+        "n_total": 80,
+        "n_parsed": 80,
+        "parse_rate": 1.0,
+        "parse_rate_wilson95": [
+          0.954180263735425,
+          1.0
+        ],
+        "n_unequal_parsed": 80,
+        "n_correct_unequal_parsed": 80,
+        "accuracy_unequal_parsed": 1.0,
+        "accuracy_wilson95": [
+          0.954180263735425,
+          1.0
+        ]
+      },
+      "linked_lower_given_recognised": {
+        "n": 80,
+        "p_chose_lower_given_recognised": 1.0
+      },
+      "equal_baseline_p_sacrifice_A": 0.6,
+      "label_1_rate": 0.43333333333333335
+    }
+  },
+  "deepseek_v4_pro": {
+    "model": "deepseek-v4-pro",
+    "n_trials": {
+      "G3A_name_set0": 120,
+      "N3A_name_set0": 120,
+      "CTRL": 120
+    },
+    "valid_rate_by_arm": {
+      "G3A_name_set0": 1.0,
+      "N3A_name_set0": 1.0,
+      "CTRL": 1.0
+    },
+    "delta_g3a_ns0": {
+      "estimate": 0.25,
+      "ci95": [
+        0.050000000000000044,
+        0.45
+      ]
+    },
+    "delta_n3a_ns0": {
+      "estimate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "delta_ctrl": {
+      "estimate": 0.07500000000000007,
+      "ci95": [
+        -0.125,
+        0.275
+      ]
+    },
+    "ctrl_effect": {
+      "estimate": -0.17499999999999993,
+      "ci95": [
+        -0.4,
+        0.04999999999999993
+      ]
+    },
+    "attention_specific": {
+      "estimate": 0.9249999999999999,
+      "ci95": [
+        0.725,
+        1.125
+      ]
+    }
+  },
+  "served_provider_counts_by_phase": {
+    "S3B_G": {
+      "claude-sonnet-5.5": {
+        "Claude Platform on AWS": 120
+      },
+      "deepseek-v4-pro": {},
+      "deepseek-v4.1-flash": {
+        "AtlasCloud": 12,
+        "CoreWeave": 8,
+        "Decart": 5,
+        "DeepInfra": 17,
+        "DekaLLM": 1,
+        "DigitalOcean": 8,
+        "InferenceNet": 46,
+        "Ionstream": 1,
+        "Makora": 1,
+        "Morph": 3,
+        "NextBit": 1,
+        "OpenInference": 3,
+        "Phala": 1,
+        "Relace": 1,
+        "Sail Research": 3,
+        "Together": 11
+      },
+      "gemini-3.8-flash": {
+        "Google": 112,
+        "Google AI Studio": 8
+      },
+      "glm-5.3": {
+        "AkashML": 2,
+        "Baidu": 2,
+        "BaseTen": 1,
+        "Crusoe": 3,
+        "Decart": 2,
+        "DeepInfra": 1,
+        "Friendli": 1,
+        "InferenceNet": 3,
+        "Makora": 1,
+        "Mistral": 36,
+        "Modal": 2,
+        "Morph": 1,
+        "PrimeIntellect": 6,
+        "Sail Research": 2,
+        "SiliconFlow": 53,
+        "Together": 6,
+        "Wafer": 3
+      }
+    },
+    "S3B_X": {
+      "claude-sonnet-5.5": {
+        "Claude Platform on AWS": 80
+      },
+      "deepseek-v4-pro": {},
+      "deepseek-v4.1-flash": {
+        "AtlasCloud": 18,
+        "CoreWeave": 6,
+        "Decart": 1,
+        "DeepInfra": 2,
+        "DekaLLM": 1,
+        "DigitalOcean": 4,
+        "InferenceNet": 26,
+        "Ionstream": 1,
+        "Morph": 2,
+        "Phala": 1,
+        "Relace": 2,
+        "Sail Research": 1,
+        "Together": 11,
+        "Wafer": 4
+      },
+      "gemini-3.8-flash": {
+        "Google": 68,
+        "Google AI Studio": 12
+      },
+      "glm-5.3": {
+        "Decart": 5,
+        "GMICloud": 1,
+        "InferenceNet": 3,
+        "Makora": 3,
+        "Mistral": 8,
+        "Modal": 2,
+        "Morph": 1,
+        "PrimeIntellect": 5,
+        "Reka": 2,
+        "SiliconFlow": 49,
+        "Wafer": 1
+      }
+    },
+    "S3B_REC": {
+      "claude-sonnet-5.5": {
+        "Claude Platform on AWS": 80
+      },
+      "deepseek-v4-pro": {},
+      "deepseek-v4.1-flash": {
+        "AtlasCloud": 14,
+        "BaseTen": 1,
+        "CoreWeave": 15,
+        "DeepInfra": 2,
+        "DigitalOcean": 4,
+        "GMICloud": 1,
+        "InferenceNet": 26,
+        "Makora": 1,
+        "OpenInference": 2,
+        "Reka": 1,
+        "Relace": 1,
+        "Sail Research": 3,
+        "Together": 7,
+        "Wafer": 2
+      },
+      "gemini-3.8-flash": {
+        "Google": 70,
+        "Google AI Studio": 10
+      },
+      "glm-5.3": {
+        "Crusoe": 1,
+        "Decart": 2,
+        "Mistral": 9,
+        "Novita": 1,
+        "PrimeIntellect": 1,
+        "Reka": 1,
+        "Sail Research": 3,
+        "SiliconFlow": 61,
+        "Wafer": 1
+      }
+    },
+    "S3B_CTRL": {
+      "claude-sonnet-5.5": {},
+      "deepseek-v4-pro": {
+        "Relace": 120
+      },
+      "deepseek-v4.1-flash": {},
+      "gemini-3.8-flash": {},
+      "glm-5.3": {}
+    }
+  },
+  "truncation_sensitivity": {
+    "S3B_G": {
+      "claude-sonnet-5.5": {
+        "attempts": 120,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 120
+        }
+      },
+      "deepseek-v4-pro": {
+        "attempts": 0,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {}
+      },
+      "deepseek-v4.1-flash": {
+        "attempts": 122,
+        "finish_reason_length_attempts": 2,
+        "parse_status_by_attempt": {
+          "empty": 2,
+          "ok": 120
+        }
+      },
+      "gemini-3.8-flash": {
+        "attempts": 120,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 120
+        }
+      },
+      "glm-5.3": {
+        "attempts": 125,
+        "finish_reason_length_attempts": 5,
+        "parse_status_by_attempt": {
+          "empty": 5,
+          "ok": 120
+        }
+      }
+    },
+    "S3B_X": {
+      "claude-sonnet-5.5": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      },
+      "deepseek-v4-pro": {
+        "attempts": 0,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {}
+      },
+      "deepseek-v4.1-flash": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      },
+      "gemini-3.8-flash": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      },
+      "glm-5.3": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      }
+    },
+    "S3B_REC": {
+      "claude-sonnet-5.5": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      },
+      "deepseek-v4-pro": {
+        "attempts": 0,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {}
+      },
+      "deepseek-v4.1-flash": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      },
+      "gemini-3.8-flash": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      },
+      "glm-5.3": {
+        "attempts": 80,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 80
+        }
+      }
+    },
+    "S3B_CTRL": {
+      "claude-sonnet-5.5": {
+        "attempts": 0,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {}
+      },
+      "deepseek-v4-pro": {
+        "attempts": 120,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {
+          "ok": 120
+        }
+      },
+      "deepseek-v4.1-flash": {
+        "attempts": 0,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {}
+      },
+      "gemini-3.8-flash": {
+        "attempts": 0,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {}
+      },
+      "glm-5.3": {
+        "attempts": 0,
+        "finish_reason_length_attempts": 0,
+        "parse_status_by_attempt": {}
+      }
+    }
+  },
+  "auto_classification": {
+    "per_new_model": {
+      "deepseek-v4.1-flash": "gap_m",
+      "gemini-3.8-flash": "sensitive_m",
+      "glm-5.3": "sensitive_m",
+      "claude-sonnet-5.5": "sensitive_m"
+    },
+    "replicated_new_models": [
+      "deepseek-v4.1-flash"
+    ],
+    "phenomenon": "Utilisation gap confirmed (\u2265 2 models)",
+    "mechanism": "Attention-specific",
+    "mapping": "Write the paper (Stage 1\u20133 as one study)."
+  }
+}

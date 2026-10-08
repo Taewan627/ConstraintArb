@@ -1,0 +1,326 @@
+{
+  "seed": 20261006,
+  "bootstrap_replicates": 2000,
+  "n_trials": {
+    "graph": 720,
+    "explicit": 360,
+    "recognition": 720
+  },
+  "n_valid": {
+    "graph": 715,
+    "explicit": 359
+  },
+  "n_templates_with_valid_trials": 20,
+  "valid_rate_by_model": {
+    "deepseek-v4-pro": 0.9791666666666666,
+    "gpt-5.6-sol": 1.0,
+    "qwen3.8-flash": 1.0
+  },
+  "delta_graph": {
+    "pooled": {
+      "estimate": 0.6395344748778172,
+      "ci95": [
+        0.5889530079814352,
+        0.6932788119502818
+      ]
+    },
+    "per_model": {
+      "deepseek-v4-pro": {
+        "estimate": 0.12155144433625442,
+        "ci95": [
+          -0.012824675324675388,
+          0.25386321512154275
+        ]
+      },
+      "gpt-5.6-sol": {
+        "estimate": 0.9625,
+        "ci95": [
+          0.9249999999999999,
+          1.0
+        ]
+      },
+      "qwen3.8-flash": {
+        "estimate": 0.825,
+        "ci95": [
+          0.7250000000000001,
+          0.9125
+        ]
+      }
+    }
+  },
+  "delta_explicit": {
+    "pooled": {
+      "estimate": 0.9833333333333333,
+      "ci95": [
+        0.9583333333333334,
+        1.0
+      ]
+    },
+    "per_model": {
+      "deepseek-v4-pro": {
+        "estimate": 0.95,
+        "ci95": [
+          0.875,
+          1.0
+        ]
+      },
+      "gpt-5.6-sol": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "qwen3.8-flash": {
+        "estimate": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "gap": {
+    "pooled": {
+      "estimate": 0.34379885845551605,
+      "ci95": [
+        0.289958482790322,
+        0.3951682637066266
+      ]
+    },
+    "per_model": {
+      "deepseek-v4-pro": {
+        "estimate": 0.8284485556637455,
+        "ci95": [
+          0.6971602265156561,
+          0.9578028230097679
+        ]
+      },
+      "gpt-5.6-sol": {
+        "estimate": 0.03749999999999998,
+        "ci95": [
+          0.0,
+          0.07500000000000007
+        ]
+      },
+      "qwen3.8-flash": {
+        "estimate": 0.17500000000000004,
+        "ci95": [
+          0.08750000000000002,
+          0.2749999999999999
+        ]
+      }
+    }
+  },
+  "recognition": {
+    "pooled": {
+      "n_unequal": 480,
+      "recognition_acc_unequal": 0.95625,
+      "wilson95": [
+        0.9340454583695862,
+        0.9712094845704174
+      ],
+      "counts_exact_rate": 0.8819444444444444,
+      "n_counts_exact": 720
+    },
+    "deepseek-v4-pro": {
+      "n_unequal": 160,
+      "recognition_acc_unequal": 0.86875,
+      "wilson95": [
+        0.807679992059104,
+        0.9125278184114969
+      ],
+      "counts_exact_rate": 0.6666666666666666,
+      "n_counts_exact": 240
+    },
+    "gpt-5.6-sol": {
+      "n_unequal": 160,
+      "recognition_acc_unequal": 1.0,
+      "wilson95": [
+        0.9765529633499672,
+        1.0
+      ],
+      "counts_exact_rate": 1.0,
+      "n_counts_exact": 240
+    },
+    "qwen3.8-flash": {
+      "n_unequal": 160,
+      "recognition_acc_unequal": 1.0,
+      "wilson95": [
+        0.9765529633499672,
+        1.0
+      ],
+      "counts_exact_rate": 0.9791666666666666,
+      "n_counts_exact": 240
+    }
+  },
+  "linked_measure": {
+    "pooled": {
+      "recognition_correct": {
+        "n": 457,
+        "p_chose_lower_cost": 0.8271334792122538
+      },
+      "recognition_incorrect": {
+        "n": 20,
+        "p_chose_lower_cost": 0.65
+      }
+    },
+    "per_model": {
+      "deepseek-v4-pro": {
+        "recognition_correct": {
+          "n": 137,
+          "p_chose_lower_cost": 0.5474452554744526
+        },
+        "recognition_incorrect": {
+          "n": 20,
+          "p_chose_lower_cost": 0.65
+        }
+      },
+      "gpt-5.6-sol": {
+        "recognition_correct": {
+          "n": 160,
+          "p_chose_lower_cost": 0.98125
+        },
+        "recognition_incorrect": {
+          "n": 0,
+          "p_chose_lower_cost": null
+        }
+      },
+      "qwen3.8-flash": {
+        "recognition_correct": {
+          "n": 160,
+          "p_chose_lower_cost": 0.9125
+        },
+        "recognition_incorrect": {
+          "n": 0,
+          "p_chose_lower_cost": null
+        }
+      }
+    }
+  },
+  "firth_interaction": {
+    "coefficient_cost_diff_x_graph_only": 0.48465600683430793,
+    "bootstrap_ci95": [
+      0.3575075308022929,
+      0.7483703736710727
+    ]
+  },
+  "per_template_delta_graph": {
+    "T01": {
+      "n_valid": 36,
+      "delta_graph": 0.5833333333333334
+    },
+    "T02": {
+      "n_valid": 36,
+      "delta_graph": 0.5833333333333334
+    },
+    "T03": {
+      "n_valid": 36,
+      "delta_graph": 0.49999999999999994
+    },
+    "T04": {
+      "n_valid": 36,
+      "delta_graph": 0.75
+    },
+    "T05": {
+      "n_valid": 35,
+      "delta_graph": 0.6515151515151516
+    },
+    "T06": {
+      "n_valid": 36,
+      "delta_graph": 0.5
+    },
+    "T07": {
+      "n_valid": 35,
+      "delta_graph": 0.5681818181818181
+    },
+    "T08": {
+      "n_valid": 36,
+      "delta_graph": 0.75
+    },
+    "T09": {
+      "n_valid": 36,
+      "delta_graph": 0.75
+    },
+    "T10": {
+      "n_valid": 36,
+      "delta_graph": 0.8333333333333333
+    },
+    "T11": {
+      "n_valid": 36,
+      "delta_graph": 0.75
+    },
+    "T12": {
+      "n_valid": 36,
+      "delta_graph": 0.5
+    },
+    "T13": {
+      "n_valid": 36,
+      "delta_graph": 0.5833333333333334
+    },
+    "T14": {
+      "n_valid": 35,
+      "delta_graph": 0.75
+    },
+    "T15": {
+      "n_valid": 36,
+      "delta_graph": 0.5
+    },
+    "T16": {
+      "n_valid": 35,
+      "delta_graph": 0.5833333333333333
+    },
+    "T17": {
+      "n_valid": 36,
+      "delta_graph": 0.6666666666666666
+    },
+    "T18": {
+      "n_valid": 36,
+      "delta_graph": 0.9166666666666666
+    },
+    "T19": {
+      "n_valid": 35,
+      "delta_graph": 0.5833333333333333
+    },
+    "T20": {
+      "n_valid": 36,
+      "delta_graph": 0.5
+    }
+  },
+  "equal_baselines": {
+    "deepseek-v4-pro": {
+      "n_valid": 78,
+      "p_sacrifice_A": 0.5512820512820513,
+      "p_label_1": 0.48717948717948717
+    },
+    "gpt-5.6-sol": {
+      "n_valid": 80,
+      "p_sacrifice_A": 0.65,
+      "p_label_1": 0.6
+    },
+    "qwen3.8-flash": {
+      "n_valid": 80,
+      "p_sacrifice_A": 0.55,
+      "p_label_1": 0.275
+    }
+  },
+  "auto_classification": {
+    "label": "Inferred-cost sensitivity",
+    "models_valid_ge_0.80": [
+      "deepseek-v4-pro",
+      "gpt-5.6-sol",
+      "qwen3.8-flash"
+    ],
+    "models_utilisation_gap": [
+      "deepseek-v4-pro"
+    ],
+    "models_inferred_cost_sensitive": [
+      "gpt-5.6-sol",
+      "qwen3.8-flash"
+    ],
+    "models_inference_failure": [],
+    "positive_control_ok": true,
+    "notes": [],
+    "mapping": "GO: modest; next: cost \u00d7 declared-importance trade-off."
+  }
+}

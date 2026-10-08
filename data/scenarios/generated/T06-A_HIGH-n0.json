@@ -1,0 +1,316 @@
+{
+ "scenario_id": "T06-A_HIGH-n0",
+ "template_id": "T06",
+ "condition": "A_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "tree",
+ "a_kind": "act",
+ "b_kind": "location",
+ "a_type": "waypoint",
+ "b_type": "npc",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_embers_in_the_well",
+   "type": "quest",
+   "name": "Embers in the Well",
+   "act": 1,
+   "location": "loc_dunmere",
+   "requires_any": [
+    "waypoint_pilgrim_s_rest",
+    "npc_ottilie_crane"
+   ],
+   "description": "Completed by activating the Pilgrim's Rest or by meeting Ottilie Crane."
+  },
+  {
+   "id": "waypoint_pilgrim_s_rest",
+   "type": "waypoint",
+   "name": "Pilgrim's Rest",
+   "act": 2,
+   "location": "loc_dunmere"
+  },
+  {
+   "id": "npc_ottilie_crane",
+   "type": "npc",
+   "name": "Ottilie Crane",
+   "act": 1,
+   "location": "loc_frost_cave"
+  },
+  {
+   "id": "loc_dunmere",
+   "type": "location",
+   "name": "Dunmere",
+   "act": 1
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 1
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 2
+  },
+  {
+   "id": "loc_frost_cave",
+   "type": "location",
+   "name": "Frost Cave",
+   "act": 2
+  },
+  {
+   "id": "loc_briar_hollow",
+   "type": "location",
+   "name": "Briar Hollow",
+   "act": 3
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 1,
+   "location": "loc_dunmere"
+  },
+  {
+   "id": "enc_drowned_knight",
+   "type": "encounter",
+   "name": "Drowned Knight",
+   "act": 2,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 2,
+   "location": "loc_frost_cave"
+  },
+  {
+   "id": "enc_the_hollow_king",
+   "type": "encounter",
+   "name": "The Hollow King",
+   "act": 3,
+   "location": "loc_briar_hollow"
+  },
+  {
+   "id": "quest_smoke_over_hollin",
+   "type": "quest",
+   "name": "Smoke over Hollin",
+   "act": 2,
+   "location": "loc_frost_cave",
+   "requires_all": [
+    "enc_cinder_golem"
+   ]
+  },
+  {
+   "id": "quest_the_glass_pilgrim",
+   "type": "quest",
+   "name": "The Glass Pilgrim",
+   "act": 3,
+   "location": "loc_briar_hollow",
+   "unlocked_by": "enc_the_hollow_king"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_1",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Pilgrim's Rest",
+   "mirrors": "waypoint_pilgrim_s_rest.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Tutorial pop-up about Pilgrim's Rest",
+   "mirrors": "dep_pilgrim_s_rest_1.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_2",
+   "type": "codex_entry",
+   "name": "Codex page on Pilgrim's Rest",
+   "mirrors": "waypoint_pilgrim_s_rest.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Codex page on Pilgrim's Rest",
+   "mirrors": "dep_pilgrim_s_rest_2.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_3",
+   "type": "npc_dialogue",
+   "name": "Archivist Jory's dialogue line about Pilgrim's Rest",
+   "mirrors": "waypoint_pilgrim_s_rest.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Archivist Jory's dialogue line about Pilgrim's Rest",
+   "mirrors": "dep_pilgrim_s_rest_3.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_4",
+   "type": "map_marker",
+   "name": "World-map marker for Pilgrim's Rest",
+   "mirrors": "waypoint_pilgrim_s_rest.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_rest_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: World-map marker for Pilgrim's Rest",
+   "mirrors": "dep_pilgrim_s_rest_4.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_1",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_frost_cave",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Quest-log entry describing Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_1.value",
+   "value": "loc_frost_cave",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_frost_cave",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Companion remark about Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_2.value",
+   "value": "loc_frost_cave",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_3",
+   "type": "map_marker",
+   "name": "World-map marker for Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_frost_cave",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_3.value",
+   "value": "loc_frost_cave",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_4",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_frost_cave",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Innkeeper Bel's shop line about Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_4.value",
+   "value": "loc_frost_cave",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "quest_embers_in_the_well",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "waypoint_pilgrim_s_rest",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Pilgrim's Rest must remain an Act 2 element."
+  },
+  "B": {
+   "node": "npc_ottilie_crane",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_frost_cave",
+   "kind": "location",
+   "text": "Ottilie Crane must remain located in Frost Cave."
+  }
+ },
+ "editable": [
+  {
+   "node": "waypoint_pilgrim_s_rest",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "node": "npc_ottilie_crane",
+   "field": "location",
+   "domain": [
+    "loc_dunmere",
+    "loc_stonewake_hills",
+    "loc_kingsfall_ruins",
+    "loc_frost_cave",
+    "loc_briar_hollow"
+   ]
+  }
+ ],
+ "request_text": "Act 1 needs a stronger hook. Make the quest \"Embers in the Well\" completable in Act 1.",
+ "entity_names": {
+  "T": "Embers in the Well",
+  "A": "Pilgrim's Rest",
+  "B": "Ottilie Crane",
+  "L1a": "Dunmere",
+  "L1b": "Stonewake Hills",
+  "L2a": "Kingsfall Ruins",
+  "L2b": "Frost Cave",
+  "L3": "Briar Hollow",
+  "E1": "Warden of Thorns",
+  "E2a": "Drowned Knight",
+  "E2b": "Cinder Golem",
+  "E3": "The Hollow King",
+  "D1": "Smoke over Hollin",
+  "D2": "The Glass Pilgrim"
+ },
+ "expected": {
+  "a_downstream_repairs": 8,
+  "b_downstream_repairs": 2,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "bc9f1b63d010406e"
+}

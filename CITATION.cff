@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite these reproducibility artifacts; the manuscript is prepared for submission and has no asserted DOI or acceptance."
+type: software
+title: "ConstraintArb reproducibility artifacts"
+authors:
+  - family-names: Kim
+    given-names: Taewan
+  - family-names: Kim
+    given-names: Taehoon
+abstract: "Offline reproducibility artifacts for a manuscript on recognition--use dissociation in consequence-aware constraint arbitration."

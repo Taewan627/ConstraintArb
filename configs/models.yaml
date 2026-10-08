@@ -1,0 +1,81 @@
+# Copy to configs/models.yaml (or use as-is: runner reads configs/models.yaml).
+# Secrets come from environment variables / .env — never put keys in this file.
+# Model IDs and prices verified against the OpenRouter model list on 2026-10-05.
+roles:            # role -> model name used by configs/pilot.yaml
+  frontier: gpt-5.6-sol
+  nonoa: deepseek-v4-pro
+  cheap: qwen3.8-flash
+
+models:
+  - name: gpt-5.6-sol                 # strong frontier reasoning model
+    provider: openai_compat
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    model: openai/gpt-5.6-sol
+    temperature: 0.7
+    max_tokens: 8000
+    send_seed: true
+    extra_body: {usage: {include: true}, reasoning: {effort: medium}}
+    price_in_per_mtok: 2.0
+    price_out_per_mtok: 10.0
+    expected_output_tokens: 2500
+  - name: deepseek-v4-pro             # strong non-OpenAI/Anthropic model
+    provider: openai_compat
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    model: deepseek/deepseek-v4-pro-0813
+    temperature: 0.7
+    max_tokens: 8000
+    extra_body: {usage: {include: true}}
+    price_in_per_mtok: 0.85
+    price_out_per_mtok: 5.0
+    expected_output_tokens: 2500
+  - name: qwen3.8-flash               # cheaper competent model
+    provider: openai_compat
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    model: qwen/qwen3.8-flash
+    temperature: 0.7
+    max_tokens: 8000
+    extra_body: {usage: {include: true}}
+    price_in_per_mtok: 0.15
+    price_out_per_mtok: 0.47
+    expected_output_tokens: 1500
+  # ---- alternates (swap into roles if preferred) ----
+  - name: claude-sonnet-5.5
+    provider: openai_compat
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    model: anthropic/claude-sonnet-5.5
+    temperature: 0.7
+    max_tokens: 8000
+    extra_body: {usage: {include: true}}
+    price_in_per_mtok: 2.0
+    price_out_per_mtok: 10.0
+  - name: gemini-3.8-flash
+    provider: openai_compat
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    model: google/gemini-3.8-flash
+    temperature: 0.7
+    max_tokens: 8000
+    extra_body: {usage: {include: true}}
+    price_in_per_mtok: 0.75
+    price_out_per_mtok: 3.75
+  - name: openai-direct-example       # direct OpenAI API instead of OpenRouter
+    provider: openai_compat
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+    model: gpt-5.6-sol
+    max_tokens_field: max_completion_tokens
+    max_tokens: 8000
+    price_in_per_mtok: 2.0
+    price_out_per_mtok: 10.0
+  - name: anthropic-direct-example    # direct Anthropic API
+    provider: anthropic
+    api_key_env: ANTHROPIC_API_KEY
+    model: claude-sonnet-5-5
+    temperature: 0.7
+    max_tokens: 4000
+    price_in_per_mtok: 2.0
+    price_out_per_mtok: 10.0

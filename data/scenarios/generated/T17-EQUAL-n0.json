@@ -1,0 +1,316 @@
+{
+ "scenario_id": "T17-EQUAL-n0",
+ "template_id": "T17",
+ "condition": "EQUAL",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "fan",
+ "a_kind": "act",
+ "b_kind": "unlocked_by",
+ "a_type": "route",
+ "b_type": "trainer",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_the_silent_bellfry",
+   "type": "quest",
+   "name": "The Silent Bellfry",
+   "act": 1,
+   "location": "loc_kingsfall_ruins",
+   "requires_any": [
+    "route_old_mine_shaft",
+    "trainer_fishing_teacher_pim"
+   ],
+   "description": "Completed by scouting the Old Mine Shaft or by learning from Fishing Teacher Pim."
+  },
+  {
+   "id": "route_old_mine_shaft",
+   "type": "route",
+   "name": "Old Mine Shaft",
+   "act": 2,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "trainer_fishing_teacher_pim",
+   "type": "trainer",
+   "name": "Fishing Teacher Pim",
+   "act": 1,
+   "location": "loc_mirelight_bog",
+   "unlocked_by": "enc_bandit_chief_corvo"
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 1
+  },
+  {
+   "id": "loc_mirelight_bog",
+   "type": "location",
+   "name": "Mirelight Bog",
+   "act": 1
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 2
+  },
+  {
+   "id": "loc_drowned_abbey",
+   "type": "location",
+   "name": "Drowned Abbey",
+   "act": 2
+  },
+  {
+   "id": "loc_thornwatch_keep",
+   "type": "location",
+   "name": "Thornwatch Keep",
+   "act": 3
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 1,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "enc_the_hollow_king",
+   "type": "encounter",
+   "name": "The Hollow King",
+   "act": 2,
+   "location": "loc_stonewake_hills"
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 2,
+   "location": "loc_drowned_abbey"
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 3,
+   "location": "loc_thornwatch_keep"
+  },
+  {
+   "id": "quest_roots_beneath_varn",
+   "type": "quest",
+   "name": "Roots Beneath Varn",
+   "act": 2,
+   "location": "loc_drowned_abbey",
+   "requires_all": [
+    "enc_bandit_chief_corvo"
+   ]
+  },
+  {
+   "id": "quest_the_lost_lantern",
+   "type": "quest",
+   "name": "The Lost Lantern",
+   "act": 3,
+   "location": "loc_thornwatch_keep",
+   "unlocked_by": "enc_iron_sentinel"
+  },
+  {
+   "id": "dep_old_mine_shaft_1",
+   "type": "vendor_line",
+   "name": "Bard Lisel's shop line about Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_old_mine_shaft_2",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_mine_shaft_3",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_mine_shaft_4",
+   "type": "codex_entry",
+   "name": "Codex page on Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_mine_shaft_5",
+   "type": "map_marker",
+   "name": "World-map marker for Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_mine_shaft_6",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_mine_shaft_7",
+   "type": "npc_dialogue",
+   "name": "Guard Tomas's dialogue line about Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_mine_shaft_8",
+   "type": "companion_bark",
+   "name": "Companion remark about Old Mine Shaft",
+   "mirrors": "route_old_mine_shaft.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_1",
+   "type": "companion_bark",
+   "name": "Companion remark about Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_2",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_3",
+   "type": "codex_entry",
+   "name": "Codex page on Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_4",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_5",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_6",
+   "type": "map_marker",
+   "name": "World-map marker for Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "manual"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_7",
+   "type": "vendor_line",
+   "name": "Bard Lisel's shop line about Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_fishing_teacher_pim_8",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Fishing Teacher Pim",
+   "mirrors": "trainer_fishing_teacher_pim.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "quest_the_silent_bellfry",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "route_old_mine_shaft",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Old Mine Shaft must remain an Act 2 element."
+  },
+  "B": {
+   "node": "trainer_fishing_teacher_pim",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_bandit_chief_corvo",
+   "kind": "unlocked_by",
+   "text": "Fishing Teacher Pim must remain locked until Bandit Chief Corvo has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "route_old_mine_shaft",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "node": "trainer_fishing_teacher_pim",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_bandit_ambush",
+    "enc_the_hollow_king",
+    "enc_bandit_chief_corvo",
+    "enc_iron_sentinel"
+   ]
+  }
+ ],
+ "request_text": "Speedrun-safe pacing requires this quest in Act 1. Make \"The Silent Bellfry\" completable in Act 1.",
+ "entity_names": {
+  "T": "The Silent Bellfry",
+  "A": "Old Mine Shaft",
+  "B": "Fishing Teacher Pim",
+  "L1a": "Kingsfall Ruins",
+  "L1b": "Mirelight Bog",
+  "L2a": "Stonewake Hills",
+  "L2b": "Drowned Abbey",
+  "L3": "Thornwatch Keep",
+  "E1": "Bandit Ambush",
+  "E2a": "The Hollow King",
+  "E2b": "Bandit Chief Corvo",
+  "E3": "Iron Sentinel",
+  "D1": "Roots Beneath Varn",
+  "D2": "The Lost Lantern"
+ },
+ "expected": {
+  "a_downstream_repairs": 1,
+  "b_downstream_repairs": 1,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "df8d2d9963c69ef2"
+}

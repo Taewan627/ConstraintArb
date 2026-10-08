@@ -1,0 +1,7 @@
+{
+  "stage": "stage3c",
+  "status": "PASS",
+  "absolute_tolerance": 1e-08,
+  "bootstrap_replicates": 2000,
+  "differences": []
+}

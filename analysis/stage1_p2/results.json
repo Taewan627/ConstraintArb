@@ -1,0 +1,466 @@
+{
+ "n_trials_total": 720,
+ "valid_rate_by_model": {
+  "deepseek-v4-pro": 0.8917,
+  "gpt-5.6-sol": 0.9042,
+  "qwen3.8-flash": 0.8708
+ },
+ "valid_rate_by_model_condition": {
+  "deepseek-v4-pro|A_HIGH": 0.875,
+  "deepseek-v4-pro|B_HIGH": 0.9,
+  "deepseek-v4-pro|EQUAL": 0.9,
+  "gpt-5.6-sol|A_HIGH": 0.9375,
+  "gpt-5.6-sol|B_HIGH": 0.925,
+  "gpt-5.6-sol|EQUAL": 0.85,
+  "qwen3.8-flash|A_HIGH": 0.8625,
+  "qwen3.8-flash|B_HIGH": 0.875,
+  "qwen3.8-flash|EQUAL": 0.875
+ },
+ "n_templates_with_valid_trials": 20,
+ "n_valid": 640,
+ "raw_proportions": {
+  "deepseek-v4-pro|A_HIGH": {
+   "n": 70,
+   "p_sacrifice_A": 0.0286,
+   "wilson95": [
+    0.0079,
+    0.0983
+   ]
+  },
+  "deepseek-v4-pro|B_HIGH": {
+   "n": 72,
+   "p_sacrifice_A": 0.9861,
+   "wilson95": [
+    0.9254,
+    0.9975
+   ]
+  },
+  "deepseek-v4-pro|EQUAL": {
+   "n": 72,
+   "p_sacrifice_A": 0.5417,
+   "wilson95": [
+    0.4274,
+    0.6517
+   ]
+  },
+  "gpt-5.6-sol|A_HIGH": {
+   "n": 75,
+   "p_sacrifice_A": 0.0,
+   "wilson95": [
+    0.0,
+    0.0487
+   ]
+  },
+  "gpt-5.6-sol|B_HIGH": {
+   "n": 74,
+   "p_sacrifice_A": 1.0,
+   "wilson95": [
+    0.9506,
+    1.0
+   ]
+  },
+  "gpt-5.6-sol|EQUAL": {
+   "n": 68,
+   "p_sacrifice_A": 0.5,
+   "wilson95": [
+    0.3844,
+    0.6156
+   ]
+  },
+  "qwen3.8-flash|A_HIGH": {
+   "n": 69,
+   "p_sacrifice_A": 0.0,
+   "wilson95": [
+    0.0,
+    0.0527
+   ]
+  },
+  "qwen3.8-flash|B_HIGH": {
+   "n": 70,
+   "p_sacrifice_A": 0.9714,
+   "wilson95": [
+    0.9017,
+    0.9921
+   ]
+  },
+  "qwen3.8-flash|EQUAL": {
+   "n": 70,
+   "p_sacrifice_A": 0.6429,
+   "wilson95": [
+    0.5259,
+    0.745
+   ]
+  }
+ },
+ "primary": {
+  "beta_cost_per_repair": -0.8046,
+  "firth_se": 0.082,
+  "beta_cost_boot95": [
+   -1.1247,
+   -0.6863
+  ],
+  "odds_ratio_per_repair": 0.4473,
+  "odds_ratio_per_7_repairs": 0.0036,
+  "risk_diff": 0.9768,
+  "risk_diff_boot95": [
+   0.9537,
+   0.9954
+  ],
+  "cost_follow_rate": 0.9884,
+  "cost_follow_rate_boot95": [
+   0.9766,
+   0.9977
+  ],
+  "interpretation_note": "beta<0: less likely to sacrifice A as A becomes costlier; risk_diff>0: cost-following"
+ },
+ "per_model": {
+  "deepseek-v4-pro": {
+   "n_valid": 214,
+   "beta_cost": -0.5802,
+   "firth_se": 0.0796,
+   "beta_cost_boot95": [
+    -0.8342,
+    -0.4679
+   ],
+   "odds_ratio_per_7_repairs": 0.0172,
+   "risk_diff": 0.9575,
+   "risk_diff_boot95": [
+    0.9115,
+    1.0
+   ],
+   "cost_follow_rate": 0.9789,
+   "cost_follow_rate_boot95": [
+    0.9559,
+    1.0
+   ],
+   "equal_P_sacrifice_A": 0.5417,
+   "P_sacrifice_label1_all": 0.5374,
+   "declared_matches_behavior": 1.0,
+   "included_repair_ops_rate": 0.0
+  },
+  "gpt-5.6-sol": {
+   "n_valid": 217,
+   "beta_cost": -0.8601,
+   "firth_se": 0.1367,
+   "beta_cost_boot95": [
+    -1.1059,
+    -0.7982
+   ],
+   "odds_ratio_per_7_repairs": 0.0024,
+   "risk_diff": 1.0,
+   "risk_diff_boot95": [
+    1.0,
+    1.0
+   ],
+   "cost_follow_rate": 1.0,
+   "cost_follow_rate_boot95": [
+    1.0,
+    1.0
+   ],
+   "equal_P_sacrifice_A": 0.5,
+   "P_sacrifice_label1_all": 0.53,
+   "declared_matches_behavior": 1.0,
+   "included_repair_ops_rate": 0.0
+  },
+  "qwen3.8-flash": {
+   "n_valid": 209,
+   "beta_cost": -0.8998,
+   "firth_se": 0.1422,
+   "beta_cost_boot95": [
+    -1.1554,
+    -0.8057
+   ],
+   "odds_ratio_per_7_repairs": 0.0018,
+   "risk_diff": 0.9714,
+   "risk_diff_boot95": [
+    0.9077,
+    1.0
+   ],
+   "cost_follow_rate": 0.9856,
+   "cost_follow_rate_boot95": [
+    0.9556,
+    1.0
+   ],
+   "equal_P_sacrifice_A": 0.6429,
+   "P_sacrifice_label1_all": 0.4833,
+   "declared_matches_behavior": 1.0,
+   "included_repair_ops_rate": 0.0
+  }
+ },
+ "per_template": {
+  "T01": {
+   "n": 30,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.5
+  },
+  "T02": {
+   "n": 31,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.3333
+  },
+  "T03": {
+   "n": 34,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.8182
+  },
+  "T04": {
+   "n": 32,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.9
+  },
+  "T05": {
+   "n": 33,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.25
+  },
+  "T06": {
+   "n": 32,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.7
+  },
+  "T07": {
+   "n": 33,
+   "risk_diff": 0.9167,
+   "cost_follow_rate": 0.9565,
+   "equal_P_sacrifice_A": 0.9
+  },
+  "T08": {
+   "n": 33,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.7273
+  },
+  "T09": {
+   "n": 33,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.6667
+  },
+  "T10": {
+   "n": 29,
+   "risk_diff": 0.9,
+   "cost_follow_rate": 0.95,
+   "equal_P_sacrifice_A": 0.1111
+  },
+  "T11": {
+   "n": 30,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.3
+  },
+  "T12": {
+   "n": 36,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.5
+  },
+  "T13": {
+   "n": 31,
+   "risk_diff": 0.9167,
+   "cost_follow_rate": 0.95,
+   "equal_P_sacrifice_A": 0.6364
+  },
+  "T14": {
+   "n": 30,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.3636
+  },
+  "T15": {
+   "n": 35,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.4545
+  },
+  "T16": {
+   "n": 32,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.8
+  },
+  "T17": {
+   "n": 32,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.6364
+  },
+  "T18": {
+   "n": 33,
+   "risk_diff": 0.8182,
+   "cost_follow_rate": 0.9091,
+   "equal_P_sacrifice_A": 0.0
+  },
+  "T19": {
+   "n": 31,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 0.6667
+  },
+  "T20": {
+   "n": 30,
+   "risk_diff": 1.0,
+   "cost_follow_rate": 1.0,
+   "equal_P_sacrifice_A": 1.0
+  }
+ },
+ "template_heterogeneity": {
+  "n": 20,
+  "min": 0.8182,
+  "max": 1.0,
+  "share_rd_ge_0.3": 1.0,
+  "share_rd_le_0": 0.0
+ },
+ "mirror_pairs": {
+  "deepseek-v4-pro": {
+   "n_pairs": 63,
+   "cost_following": 0.9683,
+   "cost_opposing": 0.0,
+   "identity_fixed": 0.0317
+  },
+  "gpt-5.6-sol": {
+   "n_pairs": 69,
+   "cost_following": 1.0,
+   "cost_opposing": 0.0,
+   "identity_fixed": 0.0
+  },
+  "qwen3.8-flash": {
+   "n_pairs": 59,
+   "cost_following": 0.9661,
+   "cost_opposing": 0.0,
+   "identity_fixed": 0.0339
+  }
+ },
+ "secondary_gee": {
+  "beta_cost": -0.7011,
+  "robust_se": 0.0829
+ },
+ "secondary_bayes_mixed_glm": {
+  "beta_cost_post_mean": -0.8326,
+  "post_sd": 0.0736,
+  "note": "variational Bayes, random intercepts template+model"
+ },
+ "robustness": {
+  "first_attempt_only": {
+   "n": 619,
+   "beta_cost": -0.8107,
+   "risk_diff": 0.9858,
+   "risk_diff_boot95": [
+    0.9714,
+    1.0
+   ]
+  },
+  "declared_matches_behavior_only": {
+   "n": 640,
+   "beta_cost": -0.8046,
+   "risk_diff": 0.9768,
+   "risk_diff_boot95": [
+    0.9515,
+    0.9953
+   ]
+  },
+  "no_included_repairs": {
+   "n": 640,
+   "beta_cost": -0.8046,
+   "risk_diff": 0.9768,
+   "risk_diff_boot95": [
+    0.9538,
+    0.9954
+   ]
+  },
+  "order_0_only": {
+   "n": 316,
+   "beta_cost": -0.7657,
+   "risk_diff": 0.9717,
+   "risk_diff_boot95": [
+    0.9388,
+    1.0
+   ]
+  },
+  "order_1_only": {
+   "n": 324,
+   "beta_cost": -0.8479,
+   "risk_diff": 0.9811,
+   "risk_diff_boot95": [
+    0.9541,
+    1.0
+   ]
+  },
+  "name_set_0_only": {
+   "n": 317,
+   "beta_cost": -0.7685,
+   "risk_diff": 0.9633,
+   "risk_diff_boot95": [
+    0.9186,
+    1.0
+   ]
+  },
+  "name_set_1_only": {
+   "n": 323,
+   "beta_cost": -0.8208,
+   "risk_diff": 0.9907,
+   "risk_diff_boot95": [
+    0.9716,
+    1.0
+   ]
+  },
+  "declared_choice_dv_all_schema_ok": {
+   "n": 641,
+   "beta_cost": -0.8066,
+   "risk_diff": 0.9768,
+   "risk_diff_boot95": [
+    0.9493,
+    0.9954
+   ]
+  },
+  "leave_out_deepseek-v4-pro": {
+   "n": 426,
+   "beta_cost": -1.0273,
+   "risk_diff": 0.9861,
+   "risk_diff_boot95": [
+    0.9576,
+    1.0
+   ]
+  },
+  "leave_out_gpt-5.6-sol": {
+   "n": 423,
+   "beta_cost": -0.7051,
+   "risk_diff": 0.9645,
+   "risk_diff_boot95": [
+    0.9294,
+    0.9929
+   ]
+  },
+  "leave_out_qwen3.8-flash": {
+   "n": 431,
+   "beta_cost": -0.7358,
+   "risk_diff": 0.9794,
+   "risk_diff_boot95": [
+    0.9573,
+    1.0
+   ]
+  }
+ },
+ "auto_classification": {
+  "label": "consequence-sensitive arbitration",
+  "models_valid_ge_0.80": [
+   "deepseek-v4-pro",
+   "gpt-5.6-sol",
+   "qwen3.8-flash"
+  ],
+  "models_recognition_ge_0.90": [],
+  "models_recognition_lt_0.70": [],
+  "models_risk_diff_ge_0.20": [
+   "deepseek-v4-pro",
+   "gpt-5.6-sol",
+   "qwen3.8-flash"
+  ],
+  "models_cost_blind_equivalence": [],
+  "notes": []
+ }
+}

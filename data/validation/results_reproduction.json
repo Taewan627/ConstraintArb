@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "mappings_verified": 165,
+  "tables_exported": 9,
+  "scope": "Frozen-result formatting and table export; use reanalyse.py for empirical statistical recalculation.",
+  "network": "disabled"
+}

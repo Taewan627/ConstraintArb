@@ -1,0 +1,319 @@
+{
+ "scenario_id": "S2-T20-B_HIGH-n1",
+ "template_id": "T20",
+ "condition": "B_HIGH",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "unlocked_by",
+ "b_kind": "location",
+ "a_type": "waypoint",
+ "b_type": "item",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_the_brass_choir",
+   "type": "quest",
+   "name": "The Brass Choir",
+   "act": 1,
+   "location": "loc_gull_s_rest",
+   "requires_any": [
+    "waypoint_harbor_gate_stone",
+    "item_saltwood_charm"
+   ],
+   "description": "Completed by restoring the Harbor Gate Stone or by returning the Saltwood Charm."
+  },
+  {
+   "id": "waypoint_harbor_gate_stone",
+   "type": "waypoint",
+   "name": "Harbor Gate Stone",
+   "act": 1,
+   "location": "loc_gull_s_rest",
+   "unlocked_by": "enc_drowned_knight"
+  },
+  {
+   "id": "item_saltwood_charm",
+   "type": "item",
+   "name": "Saltwood Charm",
+   "act": 1,
+   "location": "loc_millbrook_village"
+  },
+  {
+   "id": "loc_gull_s_rest",
+   "type": "location",
+   "name": "Gull's Rest",
+   "act": 1
+  },
+  {
+   "id": "loc_glasswood",
+   "type": "location",
+   "name": "Glasswood",
+   "act": 1
+  },
+  {
+   "id": "loc_thornwatch_keep",
+   "type": "location",
+   "name": "Thornwatch Keep",
+   "act": 2
+  },
+  {
+   "id": "loc_millbrook_village",
+   "type": "location",
+   "name": "Millbrook Village",
+   "act": 2
+  },
+  {
+   "id": "loc_mirelight_bog",
+   "type": "location",
+   "name": "Mirelight Bog",
+   "act": 3
+  },
+  {
+   "id": "enc_the_ash_wyrm",
+   "type": "encounter",
+   "name": "The Ash Wyrm",
+   "act": 1,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "enc_drowned_knight",
+   "type": "encounter",
+   "name": "Drowned Knight",
+   "act": 2,
+   "location": "loc_thornwatch_keep"
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 2,
+   "location": "loc_millbrook_village"
+  },
+  {
+   "id": "enc_marsh_hydra",
+   "type": "encounter",
+   "name": "Marsh Hydra",
+   "act": 3,
+   "location": "loc_mirelight_bog"
+  },
+  {
+   "id": "quest_a_debt_to_the_tide",
+   "type": "quest",
+   "name": "A Debt to the Tide",
+   "act": 2,
+   "location": "loc_millbrook_village",
+   "requires_all": [
+    "enc_warden_of_thorns"
+   ]
+  },
+  {
+   "id": "quest_ashes_of_the_mill",
+   "type": "quest",
+   "name": "Ashes of the Mill",
+   "act": 3,
+   "location": "loc_mirelight_bog",
+   "unlocked_by": "enc_marsh_hydra"
+  },
+  {
+   "id": "dep_harbor_gate_stone_1",
+   "type": "vendor_line",
+   "name": "Stablehand Fay's shop line about Harbor Gate Stone",
+   "mirrors": "waypoint_harbor_gate_stone.unlocked_by",
+   "value": "enc_drowned_knight",
+   "update": "engine"
+  },
+  {
+   "id": "dep_harbor_gate_stone_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Stablehand Fay's shop line about Harbor Gate Stone",
+   "mirrors": "dep_harbor_gate_stone_1.value",
+   "value": "enc_drowned_knight",
+   "update": "engine"
+  },
+  {
+   "id": "dep_harbor_gate_stone_2",
+   "type": "npc_dialogue",
+   "name": "Merchant Royce's dialogue line about Harbor Gate Stone",
+   "mirrors": "waypoint_harbor_gate_stone.unlocked_by",
+   "value": "enc_drowned_knight",
+   "update": "manual"
+  },
+  {
+   "id": "dep_harbor_gate_stone_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Merchant Royce's dialogue line about Harbor Gate Stone",
+   "mirrors": "dep_harbor_gate_stone_2.value",
+   "value": "enc_drowned_knight",
+   "update": "manual"
+  },
+  {
+   "id": "dep_harbor_gate_stone_3",
+   "type": "map_marker",
+   "name": "World-map marker for Harbor Gate Stone",
+   "mirrors": "waypoint_harbor_gate_stone.unlocked_by",
+   "value": "enc_drowned_knight",
+   "update": "engine"
+  },
+  {
+   "id": "dep_harbor_gate_stone_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Harbor Gate Stone",
+   "mirrors": "dep_harbor_gate_stone_3.value",
+   "value": "enc_drowned_knight",
+   "update": "engine"
+  },
+  {
+   "id": "dep_harbor_gate_stone_4",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Harbor Gate Stone",
+   "mirrors": "waypoint_harbor_gate_stone.unlocked_by",
+   "value": "enc_drowned_knight",
+   "update": "engine"
+  },
+  {
+   "id": "dep_harbor_gate_stone_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Achievement description referencing Harbor Gate Stone",
+   "mirrors": "dep_harbor_gate_stone_4.value",
+   "value": "enc_drowned_knight",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwood_charm_1",
+   "type": "companion_bark",
+   "name": "Companion remark about Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Companion remark about Saltwood Charm",
+   "mirrors": "dep_saltwood_charm_1.value",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_2",
+   "type": "codex_entry",
+   "name": "Codex page on Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Codex page on Saltwood Charm",
+   "mirrors": "dep_saltwood_charm_2.value",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_3",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Loading-screen tip mentioning Saltwood Charm",
+   "mirrors": "dep_saltwood_charm_3.value",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_4",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Achievement description referencing Saltwood Charm",
+   "mirrors": "dep_saltwood_charm_4.value",
+   "value": "loc_millbrook_village",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "quest_the_brass_choir",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "waypoint_harbor_gate_stone",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_drowned_knight",
+   "kind": "unlocked_by",
+   "text": "Do not make Harbor Gate Stone available before Drowned Knight has been defeated."
+  },
+  "B": {
+   "node": "item_saltwood_charm",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_millbrook_village",
+   "kind": "location",
+   "text": "Do not move Saltwood Charm out of Millbrook Village."
+  }
+ },
+ "editable": [
+  {
+   "node": "waypoint_harbor_gate_stone",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_the_ash_wyrm",
+    "enc_drowned_knight",
+    "enc_warden_of_thorns",
+    "enc_marsh_hydra"
+   ]
+  },
+  {
+   "node": "item_saltwood_charm",
+   "field": "location",
+   "domain": [
+    "loc_gull_s_rest",
+    "loc_glasswood",
+    "loc_thornwatch_keep",
+    "loc_millbrook_village",
+    "loc_mirelight_bog"
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"The Brass Choir\" completable in Act 1.",
+ "entity_names": {
+  "T": "The Brass Choir",
+  "A": "Harbor Gate Stone",
+  "B": "Saltwood Charm",
+  "L1a": "Gull's Rest",
+  "L1b": "Glasswood",
+  "L2a": "Thornwatch Keep",
+  "L2b": "Millbrook Village",
+  "L3": "Mirelight Bog",
+  "E1": "The Ash Wyrm",
+  "E2a": "Drowned Knight",
+  "E2b": "Warden of Thorns",
+  "E3": "Marsh Hydra",
+  "D1": "A Debt to the Tide",
+  "D2": "Ashes of the Mill"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "1b4875b8d02b478f"
+}

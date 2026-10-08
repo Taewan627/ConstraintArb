@@ -1,0 +1,318 @@
+{
+ "scenario_id": "T11-B_HIGH-n0",
+ "template_id": "T11",
+ "condition": "B_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "fan",
+ "a_kind": "location",
+ "b_kind": "unlocked_by",
+ "a_type": "trainer",
+ "b_type": "route",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "bounty_bounty_rustfang",
+   "type": "bounty",
+   "name": "Bounty: Rustfang",
+   "act": 1,
+   "location": "loc_dunmere",
+   "requires_any": [
+    "trainer_alchemist_rennet",
+    "route_reedway_channel"
+   ],
+   "description": "Claimable after training with Alchemist Rennet or by ambushing the target on the Reedway Channel."
+  },
+  {
+   "id": "trainer_alchemist_rennet",
+   "type": "trainer",
+   "name": "Alchemist Rennet",
+   "act": 1,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "route_reedway_channel",
+   "type": "route",
+   "name": "Reedway Channel",
+   "act": 1,
+   "location": "loc_tanner_s_crossing",
+   "unlocked_by": "enc_tide_serpent"
+  },
+  {
+   "id": "loc_dunmere",
+   "type": "location",
+   "name": "Dunmere",
+   "act": 1
+  },
+  {
+   "id": "loc_tanner_s_crossing",
+   "type": "location",
+   "name": "Tanner's Crossing",
+   "act": 1
+  },
+  {
+   "id": "loc_owl_ridge",
+   "type": "location",
+   "name": "Owl Ridge",
+   "act": 2
+  },
+  {
+   "id": "loc_ashen_spire",
+   "type": "location",
+   "name": "Ashen Spire",
+   "act": 2
+  },
+  {
+   "id": "loc_frost_cave",
+   "type": "location",
+   "name": "Frost Cave",
+   "act": 3
+  },
+  {
+   "id": "enc_bog_troll",
+   "type": "encounter",
+   "name": "Bog Troll",
+   "act": 1,
+   "location": "loc_dunmere"
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 2,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 2,
+   "location": "loc_ashen_spire"
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 3,
+   "location": "loc_frost_cave"
+  },
+  {
+   "id": "quest_smoke_over_hollin",
+   "type": "quest",
+   "name": "Smoke over Hollin",
+   "act": 2,
+   "location": "loc_ashen_spire",
+   "requires_all": [
+    "enc_tide_serpent"
+   ]
+  },
+  {
+   "id": "quest_the_glass_pilgrim",
+   "type": "quest",
+   "name": "The Glass Pilgrim",
+   "act": 3,
+   "location": "loc_frost_cave",
+   "unlocked_by": "enc_frost_matron"
+  },
+  {
+   "id": "dep_alchemist_rennet_1",
+   "type": "map_marker",
+   "name": "World-map marker for Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_alchemist_rennet_2",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_alchemist_rennet_3",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_alchemist_rennet_4",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_alchemist_rennet_5",
+   "type": "codex_entry",
+   "name": "Codex page on Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_alchemist_rennet_6",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_alchemist_rennet_7",
+   "type": "vendor_line",
+   "name": "Bard Lisel's shop line about Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_alchemist_rennet_8",
+   "type": "companion_bark",
+   "name": "Companion remark about Alchemist Rennet",
+   "mirrors": "trainer_alchemist_rennet.location",
+   "value": "loc_owl_ridge",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_1",
+   "type": "map_marker",
+   "name": "World-map marker for Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_2",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_3",
+   "type": "codex_entry",
+   "name": "Codex page on Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_4",
+   "type": "vendor_line",
+   "name": "Archivist Jory's shop line about Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_5",
+   "type": "npc_dialogue",
+   "name": "Scout Ilka's dialogue line about Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_6",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_7",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_reedway_channel_8",
+   "type": "companion_bark",
+   "name": "Companion remark about Reedway Channel",
+   "mirrors": "route_reedway_channel.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "bounty_bounty_rustfang",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "trainer_alchemist_rennet",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_owl_ridge",
+   "kind": "location",
+   "text": "Alchemist Rennet must remain located in Owl Ridge."
+  },
+  "B": {
+   "node": "route_reedway_channel",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_tide_serpent",
+   "kind": "unlocked_by",
+   "text": "Reedway Channel must remain locked until Tide Serpent has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "trainer_alchemist_rennet",
+   "field": "location",
+   "domain": [
+    "loc_dunmere",
+    "loc_tanner_s_crossing",
+    "loc_owl_ridge",
+    "loc_ashen_spire",
+    "loc_frost_cave"
+   ]
+  },
+  {
+   "node": "route_reedway_channel",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_bog_troll",
+    "enc_iron_sentinel",
+    "enc_tide_serpent",
+    "enc_frost_matron"
+   ]
+  }
+ ],
+ "request_text": "The combat loop needs an early reward. Make \"Bounty: Rustfang\" claimable in Act 1.",
+ "entity_names": {
+  "T": "Bounty: Rustfang",
+  "A": "Alchemist Rennet",
+  "B": "Reedway Channel",
+  "L1a": "Dunmere",
+  "L1b": "Tanner's Crossing",
+  "L2a": "Owl Ridge",
+  "L2b": "Ashen Spire",
+  "L3": "Frost Cave",
+  "E1": "Bog Troll",
+  "E2a": "Iron Sentinel",
+  "E2b": "Tide Serpent",
+  "E3": "Frost Matron",
+  "D1": "Smoke over Hollin",
+  "D2": "The Glass Pilgrim"
+ },
+ "expected": {
+  "a_downstream_repairs": 1,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "e67c1227669b8b72"
+}

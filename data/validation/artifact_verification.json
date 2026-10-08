@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_files_verified": 325,
+  "solver_scenarios": 244,
+  "saved_trials_rescored": 5009,
+  "scored_fields": 71233,
+  "network": "disabled",
+  "failures": []
+}

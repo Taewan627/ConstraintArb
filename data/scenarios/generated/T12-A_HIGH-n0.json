@@ -1,0 +1,316 @@
+{
+ "scenario_id": "T12-A_HIGH-n0",
+ "template_id": "T12",
+ "condition": "A_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "tree",
+ "a_kind": "unlocked_by",
+ "b_kind": "act",
+ "a_type": "mount",
+ "b_type": "recipe",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_the_ferryman_s_coin",
+   "type": "quest",
+   "name": "The Ferryman's Coin",
+   "act": 1,
+   "location": "loc_gull_s_rest",
+   "requires_any": [
+    "mount_ash_stag",
+    "recipe_recipe_frost_salve"
+   ],
+   "description": "Completed by taming the Ash Stag or by brewing with the Recipe: Frost Salve."
+  },
+  {
+   "id": "mount_ash_stag",
+   "type": "mount",
+   "name": "Ash Stag",
+   "act": 1,
+   "location": "loc_gull_s_rest",
+   "unlocked_by": "enc_cinder_golem"
+  },
+  {
+   "id": "recipe_recipe_frost_salve",
+   "type": "recipe",
+   "name": "Recipe: Frost Salve",
+   "act": 2,
+   "location": "loc_stonewake_hills"
+  },
+  {
+   "id": "loc_gull_s_rest",
+   "type": "location",
+   "name": "Gull's Rest",
+   "act": 1
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 1
+  },
+  {
+   "id": "loc_dunmere",
+   "type": "location",
+   "name": "Dunmere",
+   "act": 2
+  },
+  {
+   "id": "loc_frost_cave",
+   "type": "location",
+   "name": "Frost Cave",
+   "act": 2
+  },
+  {
+   "id": "loc_ferrow_fields",
+   "type": "location",
+   "name": "Ferrow Fields",
+   "act": 3
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 1,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 2,
+   "location": "loc_dunmere"
+  },
+  {
+   "id": "enc_rat_swarm",
+   "type": "encounter",
+   "name": "Rat Swarm",
+   "act": 2,
+   "location": "loc_frost_cave"
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 3,
+   "location": "loc_ferrow_fields"
+  },
+  {
+   "id": "quest_the_glass_pilgrim",
+   "type": "quest",
+   "name": "The Glass Pilgrim",
+   "act": 2,
+   "location": "loc_frost_cave",
+   "requires_all": [
+    "enc_rat_swarm"
+   ]
+  },
+  {
+   "id": "quest_under_the_weeping_arch",
+   "type": "quest",
+   "name": "Under the Weeping Arch",
+   "act": 3,
+   "location": "loc_ferrow_fields",
+   "unlocked_by": "enc_warden_of_thorns"
+  },
+  {
+   "id": "dep_ash_stag_1",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Ash Stag",
+   "mirrors": "mount_ash_stag.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_stag_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Achievement description referencing Ash Stag",
+   "mirrors": "dep_ash_stag_1.value",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_stag_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Ash Stag",
+   "mirrors": "mount_ash_stag.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_stag_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Companion remark about Ash Stag",
+   "mirrors": "dep_ash_stag_2.value",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_stag_3",
+   "type": "vendor_line",
+   "name": "Hermit Oswin's shop line about Ash Stag",
+   "mirrors": "mount_ash_stag.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_stag_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Hermit Oswin's shop line about Ash Stag",
+   "mirrors": "dep_ash_stag_3.value",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_stag_4",
+   "type": "map_marker",
+   "name": "World-map marker for Ash Stag",
+   "mirrors": "mount_ash_stag.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_stag_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: World-map marker for Ash Stag",
+   "mirrors": "dep_ash_stag_4.value",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_recipe_frost_salve_1",
+   "type": "companion_bark",
+   "name": "Companion remark about Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Companion remark about Recipe: Frost Salve",
+   "mirrors": "dep_recipe_frost_salve_1.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_2",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_recipe_frost_salve_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Tutorial pop-up about Recipe: Frost Salve",
+   "mirrors": "dep_recipe_frost_salve_2.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_recipe_frost_salve_3",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Innkeeper Bel's shop line about Recipe: Frost Salve",
+   "mirrors": "dep_recipe_frost_salve_3.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_4",
+   "type": "npc_dialogue",
+   "name": "Merchant Royce's dialogue line about Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Merchant Royce's dialogue line about Recipe: Frost Salve",
+   "mirrors": "dep_recipe_frost_salve_4.value",
+   "value": 2,
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "quest_the_ferryman_s_coin",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "mount_ash_stag",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_cinder_golem",
+   "kind": "unlocked_by",
+   "text": "Ash Stag must remain locked until Cinder Golem has been defeated."
+  },
+  "B": {
+   "node": "recipe_recipe_frost_salve",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Recipe: Frost Salve must remain an Act 2 element."
+  }
+ },
+ "editable": [
+  {
+   "node": "mount_ash_stag",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_tide_serpent",
+    "enc_cinder_golem",
+    "enc_rat_swarm",
+    "enc_warden_of_thorns"
+   ]
+  },
+  {
+   "node": "recipe_recipe_frost_salve",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "request_text": "Act 1 pacing review asks for this quest earlier. Make \"The Ferryman's Coin\" completable in Act 1.",
+ "entity_names": {
+  "T": "The Ferryman's Coin",
+  "A": "Ash Stag",
+  "B": "Recipe: Frost Salve",
+  "L1a": "Gull's Rest",
+  "L1b": "Stonewake Hills",
+  "L2a": "Dunmere",
+  "L2b": "Frost Cave",
+  "L3": "Ferrow Fields",
+  "E1": "Tide Serpent",
+  "E2a": "Cinder Golem",
+  "E2b": "Rat Swarm",
+  "E3": "Warden of Thorns",
+  "D1": "The Glass Pilgrim",
+  "D2": "Under the Weeping Arch"
+ },
+ "expected": {
+  "a_downstream_repairs": 8,
+  "b_downstream_repairs": 2,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "eb0f6165d99e8485"
+}

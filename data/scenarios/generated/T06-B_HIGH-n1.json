@@ -1,0 +1,316 @@
+{
+ "scenario_id": "T06-B_HIGH-n1",
+ "template_id": "T06",
+ "condition": "B_HIGH",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "act",
+ "b_kind": "location",
+ "a_type": "waypoint",
+ "b_type": "npc",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_the_ninth_lock",
+   "type": "quest",
+   "name": "The Ninth Lock",
+   "act": 1,
+   "location": "loc_owl_ridge",
+   "requires_any": [
+    "waypoint_hermit_s_bell",
+    "npc_ottilie_crane"
+   ],
+   "description": "Completed by activating the Hermit's Bell or by meeting Ottilie Crane."
+  },
+  {
+   "id": "waypoint_hermit_s_bell",
+   "type": "waypoint",
+   "name": "Hermit's Bell",
+   "act": 2,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "npc_ottilie_crane",
+   "type": "npc",
+   "name": "Ottilie Crane",
+   "act": 1,
+   "location": "loc_briar_hollow"
+  },
+  {
+   "id": "loc_owl_ridge",
+   "type": "location",
+   "name": "Owl Ridge",
+   "act": 1
+  },
+  {
+   "id": "loc_ashen_spire",
+   "type": "location",
+   "name": "Ashen Spire",
+   "act": 1
+  },
+  {
+   "id": "loc_tanner_s_crossing",
+   "type": "location",
+   "name": "Tanner's Crossing",
+   "act": 2
+  },
+  {
+   "id": "loc_briar_hollow",
+   "type": "location",
+   "name": "Briar Hollow",
+   "act": 2
+  },
+  {
+   "id": "loc_drowned_abbey",
+   "type": "location",
+   "name": "Drowned Abbey",
+   "act": 3
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 1,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 2,
+   "location": "loc_tanner_s_crossing"
+  },
+  {
+   "id": "enc_marsh_hydra",
+   "type": "encounter",
+   "name": "Marsh Hydra",
+   "act": 2,
+   "location": "loc_briar_hollow"
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 3,
+   "location": "loc_drowned_abbey"
+  },
+  {
+   "id": "quest_ashes_of_the_mill",
+   "type": "quest",
+   "name": "Ashes of the Mill",
+   "act": 2,
+   "location": "loc_briar_hollow",
+   "requires_all": [
+    "enc_marsh_hydra"
+   ]
+  },
+  {
+   "id": "quest_the_warden_s_oath",
+   "type": "quest",
+   "name": "The Warden's Oath",
+   "act": 3,
+   "location": "loc_drowned_abbey",
+   "unlocked_by": "enc_bandit_ambush"
+  },
+  {
+   "id": "dep_hermit_s_bell_1",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Hermit's Bell",
+   "mirrors": "waypoint_hermit_s_bell.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_hermit_s_bell_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Achievement description referencing Hermit's Bell",
+   "mirrors": "dep_hermit_s_bell_1.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_hermit_s_bell_2",
+   "type": "npc_dialogue",
+   "name": "Blacksmith Doran's dialogue line about Hermit's Bell",
+   "mirrors": "waypoint_hermit_s_bell.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_hermit_s_bell_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Blacksmith Doran's dialogue line about Hermit's Bell",
+   "mirrors": "dep_hermit_s_bell_2.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_hermit_s_bell_3",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Hermit's Bell",
+   "mirrors": "waypoint_hermit_s_bell.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_hermit_s_bell_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Tutorial pop-up about Hermit's Bell",
+   "mirrors": "dep_hermit_s_bell_3.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_hermit_s_bell_4",
+   "type": "companion_bark",
+   "name": "Companion remark about Hermit's Bell",
+   "mirrors": "waypoint_hermit_s_bell.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_hermit_s_bell_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Companion remark about Hermit's Bell",
+   "mirrors": "dep_hermit_s_bell_4.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_1",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Loading-screen tip mentioning Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_1.value",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_2",
+   "type": "codex_entry",
+   "name": "Codex page on Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Codex page on Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_2.value",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_3",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Cutscene cue referencing Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_3.value",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_4",
+   "type": "npc_dialogue",
+   "name": "Bard Lisel's dialogue line about Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.location",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Bard Lisel's dialogue line about Ottilie Crane",
+   "mirrors": "dep_ottilie_crane_4.value",
+   "value": "loc_briar_hollow",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "quest_the_ninth_lock",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "waypoint_hermit_s_bell",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Do not move Hermit's Bell out of Act 2."
+  },
+  "B": {
+   "node": "npc_ottilie_crane",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_briar_hollow",
+   "kind": "location",
+   "text": "Do not move Ottilie Crane out of Briar Hollow."
+  }
+ },
+ "editable": [
+  {
+   "node": "waypoint_hermit_s_bell",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "node": "npc_ottilie_crane",
+   "field": "location",
+   "domain": [
+    "loc_owl_ridge",
+    "loc_ashen_spire",
+    "loc_tanner_s_crossing",
+    "loc_briar_hollow",
+    "loc_drowned_abbey"
+   ]
+  }
+ ],
+ "request_text": "Act 1 needs a stronger hook. Make the quest \"The Ninth Lock\" completable in Act 1.",
+ "entity_names": {
+  "T": "The Ninth Lock",
+  "A": "Hermit's Bell",
+  "B": "Ottilie Crane",
+  "L1a": "Owl Ridge",
+  "L1b": "Ashen Spire",
+  "L2a": "Tanner's Crossing",
+  "L2b": "Briar Hollow",
+  "L3": "Drowned Abbey",
+  "E1": "Frost Matron",
+  "E2a": "Warden of Thorns",
+  "E2b": "Marsh Hydra",
+  "E3": "Bandit Ambush",
+  "D1": "Ashes of the Mill",
+  "D2": "The Warden's Oath"
+ },
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "b5f45018fc933585"
+}

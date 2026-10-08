@@ -1,0 +1,316 @@
+{
+ "scenario_id": "T04-B_HIGH-n0",
+ "template_id": "T04",
+ "condition": "B_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "tree",
+ "a_kind": "location",
+ "b_kind": "act",
+ "a_type": "vendor",
+ "b_type": "trainer",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "objective_repair_the_rope_bridge",
+   "type": "objective",
+   "name": "Repair the Rope Bridge",
+   "act": 1,
+   "location": "loc_ferrow_fields",
+   "requires_any": [
+    "vendor_tinker_s_stall",
+    "trainer_rune_scribe_ada"
+   ],
+   "description": "Done by buying supplies from the Tinker's Stall or by training with Rune Scribe Ada."
+  },
+  {
+   "id": "vendor_tinker_s_stall",
+   "type": "vendor",
+   "name": "Tinker's Stall",
+   "act": 1,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "trainer_rune_scribe_ada",
+   "type": "trainer",
+   "name": "Rune Scribe Ada",
+   "act": 2,
+   "location": "loc_cinder_quarry"
+  },
+  {
+   "id": "loc_ferrow_fields",
+   "type": "location",
+   "name": "Ferrow Fields",
+   "act": 1
+  },
+  {
+   "id": "loc_cinder_quarry",
+   "type": "location",
+   "name": "Cinder Quarry",
+   "act": 1
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 2
+  },
+  {
+   "id": "loc_glasswood",
+   "type": "location",
+   "name": "Glasswood",
+   "act": 2
+  },
+  {
+   "id": "loc_varn_hollow",
+   "type": "location",
+   "name": "Varn Hollow",
+   "act": 3
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 1,
+   "location": "loc_ferrow_fields"
+  },
+  {
+   "id": "enc_the_ash_wyrm",
+   "type": "encounter",
+   "name": "The Ash Wyrm",
+   "act": 2,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "enc_ghoul_packmaster",
+   "type": "encounter",
+   "name": "Ghoul Packmaster",
+   "act": 2,
+   "location": "loc_glasswood"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 3,
+   "location": "loc_varn_hollow"
+  },
+  {
+   "id": "quest_roots_beneath_varn",
+   "type": "quest",
+   "name": "Roots Beneath Varn",
+   "act": 2,
+   "location": "loc_glasswood",
+   "requires_all": [
+    "enc_ghoul_packmaster"
+   ]
+  },
+  {
+   "id": "quest_embers_in_the_well",
+   "type": "quest",
+   "name": "Embers in the Well",
+   "act": 3,
+   "location": "loc_varn_hollow",
+   "unlocked_by": "enc_cinder_golem"
+  },
+  {
+   "id": "dep_tinker_s_stall_1",
+   "type": "map_marker",
+   "name": "World-map marker for Tinker's Stall",
+   "mirrors": "vendor_tinker_s_stall.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_tinker_s_stall_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: World-map marker for Tinker's Stall",
+   "mirrors": "dep_tinker_s_stall_1.value",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_tinker_s_stall_2",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Tinker's Stall",
+   "mirrors": "vendor_tinker_s_stall.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_tinker_s_stall_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Tutorial pop-up about Tinker's Stall",
+   "mirrors": "dep_tinker_s_stall_2.value",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_tinker_s_stall_3",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Tinker's Stall",
+   "mirrors": "vendor_tinker_s_stall.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_tinker_s_stall_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Achievement description referencing Tinker's Stall",
+   "mirrors": "dep_tinker_s_stall_3.value",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_tinker_s_stall_4",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Tinker's Stall",
+   "mirrors": "vendor_tinker_s_stall.location",
+   "value": "loc_bitter_marsh",
+   "update": "manual"
+  },
+  {
+   "id": "dep_tinker_s_stall_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Quest-log entry describing Tinker's Stall",
+   "mirrors": "dep_tinker_s_stall_4.value",
+   "value": "loc_bitter_marsh",
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_1",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Rune Scribe Ada",
+   "mirrors": "trainer_rune_scribe_ada.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Tutorial pop-up about Rune Scribe Ada",
+   "mirrors": "dep_rune_scribe_ada_1.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_2",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Rune Scribe Ada",
+   "mirrors": "trainer_rune_scribe_ada.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Loading-screen tip mentioning Rune Scribe Ada",
+   "mirrors": "dep_rune_scribe_ada_2.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_3",
+   "type": "map_marker",
+   "name": "World-map marker for Rune Scribe Ada",
+   "mirrors": "trainer_rune_scribe_ada.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Rune Scribe Ada",
+   "mirrors": "dep_rune_scribe_ada_3.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_4",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Rune Scribe Ada",
+   "mirrors": "trainer_rune_scribe_ada.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_rune_scribe_ada_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Quest-log entry describing Rune Scribe Ada",
+   "mirrors": "dep_rune_scribe_ada_4.value",
+   "value": 2,
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "objective_repair_the_rope_bridge",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "vendor_tinker_s_stall",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_bitter_marsh",
+   "kind": "location",
+   "text": "Tinker's Stall must remain located in Bitter Marsh."
+  },
+  "B": {
+   "node": "trainer_rune_scribe_ada",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Rune Scribe Ada must remain an Act 2 element."
+  }
+ },
+ "editable": [
+  {
+   "node": "vendor_tinker_s_stall",
+   "field": "location",
+   "domain": [
+    "loc_ferrow_fields",
+    "loc_cinder_quarry",
+    "loc_bitter_marsh",
+    "loc_glasswood",
+    "loc_varn_hollow"
+   ]
+  },
+  {
+   "node": "trainer_rune_scribe_ada",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "request_text": "The Act 1 tutorial chain stalls here. Make the objective \"Repair the Rope Bridge\" completable in Act 1.",
+ "entity_names": {
+  "T": "Repair the Rope Bridge",
+  "A": "Tinker's Stall",
+  "B": "Rune Scribe Ada",
+  "L1a": "Ferrow Fields",
+  "L1b": "Cinder Quarry",
+  "L2a": "Bitter Marsh",
+  "L2b": "Glasswood",
+  "L3": "Varn Hollow",
+  "E1": "Tide Serpent",
+  "E2a": "The Ash Wyrm",
+  "E2b": "Ghoul Packmaster",
+  "E3": "Cinder Golem",
+  "D1": "Roots Beneath Varn",
+  "D2": "Embers in the Well"
+ },
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "8fe03e8109b1926c"
+}

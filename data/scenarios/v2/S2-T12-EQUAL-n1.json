@@ -1,0 +1,317 @@
+{
+ "scenario_id": "S2-T12-EQUAL-n1",
+ "template_id": "T12",
+ "condition": "EQUAL",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "unlocked_by",
+ "b_kind": "act",
+ "a_type": "mount",
+ "b_type": "recipe",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_embers_in_the_well",
+   "type": "quest",
+   "name": "Embers in the Well",
+   "act": 1,
+   "location": "loc_stonewake_hills",
+   "requires_any": [
+    "mount_dun_marsh_pony",
+    "recipe_recipe_iron_polish"
+   ],
+   "description": "Completed by taming the Dun Marsh Pony or by brewing with the Recipe: Iron Polish."
+  },
+  {
+   "id": "mount_dun_marsh_pony",
+   "type": "mount",
+   "name": "Dun Marsh Pony",
+   "act": 1,
+   "location": "loc_stonewake_hills",
+   "unlocked_by": "enc_cinder_golem"
+  },
+  {
+   "id": "recipe_recipe_iron_polish",
+   "type": "recipe",
+   "name": "Recipe: Iron Polish",
+   "act": 2,
+   "location": "loc_copper_coast"
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 1
+  },
+  {
+   "id": "loc_copper_coast",
+   "type": "location",
+   "name": "Copper Coast",
+   "act": 1
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 2
+  },
+  {
+   "id": "loc_dunmere",
+   "type": "location",
+   "name": "Dunmere",
+   "act": 2
+  },
+  {
+   "id": "loc_drowned_abbey",
+   "type": "location",
+   "name": "Drowned Abbey",
+   "act": 3
+  },
+  {
+   "id": "enc_rat_swarm",
+   "type": "encounter",
+   "name": "Rat Swarm",
+   "act": 1,
+   "location": "loc_stonewake_hills"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 2,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 2,
+   "location": "loc_dunmere"
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 3,
+   "location": "loc_drowned_abbey"
+  },
+  {
+   "id": "quest_the_glass_pilgrim",
+   "type": "quest",
+   "name": "The Glass Pilgrim",
+   "act": 2,
+   "location": "loc_dunmere",
+   "requires_all": [
+    "enc_bandit_ambush"
+   ]
+  },
+  {
+   "id": "quest_the_crooked_ledger",
+   "type": "quest",
+   "name": "The Crooked Ledger",
+   "act": 3,
+   "location": "loc_drowned_abbey",
+   "unlocked_by": "enc_warden_of_thorns"
+  },
+  {
+   "id": "dep_dun_marsh_pony_1",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Dun Marsh Pony",
+   "mirrors": "mount_dun_marsh_pony.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_dun_marsh_pony_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Tutorial pop-up about Dun Marsh Pony",
+   "mirrors": "dep_dun_marsh_pony_1.value",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_dun_marsh_pony_2",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Dun Marsh Pony",
+   "mirrors": "mount_dun_marsh_pony.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_dun_marsh_pony_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Cutscene cue referencing Dun Marsh Pony",
+   "mirrors": "dep_dun_marsh_pony_2.value",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_dun_marsh_pony_3",
+   "type": "map_marker",
+   "name": "World-map marker for Dun Marsh Pony",
+   "mirrors": "mount_dun_marsh_pony.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_dun_marsh_pony_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Dun Marsh Pony",
+   "mirrors": "dep_dun_marsh_pony_3.value",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_dun_marsh_pony_4",
+   "type": "companion_bark",
+   "name": "Companion remark about Dun Marsh Pony",
+   "mirrors": "mount_dun_marsh_pony.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_dun_marsh_pony_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Companion remark about Dun Marsh Pony",
+   "mirrors": "dep_dun_marsh_pony_4.value",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_1",
+   "type": "map_marker",
+   "name": "World-map marker for Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: World-map marker for Recipe: Iron Polish",
+   "mirrors": "dep_recipe_iron_polish_1.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_2",
+   "type": "npc_dialogue",
+   "name": "Bard Lisel's dialogue line about Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_recipe_iron_polish_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Bard Lisel's dialogue line about Recipe: Iron Polish",
+   "mirrors": "dep_recipe_iron_polish_2.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_recipe_iron_polish_3",
+   "type": "codex_entry",
+   "name": "Codex page on Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Codex page on Recipe: Iron Polish",
+   "mirrors": "dep_recipe_iron_polish_3.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_4",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Quest-log entry describing Recipe: Iron Polish",
+   "mirrors": "dep_recipe_iron_polish_4.value",
+   "value": 2,
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "quest_embers_in_the_well",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "mount_dun_marsh_pony",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_cinder_golem",
+   "kind": "unlocked_by",
+   "text": "Do not make Dun Marsh Pony available before Cinder Golem has been defeated."
+  },
+  "B": {
+   "node": "recipe_recipe_iron_polish",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Do not move Recipe: Iron Polish out of Act 2."
+  }
+ },
+ "editable": [
+  {
+   "node": "mount_dun_marsh_pony",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_rat_swarm",
+    "enc_cinder_golem",
+    "enc_bandit_ambush",
+    "enc_warden_of_thorns"
+   ]
+  },
+  {
+   "node": "recipe_recipe_iron_polish",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Embers in the Well\" completable in Act 1.",
+ "entity_names": {
+  "T": "Embers in the Well",
+  "A": "Dun Marsh Pony",
+  "B": "Recipe: Iron Polish",
+  "L1a": "Stonewake Hills",
+  "L1b": "Copper Coast",
+  "L2a": "Bitter Marsh",
+  "L2b": "Dunmere",
+  "L3": "Drowned Abbey",
+  "E1": "Rat Swarm",
+  "E2a": "Cinder Golem",
+  "E2b": "Bandit Ambush",
+  "E3": "Warden of Thorns",
+  "D1": "The Glass Pilgrim",
+  "D2": "The Crooked Ledger"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 2,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "efa311c3e8098f1a"
+}

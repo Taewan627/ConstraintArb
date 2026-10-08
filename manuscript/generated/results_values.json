@@ -1,0 +1,662 @@
+{
+ "dg_min_nongap": {
+  "value": "0.83",
+  "source": "min graph-only delta over SOL,QWN (stage2) and GEM,GLM,SON (stage3b)"
+ },
+ "kw_G": {
+  "value": "10/240 (4%)",
+  "source": "analysis/descriptive/reason_keywords_stage3a.csv (post-hoc descriptive)"
+ },
+ "kw_N": {
+  "value": "165/240 (69%)",
+  "source": "analysis/descriptive/reason_keywords_stage3a.csv (post-hoc descriptive)"
+ },
+ "s1_bayes": {
+  "value": "−0.83",
+  "source": "stage1_p2 secondary_bayes_mixed_glm"
+ },
+ "s1_beta": {
+  "value": "−0.80",
+  "source": "stage1_p2 primary.beta_cost_per_repair"
+ },
+ "s1_beta_ci": {
+  "value": "[−1.12, −0.69]",
+  "source": "stage1_p2"
+ },
+ "s1_cfr": {
+  "value": "0.99",
+  "source": "stage1_p2 primary.cost_follow_rate"
+ },
+ "s1_gee": {
+  "value": "−0.70",
+  "source": "stage1_p2 secondary_gee.beta_cost"
+ },
+ "s1_label": {
+  "value": "consequence-sensitive arbitration",
+  "source": "stage1_p2 auto_classification.label"
+ },
+ "s1_n_both": {
+  "value": "1",
+  "source": "stage1_p2/pilot_trials.csv invalid with both constraints violated"
+ },
+ "s1_n_transport": {
+  "value": "79",
+  "source": "stage1_p2/pilot_trials.csv invalid with transport_error"
+ },
+ "s1_ntotal": {
+  "value": "720",
+  "source": "stage1_p2 n_trials_total"
+ },
+ "s1_nvalid": {
+  "value": "640",
+  "source": "stage1_p2 n_valid"
+ },
+ "s1_rd": {
+  "value": "0.98",
+  "source": "stage1_p2 primary.risk_diff"
+ },
+ "s1_rd_ci": {
+  "value": "[0.95, 1.00]",
+  "source": "stage1_p2"
+ },
+ "s1_rd_dsp": {
+  "value": "0.96",
+  "source": "stage1_p2 per_model.deepseek-v4-pro.risk_diff"
+ },
+ "s1_rd_dsp_ci": {
+  "value": "[0.91, 1.00]",
+  "source": "stage1_p2"
+ },
+ "s1_rd_qwn": {
+  "value": "0.97",
+  "source": "stage1_p2 per_model.qwen3.8-flash.risk_diff"
+ },
+ "s1_rd_qwn_ci": {
+  "value": "[0.91, 1.00]",
+  "source": "stage1_p2"
+ },
+ "s1_rd_sol": {
+  "value": "1.00",
+  "source": "stage1_p2 per_model.gpt-5.6-sol.risk_diff"
+ },
+ "s1_rd_sol_ci": {
+  "value": "[1.00, 1.00]",
+  "source": "stage1_p2"
+ },
+ "s1_robust_table": {
+  "value": "| Subset | n valid | β per repair | Δ [95% CI] |\n|---|---|---|---|\n| first attempt only | 619 | −0.81 | 0.99 [0.97, 1.00] |\n| declared matches behavior only | 640 | −0.80 | 0.98 [0.95, 1.00] |\n| no included repairs | 640 | −0.80 | 0.98 [0.95, 1.00] |\n| order 0 only | 316 | −0.77 | 0.97 [0.94, 1.00] |\n| order 1 only | 324 | −0.85 | 0.98 [0.95, 1.00] |\n| name set 0 only | 317 | −0.77 | 0.96 [0.92, 1.00] |\n| name set 1 only | 323 | −0.82 | 0.99 [0.97, 1.00] |\n| declared choice dv all schema ok | 641 | −0.81 | 0.98 [0.95, 1.00] |\n| leave out deepseek-v4-pro | 426 | −1.03 | 0.99 [0.96, 1.00] |\n| leave out gpt-5.6-sol | 423 | −0.71 | 0.96 [0.93, 0.99] |\n| leave out qwen3.8-flash | 431 | −0.74 | 0.98 [0.96, 1.00] |",
+  "source": "stage1_p2 robustness (all subsets)"
+ },
+ "s1_tmin": {
+  "value": "0.82",
+  "source": "stage1_p2 template_heterogeneity.min"
+ },
+ "s1_valid_dsp": {
+  "value": "0.89",
+  "source": "stage1_p2 valid_rate_by_model.deepseek-v4-pro"
+ },
+ "s1_valid_qwn": {
+  "value": "0.87",
+  "source": "stage1_p2 valid_rate_by_model.qwen3.8-flash"
+ },
+ "s1_valid_sol": {
+  "value": "0.90",
+  "source": "stage1_p2 valid_rate_by_model.gpt-5.6-sol"
+ },
+ "s2_R_dsp": {
+  "value": "0.87",
+  "source": "stage2 recognition.deepseek-v4-pro"
+ },
+ "s2_R_dsp_ci": {
+  "value": "[0.81, 0.91]",
+  "source": "stage2"
+ },
+ "s2_R_qwn": {
+  "value": "1.00",
+  "source": "stage2 recognition.qwen3.8-flash"
+ },
+ "s2_R_sol": {
+  "value": "1.00",
+  "source": "stage2 recognition.gpt-5.6-sol"
+ },
+ "s2_dg_dsp": {
+  "value": "0.12",
+  "source": "stage2 delta_graph.deepseek-v4-pro"
+ },
+ "s2_dg_dsp_ci": {
+  "value": "[−0.01, 0.25]",
+  "source": "stage2 delta_graph.deepseek-v4-pro"
+ },
+ "s2_dg_qwn": {
+  "value": "0.83",
+  "source": "stage2 delta_graph.qwen3.8-flash"
+ },
+ "s2_dg_qwn_ci": {
+  "value": "[0.73, 0.91]",
+  "source": "stage2 delta_graph.qwen3.8-flash"
+ },
+ "s2_dg_sol": {
+  "value": "0.96",
+  "source": "stage2 delta_graph.gpt-5.6-sol"
+ },
+ "s2_dg_sol_ci": {
+  "value": "[0.93, 1.00]",
+  "source": "stage2 delta_graph.gpt-5.6-sol"
+ },
+ "s2_dx_dsp": {
+  "value": "0.95",
+  "source": "stage2 delta_explicit.deepseek-v4-pro"
+ },
+ "s2_dx_dsp_ci": {
+  "value": "[0.88, 1.00]",
+  "source": "stage2 delta_explicit.deepseek-v4-pro"
+ },
+ "s2_dx_qwn": {
+  "value": "1.00",
+  "source": "stage2 delta_explicit.qwen3.8-flash"
+ },
+ "s2_dx_sol": {
+  "value": "1.00",
+  "source": "stage2 delta_explicit.gpt-5.6-sol"
+ },
+ "s2_exact_dsp": {
+  "value": "0.67",
+  "source": "stage2 recognition.deepseek-v4-pro.counts_exact_rate"
+ },
+ "s2_gap_dsp": {
+  "value": "0.83",
+  "source": "stage2 gap.deepseek-v4-pro"
+ },
+ "s2_gap_dsp_ci": {
+  "value": "[0.70, 0.96]",
+  "source": "stage2 gap.deepseek-v4-pro"
+ },
+ "s2_gap_qwn": {
+  "value": "0.18",
+  "source": "stage2 gap.qwen3.8-flash"
+ },
+ "s2_gap_qwn_ci": {
+  "value": "[0.09, 0.28]",
+  "source": "stage2 gap.qwen3.8-flash"
+ },
+ "s2_gap_sol": {
+  "value": "0.04",
+  "source": "stage2 gap.gpt-5.6-sol"
+ },
+ "s2_gap_sol_ci": {
+  "value": "[0.00, 0.08]",
+  "source": "stage2 gap.gpt-5.6-sol"
+ },
+ "s2_label": {
+  "value": "Inferred-cost sensitivity",
+  "source": "stage2 auto_classification.label"
+ },
+ "s2_link_dsp": {
+  "value": "0.55",
+  "source": "stage2 linked_measure.deepseek-v4-pro.recognition_correct"
+ },
+ "s2_link_dsp_n": {
+  "value": "137",
+  "source": "stage2 linked n"
+ },
+ "s2_nvalid_g": {
+  "value": "715",
+  "source": "stage2 n_valid.graph"
+ },
+ "s2_nvalid_x": {
+  "value": "359",
+  "source": "stage2 n_valid.explicit"
+ },
+ "s3a_R": {
+  "value": "1.00",
+  "source": "stage3a recognition.accuracy_unequal_parsed"
+ },
+ "s3a_R_ci": {
+  "value": "[0.95, 1.00]",
+  "source": "stage3a"
+ },
+ "s3a_dg": {
+  "value": "0.15",
+  "source": "stage3a delta_g"
+ },
+ "s3a_dg_ci": {
+  "value": "[−0.01, 0.33]",
+  "source": "stage3a delta_g"
+ },
+ "s3a_dn": {
+  "value": "1.00",
+  "source": "stage3a delta_n"
+ },
+ "s3a_dn_ci": {
+  "value": "[1.00, 1.00]",
+  "source": "stage3a delta_n"
+ },
+ "s3a_eff": {
+  "value": "0.85",
+  "source": "stage3a nudge_effect"
+ },
+ "s3a_eff_ci": {
+  "value": "[0.68, 1.01]",
+  "source": "stage3a nudge_effect"
+ },
+ "s3a_label": {
+  "value": "Gap replicated / Elicitable",
+  "source": "stage3a auto_classification"
+ },
+ "s3a_link": {
+  "value": "0.63",
+  "source": "stage3a linked_measure_s3a_g"
+ },
+ "s3b_R_dsf": {
+  "value": "1.00",
+  "source": "stage3b new_models.deepseek-v4.1-flash.recognition"
+ },
+ "s3b_R_gem": {
+  "value": "1.00",
+  "source": "stage3b new_models.gemini-3.8-flash.recognition"
+ },
+ "s3b_R_glm": {
+  "value": "1.00",
+  "source": "stage3b new_models.glm-5.3.recognition"
+ },
+ "s3b_R_son": {
+  "value": "1.00",
+  "source": "stage3b new_models.claude-sonnet-5.5.recognition"
+ },
+ "s3b_class_dsf": {
+  "value": "gap_m",
+  "source": "stage3b auto_classification.per_new_model"
+ },
+ "s3b_class_gem": {
+  "value": "sensitive_m",
+  "source": "stage3b auto_classification.per_new_model"
+ },
+ "s3b_class_glm": {
+  "value": "sensitive_m",
+  "source": "stage3b auto_classification.per_new_model"
+ },
+ "s3b_class_son": {
+  "value": "sensitive_m",
+  "source": "stage3b auto_classification.per_new_model"
+ },
+ "s3b_ctrl": {
+  "value": "0.08",
+  "source": "stage3b deepseek_v4_pro.delta_ctrl"
+ },
+ "s3b_ctrl_ci": {
+  "value": "[−0.13, 0.28]",
+  "source": "stage3b deepseek_v4_pro.delta_ctrl"
+ },
+ "s3b_ctrl_eff": {
+  "value": "−0.18",
+  "source": "stage3b deepseek_v4_pro.ctrl_effect"
+ },
+ "s3b_ctrl_eff_ci": {
+  "value": "[−0.40, 0.05]",
+  "source": "stage3b deepseek_v4_pro.ctrl_effect"
+ },
+ "s3b_cue_vs_ctrl": {
+  "value": "0.93",
+  "source": "stage3b deepseek_v4_pro.attention_specific"
+ },
+ "s3b_cue_vs_ctrl_ci": {
+  "value": "[0.73, 1.13]",
+  "source": "stage3b deepseek_v4_pro.attention_specific"
+ },
+ "s3b_dg_dsf": {
+  "value": "0.33",
+  "source": "stage3b new_models.deepseek-v4.1-flash.delta_g"
+ },
+ "s3b_dg_dsf_ci": {
+  "value": "[0.20, 0.48]",
+  "source": "stage3b new_models.deepseek-v4.1-flash.delta_g"
+ },
+ "s3b_dg_gem": {
+  "value": "1.00",
+  "source": "stage3b new_models.gemini-3.8-flash.delta_g"
+ },
+ "s3b_dg_gem_ci": {
+  "value": "[1.00, 1.00]",
+  "source": "stage3b new_models.gemini-3.8-flash.delta_g"
+ },
+ "s3b_dg_glm": {
+  "value": "0.95",
+  "source": "stage3b new_models.glm-5.3.delta_g"
+ },
+ "s3b_dg_glm_ci": {
+  "value": "[0.88, 1.00]",
+  "source": "stage3b new_models.glm-5.3.delta_g"
+ },
+ "s3b_dg_son": {
+  "value": "1.00",
+  "source": "stage3b new_models.claude-sonnet-5.5.delta_g"
+ },
+ "s3b_dg_son_ci": {
+  "value": "[1.00, 1.00]",
+  "source": "stage3b new_models.claude-sonnet-5.5.delta_g"
+ },
+ "s3b_dx_dsf": {
+  "value": "1.00",
+  "source": "stage3b new_models.deepseek-v4.1-flash.delta_x"
+ },
+ "s3b_dx_gem": {
+  "value": "1.00",
+  "source": "stage3b new_models.gemini-3.8-flash.delta_x"
+ },
+ "s3b_dx_glm": {
+  "value": "1.00",
+  "source": "stage3b new_models.glm-5.3.delta_x"
+ },
+ "s3b_dx_son": {
+  "value": "1.00",
+  "source": "stage3b new_models.claude-sonnet-5.5.delta_x"
+ },
+ "s3b_eqA_dsf": {
+  "value": "0.68",
+  "source": "stage3b new_models.deepseek-v4.1-flash.equal_baseline_p_sacrifice_A"
+ },
+ "s3b_eqA_gem": {
+  "value": "0.53",
+  "source": "stage3b new_models.gemini-3.8-flash.equal_baseline_p_sacrifice_A"
+ },
+ "s3b_eqA_glm": {
+  "value": "0.73",
+  "source": "stage3b new_models.glm-5.3.equal_baseline_p_sacrifice_A"
+ },
+ "s3b_eqA_son": {
+  "value": "0.60",
+  "source": "stage3b new_models.claude-sonnet-5.5.equal_baseline_p_sacrifice_A"
+ },
+ "s3b_g3a_ns0": {
+  "value": "0.25",
+  "source": "stage3b deepseek_v4_pro.delta_g3a_ns0"
+ },
+ "s3b_g3a_ns0_ci": {
+  "value": "[0.05, 0.45]",
+  "source": "stage3b deepseek_v4_pro.delta_g3a_ns0"
+ },
+ "s3b_gap_dsf": {
+  "value": "0.68",
+  "source": "stage3b new_models.deepseek-v4.1-flash.gap"
+ },
+ "s3b_gap_dsf_ci": {
+  "value": "[0.53, 0.80]",
+  "source": "stage3b new_models.deepseek-v4.1-flash.gap"
+ },
+ "s3b_gap_gem": {
+  "value": "0.00",
+  "source": "stage3b new_models.gemini-3.8-flash.gap"
+ },
+ "s3b_gap_gem_ci": {
+  "value": "[0.00, 0.00]",
+  "source": "stage3b new_models.gemini-3.8-flash.gap"
+ },
+ "s3b_gap_glm": {
+  "value": "0.05",
+  "source": "stage3b new_models.glm-5.3.gap"
+ },
+ "s3b_gap_glm_ci": {
+  "value": "[0.00, 0.13]",
+  "source": "stage3b new_models.glm-5.3.gap"
+ },
+ "s3b_gap_son": {
+  "value": "0.00",
+  "source": "stage3b new_models.claude-sonnet-5.5.gap"
+ },
+ "s3b_gap_son_ci": {
+  "value": "[0.00, 0.00]",
+  "source": "stage3b new_models.claude-sonnet-5.5.gap"
+ },
+ "s3b_l1_dsf": {
+  "value": "0.30",
+  "source": "stage3b new_models.deepseek-v4.1-flash.label_1_rate"
+ },
+ "s3b_l1_gem": {
+  "value": "0.53",
+  "source": "stage3b new_models.gemini-3.8-flash.label_1_rate"
+ },
+ "s3b_l1_glm": {
+  "value": "0.44",
+  "source": "stage3b new_models.glm-5.3.label_1_rate"
+ },
+ "s3b_l1_son": {
+  "value": "0.43",
+  "source": "stage3b new_models.claude-sonnet-5.5.label_1_rate"
+ },
+ "s3b_link_dsf": {
+  "value": "0.66",
+  "source": "stage3b new_models.deepseek-v4.1-flash.linked"
+ },
+ "s3b_link_gem": {
+  "value": "1.00",
+  "source": "stage3b new_models.gemini-3.8-flash.linked"
+ },
+ "s3b_link_glm": {
+  "value": "0.98",
+  "source": "stage3b new_models.glm-5.3.linked"
+ },
+ "s3b_link_son": {
+  "value": "1.00",
+  "source": "stage3b new_models.claude-sonnet-5.5.linked"
+ },
+ "s3b_mech": {
+  "value": "Attention-specific",
+  "source": "stage3b auto_classification.mechanism (frozen label)"
+ },
+ "s3b_n3a_ns0": {
+  "value": "1.00",
+  "source": "stage3b deepseek_v4_pro.delta_n3a_ns0"
+ },
+ "s3b_n3a_ns0_ci": {
+  "value": "[1.00, 1.00]",
+  "source": "stage3b deepseek_v4_pro.delta_n3a_ns0"
+ },
+ "s3b_phen": {
+  "value": "Utilisation gap confirmed (≥ 2 models)",
+  "source": "stage3b auto_classification.phenomenon"
+ },
+ "s3c_G2": {
+  "value": "PASS",
+  "source": "stage3c auto_classification.G2"
+ },
+ "s3c_G3": {
+  "value": "PARTIAL",
+  "source": "stage3c auto_classification.G3"
+ },
+ "s3c_G_dsf": {
+  "value": "0.08",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.G.delta"
+ },
+ "s3c_G_dsf_ci": {
+  "value": "[−0.13, 0.25]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.G.delta"
+ },
+ "s3c_G_dsp": {
+  "value": "0.20",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.G.delta"
+ },
+ "s3c_G_dsp_ci": {
+  "value": "[0.02, 0.40]",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.G.delta"
+ },
+ "s3c_N1_dsf": {
+  "value": "1.00",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.N1.delta"
+ },
+ "s3c_N1_dsf_ci": {
+  "value": "[1.00, 1.00]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.N1.delta"
+ },
+ "s3c_N1_dsp": {
+  "value": "1.00",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.N1.delta"
+ },
+ "s3c_N1_dsp_ci": {
+  "value": "[1.00, 1.00]",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.N1.delta"
+ },
+ "s3c_NB_dsf": {
+  "value": "0.95",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NB.delta"
+ },
+ "s3c_NB_dsf_ci": {
+  "value": "[0.88, 1.00]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NB.delta"
+ },
+ "s3c_NB_dsp": {
+  "value": "n.e.",
+  "source": "stage3c deepseek-v4-pro.NB (not evaluable)"
+ },
+ "s3c_NC_dsf": {
+  "value": "0.75",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NC.delta"
+ },
+ "s3c_NC_dsf_ci": {
+  "value": "[0.58, 0.90]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NC.delta"
+ },
+ "s3c_NC_dsp": {
+  "value": "n.e.",
+  "source": "stage3c deepseek-v4-pro.NC (not evaluable)"
+ },
+ "s3c_REP_dsf": {
+  "value": "0.13",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.REP.delta"
+ },
+ "s3c_REP_dsf_ci": {
+  "value": "[−0.03, 0.30]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.REP.delta"
+ },
+ "s3c_REP_dsp": {
+  "value": "0.30",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.REP.delta"
+ },
+ "s3c_REP_dsp_ci": {
+  "value": "[0.08, 0.53]",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.REP.delta"
+ },
+ "s3c_effN1_dsf": {
+  "value": "0.93",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.N1.effect"
+ },
+ "s3c_effN1_dsf_ci": {
+  "value": "[0.75, 1.13]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.N1.effect"
+ },
+ "s3c_effN1_dsp": {
+  "value": "0.80",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.N1.effect"
+ },
+ "s3c_effN1_dsp_ci": {
+  "value": "[0.60, 0.98]",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.N1.effect"
+ },
+ "s3c_effNB_dsf": {
+  "value": "0.88",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NB.effect"
+ },
+ "s3c_effNB_dsf_ci": {
+  "value": "[0.68, 1.08]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NB.effect"
+ },
+ "s3c_effNB_dsp": {
+  "value": "n.e.",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.NB.effect = null; S3C-A1"
+ },
+ "s3c_effNC_dsf": {
+  "value": "0.68",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NC.effect"
+ },
+ "s3c_effNC_dsf_ci": {
+  "value": "[0.45, 0.88]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.NC.effect"
+ },
+ "s3c_effNC_dsp": {
+  "value": "n.e.",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.NC.effect = null; S3C-A1"
+ },
+ "s3c_effREP_dsf": {
+  "value": "0.05",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.REP.effect"
+ },
+ "s3c_effREP_dsf_ci": {
+  "value": "[−0.18, 0.28]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.arms.REP.effect"
+ },
+ "s3c_effREP_dsp": {
+  "value": "0.10",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.REP.effect"
+ },
+ "s3c_effREP_dsp_ci": {
+  "value": "[−0.18, 0.40]",
+  "source": "stage3c per_model.deepseek-v4-pro.arms.REP.effect"
+ },
+ "s3c_len_dsf": {
+  "value": "1",
+  "source": "stage3c deepseek-v4.1-flash finish_reason length counts"
+ },
+ "s3c_len_dsp": {
+  "value": "3",
+  "source": "stage3c deepseek-v4-pro finish_reason length counts"
+ },
+ "s3c_repspec_dsf": {
+  "value": "0.88",
+  "source": "stage3c per_model.deepseek-v4.1-flash.rep_specific"
+ },
+ "s3c_repspec_dsf_ci": {
+  "value": "[0.70, 1.03]",
+  "source": "stage3c per_model.deepseek-v4.1-flash.rep_specific"
+ },
+ "s3c_repspec_dsp": {
+  "value": "0.70",
+  "source": "stage3c per_model.deepseek-v4-pro.rep_specific"
+ },
+ "s3c_repspec_dsp_ci": {
+  "value": "[0.48, 0.93]",
+  "source": "stage3c per_model.deepseek-v4-pro.rep_specific"
+ },
+ "s3c_validG_dsf": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4.1-flash.G n_valid/n_total"
+ },
+ "s3c_validG_dsp": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4-pro.G n_valid/n_total"
+ },
+ "s3c_validN1_dsf": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4.1-flash.N1 n_valid/n_total"
+ },
+ "s3c_validN1_dsp": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4-pro.N1 n_valid/n_total"
+ },
+ "s3c_validNB_dsf": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4.1-flash.NB n_valid/n_total"
+ },
+ "s3c_validNB_dsp": {
+  "value": "0/9",
+  "source": "stage3c deepseek-v4-pro.NB n_valid/n_total"
+ },
+ "s3c_validNC_dsf": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4.1-flash.NC n_valid/n_total"
+ },
+ "s3c_validNC_dsp": {
+  "value": "0/0",
+  "source": "stage3c deepseek-v4-pro.NC n_valid/n_total"
+ },
+ "s3c_validREP_dsf": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4.1-flash.REP n_valid/n_total"
+ },
+ "s3c_validREP_dsp": {
+  "value": "80/80",
+  "source": "stage3c deepseek-v4-pro.REP n_valid/n_total"
+ },
+ "valid_min_3": {
+  "value": "1.00",
+  "source": "min valid rate over stage3a arms, stage3b arms, stage3c evaluable arms"
+ }
+}

@@ -1,0 +1,318 @@
+{
+ "scenario_id": "T14-B_HIGH-n1",
+ "template_id": "T14",
+ "condition": "B_HIGH",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "unlocked_by",
+ "b_kind": "location",
+ "a_type": "vendor",
+ "b_type": "companion",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "achievement_keeper_of_small_fires",
+   "type": "achievement",
+   "name": "Keeper of Small Fires",
+   "act": 1,
+   "location": "loc_owl_ridge",
+   "requires_any": [
+    "vendor_bone_market",
+    "companion_ash_the_hound"
+   ],
+   "description": "Earned by completing a trade at the Bone Market or by befriending Ash the Hound."
+  },
+  {
+   "id": "vendor_bone_market",
+   "type": "vendor",
+   "name": "Bone Market",
+   "act": 1,
+   "location": "loc_owl_ridge",
+   "unlocked_by": "enc_bandit_chief_corvo"
+  },
+  {
+   "id": "companion_ash_the_hound",
+   "type": "companion",
+   "name": "Ash the Hound",
+   "act": 1,
+   "location": "loc_mirelight_bog"
+  },
+  {
+   "id": "loc_owl_ridge",
+   "type": "location",
+   "name": "Owl Ridge",
+   "act": 1
+  },
+  {
+   "id": "loc_briar_hollow",
+   "type": "location",
+   "name": "Briar Hollow",
+   "act": 1
+  },
+  {
+   "id": "loc_millbrook_village",
+   "type": "location",
+   "name": "Millbrook Village",
+   "act": 2
+  },
+  {
+   "id": "loc_mirelight_bog",
+   "type": "location",
+   "name": "Mirelight Bog",
+   "act": 2
+  },
+  {
+   "id": "loc_ashen_spire",
+   "type": "location",
+   "name": "Ashen Spire",
+   "act": 3
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 1,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 2,
+   "location": "loc_millbrook_village"
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 2,
+   "location": "loc_mirelight_bog"
+  },
+  {
+   "id": "enc_ghoul_packmaster",
+   "type": "encounter",
+   "name": "Ghoul Packmaster",
+   "act": 3,
+   "location": "loc_ashen_spire"
+  },
+  {
+   "id": "quest_the_silent_bellfry",
+   "type": "quest",
+   "name": "The Silent Bellfry",
+   "act": 2,
+   "location": "loc_mirelight_bog",
+   "requires_all": [
+    "enc_frost_matron"
+   ]
+  },
+  {
+   "id": "quest_embers_in_the_well",
+   "type": "quest",
+   "name": "Embers in the Well",
+   "act": 3,
+   "location": "loc_ashen_spire",
+   "unlocked_by": "enc_ghoul_packmaster"
+  },
+  {
+   "id": "dep_bone_market_1",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Bone Market",
+   "mirrors": "vendor_bone_market.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_bone_market_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Loading-screen tip mentioning Bone Market",
+   "mirrors": "dep_bone_market_1.value",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_bone_market_2",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Bone Market",
+   "mirrors": "vendor_bone_market.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_bone_market_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Cutscene cue referencing Bone Market",
+   "mirrors": "dep_bone_market_2.value",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_bone_market_3",
+   "type": "vendor_line",
+   "name": "Hermit Oswin's shop line about Bone Market",
+   "mirrors": "vendor_bone_market.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "manual"
+  },
+  {
+   "id": "dep_bone_market_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Hermit Oswin's shop line about Bone Market",
+   "mirrors": "dep_bone_market_3.value",
+   "value": "enc_bandit_chief_corvo",
+   "update": "manual"
+  },
+  {
+   "id": "dep_bone_market_4",
+   "type": "companion_bark",
+   "name": "Companion remark about Bone Market",
+   "mirrors": "vendor_bone_market.unlocked_by",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_bone_market_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Companion remark about Bone Market",
+   "mirrors": "dep_bone_market_4.value",
+   "value": "enc_bandit_chief_corvo",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ash_the_hound_1",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Ash the Hound",
+   "mirrors": "companion_ash_the_hound.location",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_the_hound_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Cutscene cue referencing Ash the Hound",
+   "mirrors": "dep_ash_the_hound_1.value",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_the_hound_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Ash the Hound",
+   "mirrors": "companion_ash_the_hound.location",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_the_hound_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Companion remark about Ash the Hound",
+   "mirrors": "dep_ash_the_hound_2.value",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_the_hound_3",
+   "type": "codex_entry",
+   "name": "Codex page on Ash the Hound",
+   "mirrors": "companion_ash_the_hound.location",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_the_hound_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Codex page on Ash the Hound",
+   "mirrors": "dep_ash_the_hound_3.value",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_the_hound_4",
+   "type": "map_marker",
+   "name": "World-map marker for Ash the Hound",
+   "mirrors": "companion_ash_the_hound.location",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ash_the_hound_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: World-map marker for Ash the Hound",
+   "mirrors": "dep_ash_the_hound_4.value",
+   "value": "loc_mirelight_bog",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "achievement_keeper_of_small_fires",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "vendor_bone_market",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_bandit_chief_corvo",
+   "kind": "unlocked_by",
+   "text": "Do not make Bone Market available before Bandit Chief Corvo has been defeated."
+  },
+  "B": {
+   "node": "companion_ash_the_hound",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_mirelight_bog",
+   "kind": "location",
+   "text": "Do not move Ash the Hound out of Mirelight Bog."
+  }
+ },
+ "editable": [
+  {
+   "node": "vendor_bone_market",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_tide_serpent",
+    "enc_bandit_chief_corvo",
+    "enc_frost_matron",
+    "enc_ghoul_packmaster"
+   ]
+  },
+  {
+   "node": "companion_ash_the_hound",
+   "field": "location",
+   "domain": [
+    "loc_owl_ridge",
+    "loc_briar_hollow",
+    "loc_millbrook_village",
+    "loc_mirelight_bog",
+    "loc_ashen_spire"
+   ]
+  }
+ ],
+ "request_text": "Social systems should be visible in Act 1. Make \"Keeper of Small Fires\" earnable in Act 1.",
+ "entity_names": {
+  "T": "Keeper of Small Fires",
+  "A": "Bone Market",
+  "B": "Ash the Hound",
+  "L1a": "Owl Ridge",
+  "L1b": "Briar Hollow",
+  "L2a": "Millbrook Village",
+  "L2b": "Mirelight Bog",
+  "L3": "Ashen Spire",
+  "E1": "Tide Serpent",
+  "E2a": "Bandit Chief Corvo",
+  "E2b": "Frost Matron",
+  "E3": "Ghoul Packmaster",
+  "D1": "The Silent Bellfry",
+  "D2": "Embers in the Well"
+ },
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "a928e5653ba16dec"
+}

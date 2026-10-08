@@ -1,0 +1,487 @@
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Baidu"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Sail Research"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "length", "parse_status": "empty", "raw_provider_response": {"provider": "Friendli"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Ionstream"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Baidu"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AkashML"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "BaseTen"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Sail Research"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Decart"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "length", "parse_status": "empty", "raw_provider_response": {"provider": "OpenInference"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Sail Research"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "length", "parse_status": "empty", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Crusoe"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Decart"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AkashML"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "NextBit"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Phala"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google AI Studio"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "PrimeIntellect"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "PrimeIntellect"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "PrimeIntellect"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "PrimeIntellect"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "length", "parse_status": "empty", "raw_provider_response": {"provider": "PrimeIntellect"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "PrimeIntellect"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Decart"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "length", "parse_status": "empty", "raw_provider_response": {"provider": "Sail Research"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Morph"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Decart"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "length", "parse_status": "empty", "raw_provider_response": {"provider": "Modal"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Modal"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Morph"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Morph"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Sail Research"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DeepInfra"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Crusoe"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DekaLLM"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Decart"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Crusoe"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Wafer"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "OpenInference"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Together"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Decart"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "CoreWeave"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Wafer"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Mistral"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Wafer"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "DigitalOcean"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Makora"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Decart"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Morph"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Makora"}}
+{"phase": "S3B_G", "model": "claude-sonnet-5.5", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Claude Platform on AWS"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "AtlasCloud"}}
+{"phase": "S3B_G", "model": "gemini-3.8-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Google"}}
+{"phase": "S3B_G", "model": "glm-5.3", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "SiliconFlow"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "InferenceNet"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "length", "parse_status": "empty", "raw_provider_response": {"provider": "OpenInference"}}
+{"phase": "S3B_G", "model": "deepseek-v4.1-flash", "finish_reason": "stop", "parse_status": "ok", "raw_provider_response": {"provider": "Relace"}}

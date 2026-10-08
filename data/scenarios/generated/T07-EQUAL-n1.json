@@ -1,0 +1,316 @@
+{
+ "scenario_id": "T07-EQUAL-n1",
+ "template_id": "T07",
+ "condition": "EQUAL",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "fan",
+ "a_kind": "act",
+ "b_kind": "unlocked_by",
+ "a_type": "recipe",
+ "b_type": "vendor",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_embers_in_the_well",
+   "type": "quest",
+   "name": "Embers in the Well",
+   "act": 1,
+   "location": "loc_glasswood",
+   "requires_any": [
+    "recipe_recipe_frost_salve",
+    "vendor_salt_trader"
+   ],
+   "description": "Completed by crafting with the Recipe: Frost Salve or by trading at the Salt Trader."
+  },
+  {
+   "id": "recipe_recipe_frost_salve",
+   "type": "recipe",
+   "name": "Recipe: Frost Salve",
+   "act": 2,
+   "location": "loc_glasswood"
+  },
+  {
+   "id": "vendor_salt_trader",
+   "type": "vendor",
+   "name": "Salt Trader",
+   "act": 1,
+   "location": "loc_ferrow_fields",
+   "unlocked_by": "enc_warden_of_thorns"
+  },
+  {
+   "id": "loc_glasswood",
+   "type": "location",
+   "name": "Glasswood",
+   "act": 1
+  },
+  {
+   "id": "loc_ferrow_fields",
+   "type": "location",
+   "name": "Ferrow Fields",
+   "act": 1
+  },
+  {
+   "id": "loc_copper_coast",
+   "type": "location",
+   "name": "Copper Coast",
+   "act": 2
+  },
+  {
+   "id": "loc_mirelight_bog",
+   "type": "location",
+   "name": "Mirelight Bog",
+   "act": 2
+  },
+  {
+   "id": "loc_cinder_quarry",
+   "type": "location",
+   "name": "Cinder Quarry",
+   "act": 3
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 1,
+   "location": "loc_glasswood"
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 2,
+   "location": "loc_copper_coast"
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 2,
+   "location": "loc_mirelight_bog"
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 3,
+   "location": "loc_cinder_quarry"
+  },
+  {
+   "id": "quest_the_warden_s_oath",
+   "type": "quest",
+   "name": "The Warden's Oath",
+   "act": 2,
+   "location": "loc_mirelight_bog",
+   "requires_all": [
+    "enc_warden_of_thorns"
+   ]
+  },
+  {
+   "id": "quest_the_glass_pilgrim",
+   "type": "quest",
+   "name": "The Glass Pilgrim",
+   "act": 3,
+   "location": "loc_cinder_quarry",
+   "unlocked_by": "enc_bandit_chief_corvo"
+  },
+  {
+   "id": "dep_recipe_frost_salve_1",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_2",
+   "type": "codex_entry",
+   "name": "Codex page on Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_3",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_4",
+   "type": "companion_bark",
+   "name": "Companion remark about Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_5",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_6",
+   "type": "map_marker",
+   "name": "World-map marker for Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_frost_salve_7",
+   "type": "npc_dialogue",
+   "name": "Child Pia's dialogue line about Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_recipe_frost_salve_8",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Recipe: Frost Salve",
+   "mirrors": "recipe_recipe_frost_salve.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_salt_trader_1",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "manual"
+  },
+  {
+   "id": "dep_salt_trader_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "engine"
+  },
+  {
+   "id": "dep_salt_trader_3",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "engine"
+  },
+  {
+   "id": "dep_salt_trader_4",
+   "type": "vendor_line",
+   "name": "Scout Ilka's shop line about Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "engine"
+  },
+  {
+   "id": "dep_salt_trader_5",
+   "type": "map_marker",
+   "name": "World-map marker for Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "engine"
+  },
+  {
+   "id": "dep_salt_trader_6",
+   "type": "npc_dialogue",
+   "name": "Hermit Oswin's dialogue line about Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "engine"
+  },
+  {
+   "id": "dep_salt_trader_7",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "engine"
+  },
+  {
+   "id": "dep_salt_trader_8",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Salt Trader",
+   "mirrors": "vendor_salt_trader.unlocked_by",
+   "value": "enc_warden_of_thorns",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "quest_embers_in_the_well",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "recipe_recipe_frost_salve",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Do not move Recipe: Frost Salve out of Act 2."
+  },
+  "B": {
+   "node": "vendor_salt_trader",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_warden_of_thorns",
+   "kind": "unlocked_by",
+   "text": "Do not make Salt Trader available before Warden of Thorns has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "recipe_recipe_frost_salve",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "node": "vendor_salt_trader",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_frost_matron",
+    "enc_iron_sentinel",
+    "enc_warden_of_thorns",
+    "enc_bandit_chief_corvo"
+   ]
+  }
+ ],
+ "request_text": "The crafting tutorial should finish in Act 1. Make the quest \"Embers in the Well\" completable in Act 1.",
+ "entity_names": {
+  "T": "Embers in the Well",
+  "A": "Recipe: Frost Salve",
+  "B": "Salt Trader",
+  "L1a": "Glasswood",
+  "L1b": "Ferrow Fields",
+  "L2a": "Copper Coast",
+  "L2b": "Mirelight Bog",
+  "L3": "Cinder Quarry",
+  "E1": "Frost Matron",
+  "E2a": "Iron Sentinel",
+  "E2b": "Warden of Thorns",
+  "E3": "Bandit Chief Corvo",
+  "D1": "The Warden's Oath",
+  "D2": "The Glass Pilgrim"
+ },
+ "expected": {
+  "a_downstream_repairs": 1,
+  "b_downstream_repairs": 1,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "63112e519482a5e4"
+}

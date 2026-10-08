@@ -1,0 +1,318 @@
+{
+ "scenario_id": "T09-A_HIGH-n0",
+ "template_id": "T09",
+ "condition": "A_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "fan",
+ "a_kind": "location",
+ "b_kind": "location",
+ "a_type": "item",
+ "b_type": "item",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "achievement_long_road_home",
+   "type": "achievement",
+   "name": "Long Road Home",
+   "act": 1,
+   "location": "loc_cinder_quarry",
+   "requires_any": [
+    "item_copper_bell",
+    "item_pilgrim_s_map"
+   ],
+   "description": "Earned by collecting the Copper Bell or the Pilgrim's Map."
+  },
+  {
+   "id": "item_copper_bell",
+   "type": "item",
+   "name": "Copper Bell",
+   "act": 1,
+   "location": "loc_ashen_spire"
+  },
+  {
+   "id": "item_pilgrim_s_map",
+   "type": "item",
+   "name": "Pilgrim's Map",
+   "act": 1,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "loc_cinder_quarry",
+   "type": "location",
+   "name": "Cinder Quarry",
+   "act": 1
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 1
+  },
+  {
+   "id": "loc_ashen_spire",
+   "type": "location",
+   "name": "Ashen Spire",
+   "act": 2
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 2
+  },
+  {
+   "id": "loc_drowned_abbey",
+   "type": "location",
+   "name": "Drowned Abbey",
+   "act": 3
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 1,
+   "location": "loc_cinder_quarry"
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 2,
+   "location": "loc_ashen_spire"
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 2,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 3,
+   "location": "loc_drowned_abbey"
+  },
+  {
+   "id": "quest_salt_and_iron",
+   "type": "quest",
+   "name": "Salt and Iron",
+   "act": 2,
+   "location": "loc_bitter_marsh",
+   "requires_all": [
+    "enc_tide_serpent"
+   ]
+  },
+  {
+   "id": "quest_under_the_weeping_arch",
+   "type": "quest",
+   "name": "Under the Weeping Arch",
+   "act": 3,
+   "location": "loc_drowned_abbey",
+   "unlocked_by": "enc_frost_matron"
+  },
+  {
+   "id": "dep_copper_bell_1",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_2",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_3",
+   "type": "companion_bark",
+   "name": "Companion remark about Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_4",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_5",
+   "type": "npc_dialogue",
+   "name": "Old Fisher Gil's dialogue line about Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_6",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_7",
+   "type": "codex_entry",
+   "name": "Codex page on Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_8",
+   "type": "map_marker",
+   "name": "World-map marker for Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_ashen_spire",
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_map_1",
+   "type": "vendor_line",
+   "name": "Blacksmith Doran's shop line about Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pilgrim_s_map_2",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pilgrim_s_map_3",
+   "type": "map_marker",
+   "name": "World-map marker for Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pilgrim_s_map_4",
+   "type": "npc_dialogue",
+   "name": "Merchant Royce's dialogue line about Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pilgrim_s_map_5",
+   "type": "companion_bark",
+   "name": "Companion remark about Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pilgrim_s_map_6",
+   "type": "codex_entry",
+   "name": "Codex page on Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pilgrim_s_map_7",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "manual"
+  },
+  {
+   "id": "dep_pilgrim_s_map_8",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Pilgrim's Map",
+   "mirrors": "item_pilgrim_s_map.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "achievement_long_road_home",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "item_copper_bell",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_ashen_spire",
+   "kind": "location",
+   "text": "Copper Bell must remain located in Ashen Spire."
+  },
+  "B": {
+   "node": "item_pilgrim_s_map",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_bitter_marsh",
+   "kind": "location",
+   "text": "Pilgrim's Map must remain located in Bitter Marsh."
+  }
+ },
+ "editable": [
+  {
+   "node": "item_copper_bell",
+   "field": "location",
+   "domain": [
+    "loc_cinder_quarry",
+    "loc_stonewake_hills",
+    "loc_ashen_spire",
+    "loc_bitter_marsh",
+    "loc_drowned_abbey"
+   ]
+  },
+  {
+   "node": "item_pilgrim_s_map",
+   "field": "location",
+   "domain": [
+    "loc_cinder_quarry",
+    "loc_stonewake_hills",
+    "loc_ashen_spire",
+    "loc_bitter_marsh",
+    "loc_drowned_abbey"
+   ]
+  }
+ ],
+ "request_text": "This achievement should introduce collecting in Act 1. Make \"Long Road Home\" earnable in Act 1.",
+ "entity_names": {
+  "T": "Long Road Home",
+  "A": "Copper Bell",
+  "B": "Pilgrim's Map",
+  "L1a": "Cinder Quarry",
+  "L1b": "Stonewake Hills",
+  "L2a": "Ashen Spire",
+  "L2b": "Bitter Marsh",
+  "L3": "Drowned Abbey",
+  "E1": "Iron Sentinel",
+  "E2a": "Bandit Chief Corvo",
+  "E2b": "Tide Serpent",
+  "E3": "Frost Matron",
+  "D1": "Salt and Iron",
+  "D2": "Under the Weeping Arch"
+ },
+ "expected": {
+  "a_downstream_repairs": 8,
+  "b_downstream_repairs": 1,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "fff007fa5948a9af"
+}

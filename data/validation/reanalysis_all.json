@@ -1,0 +1,40 @@
+{
+  "network": "disabled",
+  "comparisons": [
+    {
+      "stage": "stage1_p2",
+      "status": "PASS",
+      "absolute_tolerance": 5e-05,
+      "bootstrap_replicates": 2000,
+      "differences": []
+    },
+    {
+      "stage": "stage2",
+      "status": "PASS",
+      "absolute_tolerance": 1e-08,
+      "bootstrap_replicates": 2000,
+      "differences": []
+    },
+    {
+      "stage": "stage3a",
+      "status": "PASS",
+      "absolute_tolerance": 1e-08,
+      "bootstrap_replicates": 2000,
+      "differences": []
+    },
+    {
+      "stage": "stage3b",
+      "status": "PASS",
+      "absolute_tolerance": 1e-08,
+      "bootstrap_replicates": 2000,
+      "differences": []
+    },
+    {
+      "stage": "stage3c",
+      "status": "PASS",
+      "absolute_tolerance": 1e-08,
+      "bootstrap_replicates": 2000,
+      "differences": []
+    }
+  ]
+}

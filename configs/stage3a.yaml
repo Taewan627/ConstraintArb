@@ -1,0 +1,47 @@
+# Stage 3a configurations per docs/stage3a_change_spec.md.
+experiment: consequence_aware_constraint_arbitration_stage3a
+scenario_dir: data/scenarios/v2
+handbuilt_dir: data/scenarios/handbuilt
+info_condition: graph_only
+format_retry_cap: 2
+concurrency: 4
+base_seed: 20261007
+max_cost_usd_without_confirm: 5
+
+phases:
+  S3A_SMOKE:
+    source: generated
+    task: decision
+    info_condition: graph_only_nudge
+    templates: [T01, T02, T03, T04, T05, T06]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [nonoa]
+  S3A_G:
+    source: generated
+    task: decision
+    info_condition: graph_only
+    templates: all
+    name_sets: [0, 1]
+    orders: [0, 1]
+    reps: 1
+    models: [nonoa]
+  S3A_N:
+    source: generated
+    task: decision
+    info_condition: graph_only_nudge
+    templates: all
+    name_sets: [0, 1]
+    orders: [0, 1]
+    reps: 1
+    models: [nonoa]
+  S3A_REC:
+    source: generated
+    task: recognition
+    info_condition: graph_only
+    templates: all
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [nonoa]

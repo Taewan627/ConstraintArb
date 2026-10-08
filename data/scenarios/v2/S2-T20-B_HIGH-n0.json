@@ -1,0 +1,319 @@
+{
+ "scenario_id": "S2-T20-B_HIGH-n0",
+ "template_id": "T20",
+ "condition": "B_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "tree",
+ "a_kind": "unlocked_by",
+ "b_kind": "location",
+ "a_type": "waypoint",
+ "b_type": "item",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_embers_in_the_well",
+   "type": "quest",
+   "name": "Embers in the Well",
+   "act": 1,
+   "location": "loc_saltmere_docks",
+   "requires_any": [
+    "waypoint_wayshrine_of_ash",
+    "item_copper_bell"
+   ],
+   "description": "Completed by restoring the Wayshrine of Ash or by returning the Copper Bell."
+  },
+  {
+   "id": "waypoint_wayshrine_of_ash",
+   "type": "waypoint",
+   "name": "Wayshrine of Ash",
+   "act": 1,
+   "location": "loc_saltmere_docks",
+   "unlocked_by": "enc_rat_swarm"
+  },
+  {
+   "id": "item_copper_bell",
+   "type": "item",
+   "name": "Copper Bell",
+   "act": 1,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "loc_saltmere_docks",
+   "type": "location",
+   "name": "Saltmere Docks",
+   "act": 1
+  },
+  {
+   "id": "loc_briar_hollow",
+   "type": "location",
+   "name": "Briar Hollow",
+   "act": 1
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 2
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 2
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 3
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 1,
+   "location": "loc_saltmere_docks"
+  },
+  {
+   "id": "enc_rat_swarm",
+   "type": "encounter",
+   "name": "Rat Swarm",
+   "act": 2,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 2,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 3,
+   "location": "loc_stonewake_hills"
+  },
+  {
+   "id": "quest_the_warden_s_oath",
+   "type": "quest",
+   "name": "The Warden's Oath",
+   "act": 2,
+   "location": "loc_kingsfall_ruins",
+   "requires_all": [
+    "enc_warden_of_thorns"
+   ]
+  },
+  {
+   "id": "quest_under_the_weeping_arch",
+   "type": "quest",
+   "name": "Under the Weeping Arch",
+   "act": 3,
+   "location": "loc_stonewake_hills",
+   "unlocked_by": "enc_bandit_ambush"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_1",
+   "type": "vendor_line",
+   "name": "Merchant Royce's shop line about Wayshrine of Ash",
+   "mirrors": "waypoint_wayshrine_of_ash.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Merchant Royce's shop line about Wayshrine of Ash",
+   "mirrors": "dep_wayshrine_of_ash_1.value",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Wayshrine of Ash",
+   "mirrors": "waypoint_wayshrine_of_ash.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Companion remark about Wayshrine of Ash",
+   "mirrors": "dep_wayshrine_of_ash_2.value",
+   "value": "enc_rat_swarm",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_3",
+   "type": "map_marker",
+   "name": "World-map marker for Wayshrine of Ash",
+   "mirrors": "waypoint_wayshrine_of_ash.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Wayshrine of Ash",
+   "mirrors": "dep_wayshrine_of_ash_3.value",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_4",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Wayshrine of Ash",
+   "mirrors": "waypoint_wayshrine_of_ash.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_wayshrine_of_ash_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Achievement description referencing Wayshrine of Ash",
+   "mirrors": "dep_wayshrine_of_ash_4.value",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_copper_bell_1",
+   "type": "codex_entry",
+   "name": "Codex page on Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Codex page on Copper Bell",
+   "mirrors": "dep_copper_bell_1.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_2",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Quest-log entry describing Copper Bell",
+   "mirrors": "dep_copper_bell_2.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_3",
+   "type": "npc_dialogue",
+   "name": "Scout Ilka's dialogue line about Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Scout Ilka's dialogue line about Copper Bell",
+   "mirrors": "dep_copper_bell_3.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_4",
+   "type": "vendor_line",
+   "name": "Old Fisher Gil's shop line about Copper Bell",
+   "mirrors": "item_copper_bell.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_copper_bell_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Old Fisher Gil's shop line about Copper Bell",
+   "mirrors": "dep_copper_bell_4.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "quest_embers_in_the_well",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "waypoint_wayshrine_of_ash",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_rat_swarm",
+   "kind": "unlocked_by",
+   "text": "Wayshrine of Ash must remain locked until Rat Swarm has been defeated."
+  },
+  "B": {
+   "node": "item_copper_bell",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_kingsfall_ruins",
+   "kind": "location",
+   "text": "Copper Bell must remain located in Kingsfall Ruins."
+  }
+ },
+ "editable": [
+  {
+   "node": "waypoint_wayshrine_of_ash",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_frost_matron",
+    "enc_rat_swarm",
+    "enc_warden_of_thorns",
+    "enc_bandit_ambush"
+   ]
+  },
+  {
+   "node": "item_copper_bell",
+   "field": "location",
+   "domain": [
+    "loc_saltmere_docks",
+    "loc_briar_hollow",
+    "loc_bitter_marsh",
+    "loc_kingsfall_ruins",
+    "loc_stonewake_hills"
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Embers in the Well\" completable in Act 1.",
+ "entity_names": {
+  "T": "Embers in the Well",
+  "A": "Wayshrine of Ash",
+  "B": "Copper Bell",
+  "L1a": "Saltmere Docks",
+  "L1b": "Briar Hollow",
+  "L2a": "Bitter Marsh",
+  "L2b": "Kingsfall Ruins",
+  "L3": "Stonewake Hills",
+  "E1": "Frost Matron",
+  "E2a": "Rat Swarm",
+  "E2b": "Warden of Thorns",
+  "E3": "Bandit Ambush",
+  "D1": "The Warden's Oath",
+  "D2": "Under the Weeping Arch"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "048ddb633b3a8fed"
+}

@@ -1,0 +1,167 @@
+{
+ "scenario_id": "H04-A_HIGH",
+ "template_id": "H4",
+ "condition": "A_HIGH",
+ "name_set": 0,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "act",
+ "b_kind": "unlocked_by",
+ "a_type": "item",
+ "b_type": "route",
+ "generator_version": "handbuilt/1.0",
+ "nodes": [
+  {
+   "id": "objective_light_beacon",
+   "type": "objective",
+   "name": "Light the Beacon Line",
+   "act": 1,
+   "location": "loc_owl_ridge",
+   "requires_any": [
+    "item_storm_lens",
+    "route_cliffside_path"
+   ],
+   "description": "Done by mounting the Storm Lens or by climbing the Cliffside Path."
+  },
+  {
+   "id": "item_storm_lens",
+   "type": "item",
+   "name": "Storm Lens",
+   "act": 2,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "route_cliffside_path",
+   "type": "route",
+   "name": "Cliffside Path",
+   "act": 1,
+   "location": "loc_owl_ridge",
+   "unlocked_by": "enc_iron_sentinel"
+  },
+  {
+   "id": "loc_owl_ridge",
+   "type": "location",
+   "name": "Owl Ridge",
+   "act": 1
+  },
+  {
+   "id": "loc_cinder_quarry",
+   "type": "location",
+   "name": "Cinder Quarry",
+   "act": 2
+  },
+  {
+   "id": "enc_training_dummy",
+   "type": "encounter",
+   "name": "Training Dummy Brawl",
+   "act": 1,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 2,
+   "location": "loc_cinder_quarry"
+  },
+  {
+   "id": "dep_lens_log",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Storm Lens",
+   "mirrors": "item_storm_lens.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_lens_log_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Quest-log entry describing Storm Lens",
+   "mirrors": "dep_lens_log.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_lens_codex",
+   "type": "codex_entry",
+   "name": "Codex page on Storm Lens",
+   "mirrors": "item_storm_lens.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_lens_codex_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Codex page on Storm Lens",
+   "mirrors": "dep_lens_codex.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_path_marker",
+   "type": "map_marker",
+   "name": "World-map marker for Cliffside Path",
+   "mirrors": "route_cliffside_path.unlocked_by",
+   "value": "enc_iron_sentinel",
+   "update": "manual"
+  },
+  {
+   "id": "dep_path_marker_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Cliffside Path",
+   "mirrors": "dep_path_marker.value",
+   "value": "enc_iron_sentinel",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "objective_light_beacon",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "item_storm_lens",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Do not move Storm Lens out of Act 2."
+  },
+  "B": {
+   "node": "route_cliffside_path",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_iron_sentinel",
+   "kind": "unlocked_by",
+   "text": "Do not make Cliffside Path available before Iron Sentinel has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "item_storm_lens",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "node": "route_cliffside_path",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_training_dummy",
+    "enc_iron_sentinel"
+   ]
+  }
+ ],
+ "request_text": "Players get stuck in Act 1 with no progress. Make the objective \"Light the Beacon Line\" completable in Act 1.",
+ "expected": {
+  "a_downstream_repairs": 4,
+  "b_downstream_repairs": 1,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ }
+}

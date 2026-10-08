@@ -1,0 +1,318 @@
+{
+ "scenario_id": "T09-EQUAL-n1",
+ "template_id": "T09",
+ "condition": "EQUAL",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "fan",
+ "a_kind": "location",
+ "b_kind": "location",
+ "a_type": "item",
+ "b_type": "item",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "achievement_long_road_home",
+   "type": "achievement",
+   "name": "Long Road Home",
+   "act": 1,
+   "location": "loc_kingsfall_ruins",
+   "requires_any": [
+    "item_saltwood_charm",
+    "item_ledger_of_debts"
+   ],
+   "description": "Earned by collecting the Saltwood Charm or the Ledger of Debts."
+  },
+  {
+   "id": "item_saltwood_charm",
+   "type": "item",
+   "name": "Saltwood Charm",
+   "act": 1,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "item_ledger_of_debts",
+   "type": "item",
+   "name": "Ledger of Debts",
+   "act": 1,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 1
+  },
+  {
+   "id": "loc_dunmere",
+   "type": "location",
+   "name": "Dunmere",
+   "act": 1
+  },
+  {
+   "id": "loc_gull_s_rest",
+   "type": "location",
+   "name": "Gull's Rest",
+   "act": 2
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 2
+  },
+  {
+   "id": "loc_saltmere_docks",
+   "type": "location",
+   "name": "Saltmere Docks",
+   "act": 3
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 1,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "enc_marsh_hydra",
+   "type": "encounter",
+   "name": "Marsh Hydra",
+   "act": 2,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 2,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "enc_rat_swarm",
+   "type": "encounter",
+   "name": "Rat Swarm",
+   "act": 3,
+   "location": "loc_saltmere_docks"
+  },
+  {
+   "id": "quest_embers_in_the_well",
+   "type": "quest",
+   "name": "Embers in the Well",
+   "act": 2,
+   "location": "loc_bitter_marsh",
+   "requires_all": [
+    "enc_iron_sentinel"
+   ]
+  },
+  {
+   "id": "quest_the_crooked_ledger",
+   "type": "quest",
+   "name": "The Crooked Ledger",
+   "act": 3,
+   "location": "loc_saltmere_docks",
+   "unlocked_by": "enc_rat_swarm"
+  },
+  {
+   "id": "dep_saltwood_charm_1",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwood_charm_2",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwood_charm_3",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwood_charm_4",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwood_charm_5",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwood_charm_6",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwood_charm_7",
+   "type": "map_marker",
+   "name": "World-map marker for Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwood_charm_8",
+   "type": "companion_bark",
+   "name": "Companion remark about Saltwood Charm",
+   "mirrors": "item_saltwood_charm.location",
+   "value": "loc_gull_s_rest",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ledger_of_debts_1",
+   "type": "map_marker",
+   "name": "World-map marker for Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ledger_of_debts_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ledger_of_debts_3",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ledger_of_debts_4",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ledger_of_debts_5",
+   "type": "codex_entry",
+   "name": "Codex page on Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ledger_of_debts_6",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ledger_of_debts_7",
+   "type": "npc_dialogue",
+   "name": "Priestess Anwen's dialogue line about Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "manual"
+  },
+  {
+   "id": "dep_ledger_of_debts_8",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Ledger of Debts",
+   "mirrors": "item_ledger_of_debts.location",
+   "value": "loc_bitter_marsh",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "achievement_long_road_home",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "item_saltwood_charm",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_gull_s_rest",
+   "kind": "location",
+   "text": "Do not move Saltwood Charm out of Gull's Rest."
+  },
+  "B": {
+   "node": "item_ledger_of_debts",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_bitter_marsh",
+   "kind": "location",
+   "text": "Do not move Ledger of Debts out of Bitter Marsh."
+  }
+ },
+ "editable": [
+  {
+   "node": "item_saltwood_charm",
+   "field": "location",
+   "domain": [
+    "loc_kingsfall_ruins",
+    "loc_dunmere",
+    "loc_gull_s_rest",
+    "loc_bitter_marsh",
+    "loc_saltmere_docks"
+   ]
+  },
+  {
+   "node": "item_ledger_of_debts",
+   "field": "location",
+   "domain": [
+    "loc_kingsfall_ruins",
+    "loc_dunmere",
+    "loc_gull_s_rest",
+    "loc_bitter_marsh",
+    "loc_saltmere_docks"
+   ]
+  }
+ ],
+ "request_text": "This achievement should introduce collecting in Act 1. Make \"Long Road Home\" earnable in Act 1.",
+ "entity_names": {
+  "T": "Long Road Home",
+  "A": "Saltwood Charm",
+  "B": "Ledger of Debts",
+  "L1a": "Kingsfall Ruins",
+  "L1b": "Dunmere",
+  "L2a": "Gull's Rest",
+  "L2b": "Bitter Marsh",
+  "L3": "Saltmere Docks",
+  "E1": "Bandit Chief Corvo",
+  "E2a": "Marsh Hydra",
+  "E2b": "Iron Sentinel",
+  "E3": "Rat Swarm",
+  "D1": "Embers in the Well",
+  "D2": "The Crooked Ledger"
+ },
+ "expected": {
+  "a_downstream_repairs": 1,
+  "b_downstream_repairs": 1,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "aa6e6b751ca5534d"
+}

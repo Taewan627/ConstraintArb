@@ -1,0 +1,319 @@
+{
+ "scenario_id": "S2-T16-A_HIGH-n1",
+ "template_id": "T16",
+ "condition": "A_HIGH",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "location",
+ "b_kind": "unlocked_by",
+ "a_type": "npc",
+ "b_type": "npc",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "bounty_bounty_the_mire_witch",
+   "type": "bounty",
+   "name": "Bounty: The Mire Witch",
+   "act": 1,
+   "location": "loc_gull_s_rest",
+   "requires_any": [
+    "npc_wren_the_tinker",
+    "npc_sister_calla"
+   ],
+   "description": "Claimable with intel from Wren the Tinker or from Sister Calla."
+  },
+  {
+   "id": "npc_wren_the_tinker",
+   "type": "npc",
+   "name": "Wren the Tinker",
+   "act": 1,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "npc_sister_calla",
+   "type": "npc",
+   "name": "Sister Calla",
+   "act": 1,
+   "location": "loc_owl_ridge",
+   "unlocked_by": "enc_tide_serpent"
+  },
+  {
+   "id": "loc_gull_s_rest",
+   "type": "location",
+   "name": "Gull's Rest",
+   "act": 1
+  },
+  {
+   "id": "loc_owl_ridge",
+   "type": "location",
+   "name": "Owl Ridge",
+   "act": 1
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 2
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 2
+  },
+  {
+   "id": "loc_glasswood",
+   "type": "location",
+   "name": "Glasswood",
+   "act": 3
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 1,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 2,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 2,
+   "location": "loc_stonewake_hills"
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 3,
+   "location": "loc_glasswood"
+  },
+  {
+   "id": "quest_a_debt_to_the_tide",
+   "type": "quest",
+   "name": "A Debt to the Tide",
+   "act": 2,
+   "location": "loc_stonewake_hills",
+   "requires_all": [
+    "enc_tide_serpent"
+   ]
+  },
+  {
+   "id": "quest_the_brass_choir",
+   "type": "quest",
+   "name": "The Brass Choir",
+   "act": 3,
+   "location": "loc_glasswood",
+   "unlocked_by": "enc_bandit_ambush"
+  },
+  {
+   "id": "dep_wren_the_tinker_1",
+   "type": "npc_dialogue",
+   "name": "Child Pia's dialogue line about Wren the Tinker",
+   "mirrors": "npc_wren_the_tinker.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wren_the_tinker_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Child Pia's dialogue line about Wren the Tinker",
+   "mirrors": "dep_wren_the_tinker_1.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wren_the_tinker_2",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Wren the Tinker",
+   "mirrors": "npc_wren_the_tinker.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wren_the_tinker_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Achievement description referencing Wren the Tinker",
+   "mirrors": "dep_wren_the_tinker_2.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wren_the_tinker_3",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Wren the Tinker",
+   "mirrors": "npc_wren_the_tinker.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wren_the_tinker_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Innkeeper Bel's shop line about Wren the Tinker",
+   "mirrors": "dep_wren_the_tinker_3.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wren_the_tinker_4",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Wren the Tinker",
+   "mirrors": "npc_wren_the_tinker.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_wren_the_tinker_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Quest-log entry describing Wren the Tinker",
+   "mirrors": "dep_wren_the_tinker_4.value",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_sister_calla_1",
+   "type": "npc_dialogue",
+   "name": "Stablehand Fay's dialogue line about Sister Calla",
+   "mirrors": "npc_sister_calla.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Stablehand Fay's dialogue line about Sister Calla",
+   "mirrors": "dep_sister_calla_1.value",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_2",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Sister Calla",
+   "mirrors": "npc_sister_calla.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Loading-screen tip mentioning Sister Calla",
+   "mirrors": "dep_sister_calla_2.value",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_3",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Sister Calla",
+   "mirrors": "npc_sister_calla.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Achievement description referencing Sister Calla",
+   "mirrors": "dep_sister_calla_3.value",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_4",
+   "type": "codex_entry",
+   "name": "Codex page on Sister Calla",
+   "mirrors": "npc_sister_calla.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_sister_calla_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Codex page on Sister Calla",
+   "mirrors": "dep_sister_calla_4.value",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "bounty_bounty_the_mire_witch",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "npc_wren_the_tinker",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_kingsfall_ruins",
+   "kind": "location",
+   "text": "Do not move Wren the Tinker out of Kingsfall Ruins."
+  },
+  "B": {
+   "node": "npc_sister_calla",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_tide_serpent",
+   "kind": "unlocked_by",
+   "text": "Do not make Sister Calla available before Tide Serpent has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "npc_wren_the_tinker",
+   "field": "location",
+   "domain": [
+    "loc_gull_s_rest",
+    "loc_owl_ridge",
+    "loc_kingsfall_ruins",
+    "loc_stonewake_hills",
+    "loc_glasswood"
+   ]
+  },
+  {
+   "node": "npc_sister_calla",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_frost_matron",
+    "enc_cinder_golem",
+    "enc_tide_serpent",
+    "enc_bandit_ambush"
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Bounty: The Mire Witch\" completable in Act 1.",
+ "entity_names": {
+  "T": "Bounty: The Mire Witch",
+  "A": "Wren the Tinker",
+  "B": "Sister Calla",
+  "L1a": "Gull's Rest",
+  "L1b": "Owl Ridge",
+  "L2a": "Kingsfall Ruins",
+  "L2b": "Stonewake Hills",
+  "L3": "Glasswood",
+  "E1": "Frost Matron",
+  "E2a": "Cinder Golem",
+  "E2b": "Tide Serpent",
+  "E3": "Bandit Ambush",
+  "D1": "A Debt to the Tide",
+  "D2": "The Brass Choir"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 8,
+  "b_downstream_repairs": 2,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "879aca0c8f89fb8c"
+}

@@ -1,0 +1,57 @@
+# Pilot configuration — Consequence-Aware Constraint Arbitration
+# Confirmatory parameters for P2/REC are frozen in docs/prereg_pilot.md. Do not edit after freeze
+# without writing an amendment.
+experiment: consequence_aware_constraint_arbitration_pilot
+scenario_dir: data/scenarios/generated
+handbuilt_dir: data/scenarios/handbuilt
+info_condition: explicit          # Stage 1. Stage 2 (graph_only) is defined below but NOT part of the pilot run.
+format_retry_cap: 2               # up to 2 extra attempts after a malformed response (logged)
+concurrency: 4
+base_seed: 20261005
+max_cost_usd_without_confirm: 5
+
+phases:
+  P0:   # unit check: 4 hand-built scenarios, 1 model, 1 run
+    source: handbuilt
+    orders: [0]
+    reps: 1
+    models: [cheap]
+  P1:   # smoke: 6 matched templates x 3 conditions x 2 orders, 2 models, 2 reps
+    source: generated
+    templates: [T01, T02, T03, T04, T05, T06]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 2
+    models: [frontier, cheap]
+  P2:   # kill-shot pilot: 20 templates x 3 conditions x 2 name sets x 2 orders x 1 rep x 3 models = 720 trials
+    source: generated
+    templates: all
+    name_sets: [0, 1]
+    orders: [0, 1]
+    reps: 1
+    models: [frontier, nonoa, cheap]
+  REC:  # separate consequence-recognition probes on the same P2 cells (forked prompts, no decision asked)
+    source: generated
+    task: recognition
+    templates: all
+    name_sets: [0, 1]
+    orders: [0, 1]
+    reps: 1
+    models: [frontier, nonoa, cheap]
+  S2_GRAPH_ONLY:   # Stage 2 — built, NOT run in this pilot (run only if Stage 1 shows a clear effect)
+    source: generated
+    info_condition: graph_only
+    templates: all
+    name_sets: [0, 1]
+    orders: [0, 1]
+    reps: 1
+    models: [frontier, nonoa, cheap]
+  S2_REC_GRAPH_ONLY:
+    source: generated
+    task: recognition
+    info_condition: graph_only
+    templates: all
+    name_sets: [0, 1]
+    orders: [0, 1]
+    reps: 1
+    models: [frontier, nonoa, cheap]

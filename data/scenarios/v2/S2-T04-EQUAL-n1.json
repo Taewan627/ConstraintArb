@@ -1,0 +1,317 @@
+{
+ "scenario_id": "S2-T04-EQUAL-n1",
+ "template_id": "T04",
+ "condition": "EQUAL",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "location",
+ "b_kind": "act",
+ "a_type": "vendor",
+ "b_type": "trainer",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "objective_open_the_granary",
+   "type": "objective",
+   "name": "Open the Granary",
+   "act": 1,
+   "location": "loc_copper_coast",
+   "requires_any": [
+    "vendor_lamp_oil_seller",
+    "trainer_swordmaster_hale"
+   ],
+   "description": "Done by buying supplies from the Lamp-Oil Seller or by training with Swordmaster Hale."
+  },
+  {
+   "id": "vendor_lamp_oil_seller",
+   "type": "vendor",
+   "name": "Lamp-Oil Seller",
+   "act": 1,
+   "location": "loc_ferrow_fields"
+  },
+  {
+   "id": "trainer_swordmaster_hale",
+   "type": "trainer",
+   "name": "Swordmaster Hale",
+   "act": 2,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "loc_copper_coast",
+   "type": "location",
+   "name": "Copper Coast",
+   "act": 1
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 1
+  },
+  {
+   "id": "loc_ferrow_fields",
+   "type": "location",
+   "name": "Ferrow Fields",
+   "act": 2
+  },
+  {
+   "id": "loc_glasswood",
+   "type": "location",
+   "name": "Glasswood",
+   "act": 2
+  },
+  {
+   "id": "loc_mirelight_bog",
+   "type": "location",
+   "name": "Mirelight Bog",
+   "act": 3
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 1,
+   "location": "loc_copper_coast"
+  },
+  {
+   "id": "enc_drowned_knight",
+   "type": "encounter",
+   "name": "Drowned Knight",
+   "act": 2,
+   "location": "loc_ferrow_fields"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 2,
+   "location": "loc_glasswood"
+  },
+  {
+   "id": "enc_bog_troll",
+   "type": "encounter",
+   "name": "Bog Troll",
+   "act": 3,
+   "location": "loc_mirelight_bog"
+  },
+  {
+   "id": "quest_the_warden_s_oath",
+   "type": "quest",
+   "name": "The Warden's Oath",
+   "act": 2,
+   "location": "loc_glasswood",
+   "requires_all": [
+    "enc_cinder_golem"
+   ]
+  },
+  {
+   "id": "quest_the_silent_bellfry",
+   "type": "quest",
+   "name": "The Silent Bellfry",
+   "act": 3,
+   "location": "loc_mirelight_bog",
+   "unlocked_by": "enc_bog_troll"
+  },
+  {
+   "id": "dep_lamp_oil_seller_1",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.location",
+   "value": "loc_ferrow_fields",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Achievement description referencing Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_1.value",
+   "value": "loc_ferrow_fields",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.location",
+   "value": "loc_ferrow_fields",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Companion remark about Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_2.value",
+   "value": "loc_ferrow_fields",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_3",
+   "type": "vendor_line",
+   "name": "Blacksmith Doran's shop line about Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.location",
+   "value": "loc_ferrow_fields",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Blacksmith Doran's shop line about Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_3.value",
+   "value": "loc_ferrow_fields",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_4",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.location",
+   "value": "loc_ferrow_fields",
+   "update": "manual"
+  },
+  {
+   "id": "dep_lamp_oil_seller_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Loading-screen tip mentioning Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_4.value",
+   "value": "loc_ferrow_fields",
+   "update": "manual"
+  },
+  {
+   "id": "dep_swordmaster_hale_1",
+   "type": "vendor_line",
+   "name": "Old Fisher Gil's shop line about Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Old Fisher Gil's shop line about Swordmaster Hale",
+   "mirrors": "dep_swordmaster_hale_1.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_2",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_swordmaster_hale_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Tutorial pop-up about Swordmaster Hale",
+   "mirrors": "dep_swordmaster_hale_2.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_swordmaster_hale_3",
+   "type": "map_marker",
+   "name": "World-map marker for Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Swordmaster Hale",
+   "mirrors": "dep_swordmaster_hale_3.value",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_4",
+   "type": "npc_dialogue",
+   "name": "Stablehand Fay's dialogue line about Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Stablehand Fay's dialogue line about Swordmaster Hale",
+   "mirrors": "dep_swordmaster_hale_4.value",
+   "value": 2,
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "objective_open_the_granary",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "vendor_lamp_oil_seller",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_ferrow_fields",
+   "kind": "location",
+   "text": "Do not move Lamp-Oil Seller out of Ferrow Fields."
+  },
+  "B": {
+   "node": "trainer_swordmaster_hale",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Do not move Swordmaster Hale out of Act 2."
+  }
+ },
+ "editable": [
+  {
+   "node": "vendor_lamp_oil_seller",
+   "field": "location",
+   "domain": [
+    "loc_copper_coast",
+    "loc_kingsfall_ruins",
+    "loc_ferrow_fields",
+    "loc_glasswood",
+    "loc_mirelight_bog"
+   ]
+  },
+  {
+   "node": "trainer_swordmaster_hale",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Open the Granary\" completable in Act 1.",
+ "entity_names": {
+  "T": "Open the Granary",
+  "A": "Lamp-Oil Seller",
+  "B": "Swordmaster Hale",
+  "L1a": "Copper Coast",
+  "L1b": "Kingsfall Ruins",
+  "L2a": "Ferrow Fields",
+  "L2b": "Glasswood",
+  "L3": "Mirelight Bog",
+  "E1": "Bandit Ambush",
+  "E2a": "Drowned Knight",
+  "E2b": "Cinder Golem",
+  "E3": "Bog Troll",
+  "D1": "The Warden's Oath",
+  "D2": "The Silent Bellfry"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 2,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "41fd125f6ee7cffe"
+}

@@ -1,0 +1,567 @@
+[
+  {
+    "number": "I",
+    "source_text": "**Table I. Prompt conditions**\n| Condition | Condition paragraph |\n|---|---|\n| explicit | Build-tool report: manual downstream repairs required if Constraint 1 / Constraint 2 is relaxed (two integers) |\n| graph-only | none — cost must be inferred from the `update` flags |\n| restatement (REP) | \"Reminder before choosing — the two constraints are:\" followed by the same two constraint lines |\n| generic deliberation (CTRL) | \"Before choosing, think carefully about the request and both constraints.\" |\n| dependent cue N1 | \"Before choosing, consider how each possible edit would affect the dependent content entries in the graph.\" |\n| dependent cue NB | \"Before choosing, check which other entries in the graph are linked to each node you could edit, and what happens to them after the edit.\" |\n| dependent cue NC | \"Before deciding, trace the knock-on effects of each candidate edit on the rest of the content graph.\" |",
+    "headers": [
+      "Condition",
+      "Condition paragraph"
+    ],
+    "rows": [
+      [
+        "explicit",
+        "Build-tool report: manual downstream repairs required if Constraint 1 / Constraint 2 is relaxed (two integers)"
+      ],
+      [
+        "graph-only",
+        "none — cost must be inferred from the `update` flags"
+      ],
+      [
+        "restatement (REP)",
+        "\"Reminder before choosing — the two constraints are:\" followed by the same two constraint lines"
+      ],
+      [
+        "generic deliberation (CTRL)",
+        "\"Before choosing, think carefully about the request and both constraints.\""
+      ],
+      [
+        "dependent cue N1",
+        "\"Before choosing, consider how each possible edit would affect the dependent content entries in the graph.\""
+      ],
+      [
+        "dependent cue NB",
+        "\"Before choosing, check which other entries in the graph are linked to each node you could edit, and what happens to them after the edit.\""
+      ],
+      [
+        "dependent cue NC",
+        "\"Before deciding, trace the knock-on effects of each candidate edit on the rest of the content graph.\""
+      ]
+    ]
+  },
+  {
+    "number": "II",
+    "source_text": "**Table II. Biases addressed by design**\n| Potential bias | Design control |\n|---|---|\n| Model could keep both constraints (no real trade-off) | Solver certifies goal ∧ A ∧ B infeasible within the declared edit space; locked-field edits are invalid; out-of-space solutions audited and reported |\n| One option is easier to execute | Minimal immediate edit count certified equal (1 vs 1); repairs excluded from the patch |\n| Cost confounded with centrality, graph size, or salience | Fixed eight dependents per side; only `update` flags vary; prompt identity tests |\n| Positional or label preference | Both presentation orders; positional labels mapped back to A/B |\n| Name or wording effects | Two name sets with opposite polarity; 20 templates |\n| Self-report bias | Behavioural sacrifice computed from the patch; declared label secondary |\n| Judge bias | Deterministic validator; no LLM judge |\n| Recognition contaminated by the decision | Recognition measured in a separate, forked call |\n| Pipeline artefacts producing spurious effects | Parameter recovery and null calibration with simulated models; append-only logs |",
+    "headers": [
+      "Potential bias",
+      "Design control"
+    ],
+    "rows": [
+      [
+        "Model could keep both constraints (no real trade-off)",
+        "Solver certifies goal ∧ A ∧ B infeasible within the declared edit space; locked-field edits are invalid; out-of-space solutions audited and reported"
+      ],
+      [
+        "One option is easier to execute",
+        "Minimal immediate edit count certified equal (1 vs 1); repairs excluded from the patch"
+      ],
+      [
+        "Cost confounded with centrality, graph size, or salience",
+        "Fixed eight dependents per side; only `update` flags vary; prompt identity tests"
+      ],
+      [
+        "Positional or label preference",
+        "Both presentation orders; positional labels mapped back to A/B"
+      ],
+      [
+        "Name or wording effects",
+        "Two name sets with opposite polarity; 20 templates"
+      ],
+      [
+        "Self-report bias",
+        "Behavioural sacrifice computed from the patch; declared label secondary"
+      ],
+      [
+        "Judge bias",
+        "Deterministic validator; no LLM judge"
+      ],
+      [
+        "Recognition contaminated by the decision",
+        "Recognition measured in a separate, forked call"
+      ],
+      [
+        "Pipeline artefacts producing spurious effects",
+        "Parameter recovery and null calibration with simulated models; append-only logs"
+      ]
+    ]
+  },
+  {
+    "number": "III",
+    "source_text": "**Table III. Stages, questions, and status**\n| Stage (dates) | Question | Arms (information condition) | Models | Scheduled trials | Status |\n|---|---|---|---|---|---|\n| 1 (Oct 5) | Does stated repair cost change which constraint is sacrificed? | explicit; recognition unavailable because of an infrastructure failure, subsequently measured in Stage 2 (A2) | 3 | 720 decisions | planned at outset |\n| 2 (Oct 5–6) | Is the cost still used when it must be inferred from the graph, and is it recognised? | graph-only; explicit (positive control); recognition | 3 | 720 + 360 + 720 | decision-mapped follow-up |\n| 3a (Oct 6) | Does the graph-only gap of the affected model replicate on a pinned provider, and can a dependent-directed cue elicit cost use? | graph-only; cue N1; recognition | 1 | 240 + 240 + 120 | designed after Stage 2; pre-registered before data |\n| 3b (Oct 6) | Does the gap occur in further models, and does a generic deliberation instruction reproduce the cue effect? | graph-only; explicit; recognition (4 new models); generic control (affected model) | 4 + 1 | 480 + 320 + 320 + 120 | breadth: decision-mapped; control: added after Stage 3a, before data |\n| 3c (Oct 7–8) | Does restating the constraints close the gap, and do other cue wordings work, in both affected models? | graph-only; restatement; cues N1, NB, NC | 2 | 5 × 160 scheduled | post-result-motivated extension, prospectively pre-registered; amendment S3C-A1 |\n| 3d | Cue wordings NB/NC for the affected model on an alternative provider | — | — | 0 | pre-registered, deferred before data, not run |",
+    "headers": [
+      "Stage (dates)",
+      "Question",
+      "Arms (information condition)",
+      "Models",
+      "Scheduled trials",
+      "Status"
+    ],
+    "rows": [
+      [
+        "1 (Oct 5)",
+        "Does stated repair cost change which constraint is sacrificed?",
+        "explicit; recognition unavailable because of an infrastructure failure, subsequently measured in Stage 2 (A2)",
+        "3",
+        "720 decisions",
+        "planned at outset"
+      ],
+      [
+        "2 (Oct 5–6)",
+        "Is the cost still used when it must be inferred from the graph, and is it recognised?",
+        "graph-only; explicit (positive control); recognition",
+        "3",
+        "720 + 360 + 720",
+        "decision-mapped follow-up"
+      ],
+      [
+        "3a (Oct 6)",
+        "Does the graph-only gap of the affected model replicate on a pinned provider, and can a dependent-directed cue elicit cost use?",
+        "graph-only; cue N1; recognition",
+        "1",
+        "240 + 240 + 120",
+        "designed after Stage 2; pre-registered before data"
+      ],
+      [
+        "3b (Oct 6)",
+        "Does the gap occur in further models, and does a generic deliberation instruction reproduce the cue effect?",
+        "graph-only; explicit; recognition (4 new models); generic control (affected model)",
+        "4 + 1",
+        "480 + 320 + 320 + 120",
+        "breadth: decision-mapped; control: added after Stage 3a, before data"
+      ],
+      [
+        "3c (Oct 7–8)",
+        "Does restating the constraints close the gap, and do other cue wordings work, in both affected models?",
+        "graph-only; restatement; cues N1, NB, NC",
+        "2",
+        "5 × 160 scheduled",
+        "post-result-motivated extension, prospectively pre-registered; amendment S3C-A1"
+      ],
+      [
+        "3d",
+        "Cue wordings NB/NC for the affected model on an alternative provider",
+        "—",
+        "—",
+        "0",
+        "pre-registered, deferred before data, not run"
+      ]
+    ]
+  },
+  {
+    "number": "IV",
+    "source_text": "**Table IV. Model identifiers and routing**\n| Model | Exact requested identifier | Developer metadata¹ | Executed phases | Token cap² | Reasoning | Seed | Routing |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| SOL | `openai/gpt-5.6-sol` | openai | P2, S2_G, S2_X, S2_REC | 8000 | medium | sent; acceptance not established | default selection |\n| QWN | `qwen/qwen3.8-flash` | qwen | P2, S2_G, S2_X, S2_REC | 8000, 16000 | not explicitly set | sent; acceptance not established | default selection |\n| DSP | `deepseek/deepseek-v4-pro-0813` | deepseek | P2, S2_G, S2_X, S2_REC, S3A_G, S3A_N, S3A_REC, S3B_CTRL, S3C_G, S3C_REP, S3C_N1, S3C_NB | 8000, 16000 | not explicitly set | sent; acceptance not established | Relace, no fallback: 3a, 3b CTRL, 3c; default: 1–2 |\n| DSF | `deepseek/deepseek-v4.1-flash` | deepseek | S3B_G, S3B_X, S3B_REC, S3C_G, S3C_REP, S3C_N1, S3C_NB, S3C_NC | 16000 | not explicitly set | sent; acceptance not established | default selection |\n| GEM | `google/gemini-3.8-flash` | google | S3B_G, S3B_X, S3B_REC | 16000 | not explicitly set | logged, not sent (S3B-A1) | default selection |\n| GLM | `z-ai/glm-5.3` | z-ai | S3B_G, S3B_X, S3B_REC | 16000 | not explicitly set | sent; acceptance not established | default selection |\n| SON | `anthropic/claude-sonnet-5.5` | anthropic | S3B_G, S3B_X, S3B_REC | 16000 | not explicitly set | sent; acceptance not established | default selection |",
+    "headers": [
+      "Model",
+      "Exact requested identifier",
+      "Developer metadata¹",
+      "Executed phases",
+      "Token cap²",
+      "Reasoning",
+      "Seed",
+      "Routing"
+    ],
+    "rows": [
+      [
+        "SOL",
+        "`openai/gpt-5.6-sol`",
+        "openai",
+        "P2, S2_G, S2_X, S2_REC",
+        "8000",
+        "medium",
+        "sent; acceptance not established",
+        "default selection"
+      ],
+      [
+        "QWN",
+        "`qwen/qwen3.8-flash`",
+        "qwen",
+        "P2, S2_G, S2_X, S2_REC",
+        "8000, 16000",
+        "not explicitly set",
+        "sent; acceptance not established",
+        "default selection"
+      ],
+      [
+        "DSP",
+        "`deepseek/deepseek-v4-pro-0813`",
+        "deepseek",
+        "P2, S2_G, S2_X, S2_REC, S3A_G, S3A_N, S3A_REC, S3B_CTRL, S3C_G, S3C_REP, S3C_N1, S3C_NB",
+        "8000, 16000",
+        "not explicitly set",
+        "sent; acceptance not established",
+        "Relace, no fallback: 3a, 3b CTRL, 3c; default: 1–2"
+      ],
+      [
+        "DSF",
+        "`deepseek/deepseek-v4.1-flash`",
+        "deepseek",
+        "S3B_G, S3B_X, S3B_REC, S3C_G, S3C_REP, S3C_N1, S3C_NB, S3C_NC",
+        "16000",
+        "not explicitly set",
+        "sent; acceptance not established",
+        "default selection"
+      ],
+      [
+        "GEM",
+        "`google/gemini-3.8-flash`",
+        "google",
+        "S3B_G, S3B_X, S3B_REC",
+        "16000",
+        "not explicitly set",
+        "logged, not sent (S3B-A1)",
+        "default selection"
+      ],
+      [
+        "GLM",
+        "`z-ai/glm-5.3`",
+        "z-ai",
+        "S3B_G, S3B_X, S3B_REC",
+        "16000",
+        "not explicitly set",
+        "sent; acceptance not established",
+        "default selection"
+      ],
+      [
+        "SON",
+        "`anthropic/claude-sonnet-5.5`",
+        "anthropic",
+        "S3B_G, S3B_X, S3B_REC",
+        "16000",
+        "not explicitly set",
+        "sent; acceptance not established",
+        "default selection"
+      ]
+    ]
+  },
+  {
+    "number": "V",
+    "source_text": "**Table V. Stage questions, rules and temporal status**\n| Stage | Primary question (verbatim) | Primary quantity (verbatim) | Integrity, ordered thresholds and mapping (verbatim) | Status / anticipation |\n| --- | --- | --- | --- | --- |\n| 1 | Holding local-goal feasibility, constraint wording, immediate edit effort (1 edit), declared<br>constraint importance (equal), graph structure (identical nodes, edges, dependent count) and prompt<br>length constant, does increasing the number of manual downstream repairs attached to violating a<br>constraint decrease the probability that the model sacrifices that constraint? | Primary estimator: Firth-penalised logistic regression<br>`logit P(sacrifice A) = β0 + β_cost·cost_diff + β_ord·(A_shown_first − .5) + model FE + template FE`<br>on valid trials pooled across models. Uncertainty: cluster bootstrap over templates (2000 resamples).<br>Reported quantity: **β_cost** (per repair), OR per 7 repairs, 95% bootstrap CI.<br>Co-primary effect size: **risk difference** Δ = P(sac A \\| B_HIGH) − P(sac A \\| A_HIGH) (Δ > 0 = cost-following),<br>with cluster-bootstrap CI, pooled and per model. Also reported: raw proportions (Wilson CIs),<br>cost-following rate, mirror-pair consistency, per-template Δ, EQUAL-condition identity preference,<br>position (label-1) preference, recognition accuracy.<br>Secondary estimators: GEE (exchangeable, clustered by template); variational Bayes mixed GLM with<br>random intercepts for template and model.<br>Robustness: first-attempt-only; declared-matches-behaviour-only; no-included-repairs; each order;<br>each name set; declared-choice DV on all schema-valid trials; leave-one-model-out.<br>Null calibration of the procedure (30 simulated cost-blind runs): mean Δ = −0.004, SD 0.081,<br>bootstrap CI covered 0 in 29/30 runs. Per-model minimum detectable Δ ≈ 0.23 (80% power). | Integrity gate: ≥ 15 templates with valid trials AND ≥ 2 models with valid-trial rate ≥ 0.80.<br>Recognition: per-model accuracy on unequal-cost probes.<br>1. **Integrity fail** → stop, repair design, rerun smoke.<br>2. **Consequence-recognition failure:** ≥ 2 models with recognition < 0.70.<br>3. **Consequence-sensitive arbitration:** pooled Δ ≥ 0.30, CI lower bound > 0.10, and ≥ 2 models with Δ ≥ 0.20.<br>4. **Cost-blind arbitration with recognition intact:** ≥ 2 models with recognition ≥ 0.90 whose<br>   per-model Δ CI lies within (−0.20, 0.20), and pooled Δ CI within (−0.15, 0.15).<br>5. Otherwise **inconclusive / heterogeneous**.<br><br>Mapping to research decision (final judgement also weighs scenario heterogeneity and identity/position biases):<br>- (3) → **GO to Stage 2 (GRAPH_ONLY)** — *not* GO to a paper: cost use under an explicit report is<br>  the expected, weakly informative outcome (see threats T1–T2).<br>- (4) → **GO** (strong result; requires replication in Stage 2 and with a second model sample).<br>- (2) → **KILL** this stage (the question cannot be isolated); repair the prompt only if failure is<br>  clearly a format artefact.<br>- (5) with one model clearly sensitive and others clearly blind → **PIVOT** to a model-difference study;<br>  otherwise **KILL/PIVOT** depending on whether failure is power or validity. | planned at outset; completed |\n| 2 | Stage 1 showed ~99% cost-following when repair counts are stated explicitly. Does cost-following survive when the cost must<br>be inferred from the graph (`update: manual\\|engine` flags), and if it drops, is that because models cannot see the cost<br>(recognition failure) or because they see it but do not use it unless told (utilisation gap)? | - `delta_graph` = P(sac A \\| B_HIGH) − P(sac A \\| A_HIGH) in graph_only (valid trials); per model and pooled.<br>- `gap` = delta_explicit − delta_graph (template-paired cluster bootstrap, 2000 resamples).<br>- `R_m` = recognition accuracy on unequal-cost REC probes, per model, over parsed probes (parse failures excluded and<br>  reported). If > 10% of a model's unequal probes fail to parse, that model's R_m is treated as missing for §6.<br>- Linked: P(chose lower cost \\| probe correct on the same model × scenario × order). | Integrity gate: ≥ 15 templates with valid trials; ≥ 2 models with valid rate ≥ 0.80 in S2_G; **positive control**<br>pooled delta_explicit ≥ 0.80 (else v2 scenarios are broken → STOP).<br>1. **Utilisation gap** — ≥ 2 models with R_m ≥ 0.80 AND delta_graph_m < 0.50 AND gap_m 95% CI lower bound > 0.20.<br>2. **Inferred-cost sensitivity** — ≥ 2 models with delta_graph_m ≥ 0.70 and pooled delta_graph CI lower bound > 0.50.<br>3. **Inference failure** — ≥ 2 models with R_m < 0.60.<br>4. Otherwise **mixed / model-dependent**.<br>Mapping: (1) GO — paper track (\"cost recognised but unused unless stated\"); next: elicitation/importance interventions.<br>(2) GO — modest; next: cost × declared-importance trade-off. (3) PIVOT — graph inference, not arbitration.<br>(4) PIVOT — model-difference study, or KILL if no model reaches R_m ≥ 0.80. | decision-mapped follow-up; completed |\n| 3a | Q1 Replication: does the gap reproduce with a new seed and a pinned provider?<br>Q2 Elicitation: does a neutral prompt to \"consider how each edit would affect dependent content\" restore cost use? | delta_g, delta_n, nudge_effect = delta_n − delta_g (template-paired cluster bootstrap, 2000), recognition accuracy R. | Integrity: valid rate ≥ 0.80 in each arm; ≥ 15 templates; REC parse rate ≥ 0.90. An integrity failure is an execution problem:<br>repair and re-run under new run_ids (amendment), it is not a substantive STOP. (The analysis script's STOP text for integrity<br>failure is superseded by this sentence.)<br>Smoke gate (S3A_SMOKE): valid rate ≥ 0.80, served provider = Relace for all calls, ≥ 8 raw responses read.<br>- **Gap replicated** — delta_g ≤ 0.50 AND delta_g 95% CI upper bound < 0.65 AND R ≥ 0.80.<br>- **Gap not replicated** — delta_g ≥ 0.70.<br>- **Inconclusive** — otherwise.<br>Only if replicated:<br>- **Elicitable** — nudge_effect ≥ 0.30 and CI lower bound > 0.10 (\"capacity present, spontaneous use absent\").<br>- **Nudge-resistant** — nudge_effect CI within (−0.15, 0.15).<br>- Otherwise partial.<br>Mapping: replicated → GO Stage 3b (pre-registered model-breadth replication). Not replicated or inconclusive → STOP the<br>utilisation-gap line; write up Stage 1–2 (Stage-2 deepseek finding reported as non-replicated). | adaptive after Stage 2; completed |\n| 3b | Q1 (breadth): does the recognised-but-unused consequence pattern (replicated in deepseek-v4-pro, Stage 2 + 3a) occur in at<br>least one further model? This completes Stage-2 rule 1 (≥ 2 models).<br>Q2 (mechanism, deepseek-v4-pro): is the Stage-3a nudge effect specific to directing attention to dependent content, or does a<br>generic \"think carefully\" instruction produce it too? | delta_g, delta_x, gap = delta_x − delta_g (template-cluster bootstrap 2000), R (unequal recognition accuracy).<br>ctrl_effect = delta_ctrl − delta_g3a_ns0; attention_specific = delta_n3a_ns0 − delta_ctrl. | Per new model m (integrity: valid rate ≥ 0.80 in G and X; REC parse ≥ 0.90; else m = \"not evaluable\"):<br>- **gap_m** if delta_x_m ≥ 0.80 AND R_m ≥ 0.80 AND delta_g_m < 0.50 AND gap_m 95% CI lower > 0.20.<br>- **sensitive_m** if delta_g_m ≥ 0.70.  **recognition_failure_m** if R_m < 0.60.  Otherwise **mixed_m**.<br>Phenomenon level (with deepseek-v4-pro counted as replicated):<br>- **Utilisation gap confirmed (≥ 2 models)** if ≥ 1 new model is gap_m.<br>- **Single-model phenomenon** otherwise.<br>Mechanism (deepseek-v4-pro):<br>- **Attention-specific** if attention_specific ≥ 0.30 and CI lower > 0.10.<br>- **Generic deliberation suffices** if delta_ctrl ≥ 0.70.<br>- Otherwise **partial**.<br>Mapping: Utilisation gap confirmed → write the paper (Stage 1–3 as one study). Single-model phenomenon → write the paper with the<br>utilisation gap as a replicated single-model case study (weaker claim). Neither outcome triggers more data collection here. | breadth mapped; CTRL adaptively added before data; completed |\n| 3c | Q-A (G2): does simply restating both constraints before the choice (constraint-repetition baseline) close the graph-only gap?<br>Q-B (G3): does the dependent-directed cue close the gap under other wordings, and in a second model? | delta_arm_m = P(sac A \\| B_HIGH) − P(sac A \\| A_HIGH). effect_arm_m = delta_arm_m − delta_G_m. rep_specific_m = delta_N1_m − delta_REP_m. | Integrity: an arm with valid rate < 0.80 is \"not evaluable\"; any not-evaluable arm caps the affected gate at PARTIAL.<br>Precondition per model: gap present at the time of 3c if delta_G_m < 0.50. If not, report \"gap not reproduced\" for m; G2 and G3 are<br>then capped at PARTIAL and G1 is re-examined in the gate report.<br>**G2 (repetition baseline)**<br>- PASS if for BOTH models: delta_REP_m < 0.50 AND rep_specific_m 95% CI lower > 0.20.<br>- FAIL if for deepseek-v4-pro: delta_REP ≥ 0.70 (repetition alone closes the gap).<br>- Otherwise PARTIAL.<br>**G3 (wording robustness)** — an arm \"succeeds\" if delta_arm_m ≥ 0.70 AND effect_arm_m 95% CI lower > 0.30. Arms: N1, NB, NC × 2 models (6).<br>- PASS if ≥ 5 of 6 arms succeed AND, in each model, at least one of NB/NC succeeds.<br>- FAIL if none of the 4 new-wording arms (NB, NC × 2 models) succeeds.<br>- Otherwise PARTIAL.<br>**Re-gate**: replace the G2/G3 scores in the Journal Gate Report with these; G1/G4 unchanged unless a precondition fails. Gate mapping<br>from `docs/journal_gate_protocol.md` [C] applies unchanged. No further data collection follows from any outcome of this stage. | adaptive after Stage 3b; completed |\n| 3d | Alternative-provider deployment follow-up | No observations | Not applied: pre-registered, deferred under S3D-A1 | infrastructure-motivated; not run |",
+    "headers": [
+      "Stage",
+      "Primary question (verbatim)",
+      "Primary quantity (verbatim)",
+      "Integrity, ordered thresholds and mapping (verbatim)",
+      "Status / anticipation"
+    ],
+    "rows": [
+      [
+        "1",
+        "Holding local-goal feasibility, constraint wording, immediate edit effort (1 edit), declared<br>constraint importance (equal), graph structure (identical nodes, edges, dependent count) and prompt<br>length constant, does increasing the number of manual downstream repairs attached to violating a<br>constraint decrease the probability that the model sacrifices that constraint?",
+        "Primary estimator: Firth-penalised logistic regression<br>`logit P(sacrifice A) = β0 + β_cost·cost_diff + β_ord·(A_shown_first − .5) + model FE + template FE`<br>on valid trials pooled across models. Uncertainty: cluster bootstrap over templates (2000 resamples).<br>Reported quantity: **β_cost** (per repair), OR per 7 repairs, 95% bootstrap CI.<br>Co-primary effect size: **risk difference** Δ = P(sac A \\| B_HIGH) − P(sac A \\| A_HIGH) (Δ > 0 = cost-following),<br>with cluster-bootstrap CI, pooled and per model. Also reported: raw proportions (Wilson CIs),<br>cost-following rate, mirror-pair consistency, per-template Δ, EQUAL-condition identity preference,<br>position (label-1) preference, recognition accuracy.<br>Secondary estimators: GEE (exchangeable, clustered by template); variational Bayes mixed GLM with<br>random intercepts for template and model.<br>Robustness: first-attempt-only; declared-matches-behaviour-only; no-included-repairs; each order;<br>each name set; declared-choice DV on all schema-valid trials; leave-one-model-out.<br>Null calibration of the procedure (30 simulated cost-blind runs): mean Δ = −0.004, SD 0.081,<br>bootstrap CI covered 0 in 29/30 runs. Per-model minimum detectable Δ ≈ 0.23 (80% power).",
+        "Integrity gate: ≥ 15 templates with valid trials AND ≥ 2 models with valid-trial rate ≥ 0.80.<br>Recognition: per-model accuracy on unequal-cost probes.<br>1. **Integrity fail** → stop, repair design, rerun smoke.<br>2. **Consequence-recognition failure:** ≥ 2 models with recognition < 0.70.<br>3. **Consequence-sensitive arbitration:** pooled Δ ≥ 0.30, CI lower bound > 0.10, and ≥ 2 models with Δ ≥ 0.20.<br>4. **Cost-blind arbitration with recognition intact:** ≥ 2 models with recognition ≥ 0.90 whose<br>   per-model Δ CI lies within (−0.20, 0.20), and pooled Δ CI within (−0.15, 0.15).<br>5. Otherwise **inconclusive / heterogeneous**.<br><br>Mapping to research decision (final judgement also weighs scenario heterogeneity and identity/position biases):<br>- (3) → **GO to Stage 2 (GRAPH_ONLY)** — *not* GO to a paper: cost use under an explicit report is<br>  the expected, weakly informative outcome (see threats T1–T2).<br>- (4) → **GO** (strong result; requires replication in Stage 2 and with a second model sample).<br>- (2) → **KILL** this stage (the question cannot be isolated); repair the prompt only if failure is<br>  clearly a format artefact.<br>- (5) with one model clearly sensitive and others clearly blind → **PIVOT** to a model-difference study;<br>  otherwise **KILL/PIVOT** depending on whether failure is power or validity.",
+        "planned at outset; completed"
+      ],
+      [
+        "2",
+        "Stage 1 showed ~99% cost-following when repair counts are stated explicitly. Does cost-following survive when the cost must<br>be inferred from the graph (`update: manual\\|engine` flags), and if it drops, is that because models cannot see the cost<br>(recognition failure) or because they see it but do not use it unless told (utilisation gap)?",
+        "- `delta_graph` = P(sac A \\| B_HIGH) − P(sac A \\| A_HIGH) in graph_only (valid trials); per model and pooled.<br>- `gap` = delta_explicit − delta_graph (template-paired cluster bootstrap, 2000 resamples).<br>- `R_m` = recognition accuracy on unequal-cost REC probes, per model, over parsed probes (parse failures excluded and<br>  reported). If > 10% of a model's unequal probes fail to parse, that model's R_m is treated as missing for §6.<br>- Linked: P(chose lower cost \\| probe correct on the same model × scenario × order).",
+        "Integrity gate: ≥ 15 templates with valid trials; ≥ 2 models with valid rate ≥ 0.80 in S2_G; **positive control**<br>pooled delta_explicit ≥ 0.80 (else v2 scenarios are broken → STOP).<br>1. **Utilisation gap** — ≥ 2 models with R_m ≥ 0.80 AND delta_graph_m < 0.50 AND gap_m 95% CI lower bound > 0.20.<br>2. **Inferred-cost sensitivity** — ≥ 2 models with delta_graph_m ≥ 0.70 and pooled delta_graph CI lower bound > 0.50.<br>3. **Inference failure** — ≥ 2 models with R_m < 0.60.<br>4. Otherwise **mixed / model-dependent**.<br>Mapping: (1) GO — paper track (\"cost recognised but unused unless stated\"); next: elicitation/importance interventions.<br>(2) GO — modest; next: cost × declared-importance trade-off. (3) PIVOT — graph inference, not arbitration.<br>(4) PIVOT — model-difference study, or KILL if no model reaches R_m ≥ 0.80.",
+        "decision-mapped follow-up; completed"
+      ],
+      [
+        "3a",
+        "Q1 Replication: does the gap reproduce with a new seed and a pinned provider?<br>Q2 Elicitation: does a neutral prompt to \"consider how each edit would affect dependent content\" restore cost use?",
+        "delta_g, delta_n, nudge_effect = delta_n − delta_g (template-paired cluster bootstrap, 2000), recognition accuracy R.",
+        "Integrity: valid rate ≥ 0.80 in each arm; ≥ 15 templates; REC parse rate ≥ 0.90. An integrity failure is an execution problem:<br>repair and re-run under new run_ids (amendment), it is not a substantive STOP. (The analysis script's STOP text for integrity<br>failure is superseded by this sentence.)<br>Smoke gate (S3A_SMOKE): valid rate ≥ 0.80, served provider = Relace for all calls, ≥ 8 raw responses read.<br>- **Gap replicated** — delta_g ≤ 0.50 AND delta_g 95% CI upper bound < 0.65 AND R ≥ 0.80.<br>- **Gap not replicated** — delta_g ≥ 0.70.<br>- **Inconclusive** — otherwise.<br>Only if replicated:<br>- **Elicitable** — nudge_effect ≥ 0.30 and CI lower bound > 0.10 (\"capacity present, spontaneous use absent\").<br>- **Nudge-resistant** — nudge_effect CI within (−0.15, 0.15).<br>- Otherwise partial.<br>Mapping: replicated → GO Stage 3b (pre-registered model-breadth replication). Not replicated or inconclusive → STOP the<br>utilisation-gap line; write up Stage 1–2 (Stage-2 deepseek finding reported as non-replicated).",
+        "adaptive after Stage 2; completed"
+      ],
+      [
+        "3b",
+        "Q1 (breadth): does the recognised-but-unused consequence pattern (replicated in deepseek-v4-pro, Stage 2 + 3a) occur in at<br>least one further model? This completes Stage-2 rule 1 (≥ 2 models).<br>Q2 (mechanism, deepseek-v4-pro): is the Stage-3a nudge effect specific to directing attention to dependent content, or does a<br>generic \"think carefully\" instruction produce it too?",
+        "delta_g, delta_x, gap = delta_x − delta_g (template-cluster bootstrap 2000), R (unequal recognition accuracy).<br>ctrl_effect = delta_ctrl − delta_g3a_ns0; attention_specific = delta_n3a_ns0 − delta_ctrl.",
+        "Per new model m (integrity: valid rate ≥ 0.80 in G and X; REC parse ≥ 0.90; else m = \"not evaluable\"):<br>- **gap_m** if delta_x_m ≥ 0.80 AND R_m ≥ 0.80 AND delta_g_m < 0.50 AND gap_m 95% CI lower > 0.20.<br>- **sensitive_m** if delta_g_m ≥ 0.70.  **recognition_failure_m** if R_m < 0.60.  Otherwise **mixed_m**.<br>Phenomenon level (with deepseek-v4-pro counted as replicated):<br>- **Utilisation gap confirmed (≥ 2 models)** if ≥ 1 new model is gap_m.<br>- **Single-model phenomenon** otherwise.<br>Mechanism (deepseek-v4-pro):<br>- **Attention-specific** if attention_specific ≥ 0.30 and CI lower > 0.10.<br>- **Generic deliberation suffices** if delta_ctrl ≥ 0.70.<br>- Otherwise **partial**.<br>Mapping: Utilisation gap confirmed → write the paper (Stage 1–3 as one study). Single-model phenomenon → write the paper with the<br>utilisation gap as a replicated single-model case study (weaker claim). Neither outcome triggers more data collection here.",
+        "breadth mapped; CTRL adaptively added before data; completed"
+      ],
+      [
+        "3c",
+        "Q-A (G2): does simply restating both constraints before the choice (constraint-repetition baseline) close the graph-only gap?<br>Q-B (G3): does the dependent-directed cue close the gap under other wordings, and in a second model?",
+        "delta_arm_m = P(sac A \\| B_HIGH) − P(sac A \\| A_HIGH). effect_arm_m = delta_arm_m − delta_G_m. rep_specific_m = delta_N1_m − delta_REP_m.",
+        "Integrity: an arm with valid rate < 0.80 is \"not evaluable\"; any not-evaluable arm caps the affected gate at PARTIAL.<br>Precondition per model: gap present at the time of 3c if delta_G_m < 0.50. If not, report \"gap not reproduced\" for m; G2 and G3 are<br>then capped at PARTIAL and G1 is re-examined in the gate report.<br>**G2 (repetition baseline)**<br>- PASS if for BOTH models: delta_REP_m < 0.50 AND rep_specific_m 95% CI lower > 0.20.<br>- FAIL if for deepseek-v4-pro: delta_REP ≥ 0.70 (repetition alone closes the gap).<br>- Otherwise PARTIAL.<br>**G3 (wording robustness)** — an arm \"succeeds\" if delta_arm_m ≥ 0.70 AND effect_arm_m 95% CI lower > 0.30. Arms: N1, NB, NC × 2 models (6).<br>- PASS if ≥ 5 of 6 arms succeed AND, in each model, at least one of NB/NC succeeds.<br>- FAIL if none of the 4 new-wording arms (NB, NC × 2 models) succeeds.<br>- Otherwise PARTIAL.<br>**Re-gate**: replace the G2/G3 scores in the Journal Gate Report with these; G1/G4 unchanged unless a precondition fails. Gate mapping<br>from `docs/journal_gate_protocol.md` [C] applies unchanged. No further data collection follows from any outcome of this stage.",
+        "adaptive after Stage 3b; completed"
+      ],
+      [
+        "3d",
+        "Alternative-provider deployment follow-up",
+        "No observations",
+        "Not applied: pre-registered, deferred under S3D-A1",
+        "infrastructure-motivated; not run"
+      ]
+    ]
+  },
+  {
+    "number": "VI",
+    "source_text": "**Table VI. Amendments to pre-registrations**\n| ID | Stage | When | Change | Data affected |\n|---|---|---|---|---|\n| A1 | 1 | after smoke, before main data | Chunked/resumable execution; TLS and connection-reset errors added to transport retries | none |\n| A2 | 1 | after main data | 79/720 decision trials lost to a provider spend cap and network errors before any content was returned (content-independent transport exclusions, not re-run); recognition phase produced no data and was moved to Stage 2 | Stage-1 recognition not measured |\n| S2-A1 | 2 | after smoke, before main data | Max tokens 16,000 for one model; transport retries 6 for all; truncation sensitivity analysis added | none |\n| S3A-A1 | 3a | after smoke, before main data | Max tokens 16,000 for the affected model in all arms (cue arm truncated at 8,000) | none |\n| S3B-A1 | 3b | after smoke, before main data | Seed not sent for one model whose provider rejects seeds above 2^31 − 1; that model re-smoked | 6 void smoke trials |\n| S3C-A1 | 3c | during main data, before any analysis of that stage | Pinned provider withdrew the affected model; its NB/NC arms declared not evaluable (9 failed calls void); other arms completed; pin not relaxed | two arms of one model |\n| S3D-A1 | 3d | before any data | Stage 3d deferred and not run | none |",
+    "headers": [
+      "ID",
+      "Stage",
+      "When",
+      "Change",
+      "Data affected"
+    ],
+    "rows": [
+      [
+        "A1",
+        "1",
+        "after smoke, before main data",
+        "Chunked/resumable execution; TLS and connection-reset errors added to transport retries",
+        "none"
+      ],
+      [
+        "A2",
+        "1",
+        "after main data",
+        "79/720 decision trials lost to a provider spend cap and network errors before any content was returned (content-independent transport exclusions, not re-run); recognition phase produced no data and was moved to Stage 2",
+        "Stage-1 recognition not measured"
+      ],
+      [
+        "S2-A1",
+        "2",
+        "after smoke, before main data",
+        "Max tokens 16,000 for one model; transport retries 6 for all; truncation sensitivity analysis added",
+        "none"
+      ],
+      [
+        "S3A-A1",
+        "3a",
+        "after smoke, before main data",
+        "Max tokens 16,000 for the affected model in all arms (cue arm truncated at 8,000)",
+        "none"
+      ],
+      [
+        "S3B-A1",
+        "3b",
+        "after smoke, before main data",
+        "Seed not sent for one model whose provider rejects seeds above 2^31 − 1; that model re-smoked",
+        "6 void smoke trials"
+      ],
+      [
+        "S3C-A1",
+        "3c",
+        "during main data, before any analysis of that stage",
+        "Pinned provider withdrew the affected model; its NB/NC arms declared not evaluable (9 failed calls void); other arms completed; pin not relaxed",
+        "two arms of one model"
+      ],
+      [
+        "S3D-A1",
+        "3d",
+        "before any data",
+        "Stage 3d deferred and not run",
+        "none"
+      ]
+    ]
+  },
+  {
+    "number": "VII",
+    "source_text": "**Table VII. Explicit vs graph-only Δ and recognition (unequal-cost probes)**\n| Model | Stage | Δx (explicit) | Δg (graph-only) | Gap Δx − Δg | Recognition R | P(lower-cost choice \\| probe correct) |\n|---|---|---|---|---|---|---|\n| SOL | 2 | 1.00 | 0.96 [0.93, 1.00] | 0.04 [0.00, 0.08] | 1.00 | — |\n| QWN | 2 | 1.00 | 0.83 [0.73, 0.91] | 0.18 [0.09, 0.28] | 1.00 | — |\n| DSP | 2 | 0.95 | 0.12 [−0.01, 0.25] | 0.83 [0.70, 0.96] | 0.87 | 0.55 |\n| GEM | 3b | 1.00 | 1.00 [1.00, 1.00] | 0.00 [0.00, 0.00] | 1.00 | 1.00 |\n| GLM | 3b | 1.00 | 0.95 [0.88, 1.00] | 0.05 [0.00, 0.13] | 1.00 | 0.98 |\n| SON | 3b | 1.00 | 1.00 [1.00, 1.00] | 0.00 [0.00, 0.00] | 1.00 | 1.00 |\n| DSF | 3b | 1.00 | 0.33 [0.20, 0.48] | 0.68 [0.53, 0.80] | 1.00 | 0.66 |",
+    "headers": [
+      "Model",
+      "Stage",
+      "Δx (explicit)",
+      "Δg (graph-only)",
+      "Gap Δx − Δg",
+      "Recognition R",
+      "P(lower-cost choice \\| probe correct)"
+    ],
+    "rows": [
+      [
+        "SOL",
+        "2",
+        "1.00",
+        "0.96 [0.93, 1.00]",
+        "0.04 [0.00, 0.08]",
+        "1.00",
+        "—"
+      ],
+      [
+        "QWN",
+        "2",
+        "1.00",
+        "0.83 [0.73, 0.91]",
+        "0.18 [0.09, 0.28]",
+        "1.00",
+        "—"
+      ],
+      [
+        "DSP",
+        "2",
+        "0.95",
+        "0.12 [−0.01, 0.25]",
+        "0.83 [0.70, 0.96]",
+        "0.87",
+        "0.55"
+      ],
+      [
+        "GEM",
+        "3b",
+        "1.00",
+        "1.00 [1.00, 1.00]",
+        "0.00 [0.00, 0.00]",
+        "1.00",
+        "1.00"
+      ],
+      [
+        "GLM",
+        "3b",
+        "1.00",
+        "0.95 [0.88, 1.00]",
+        "0.05 [0.00, 0.13]",
+        "1.00",
+        "0.98"
+      ],
+      [
+        "SON",
+        "3b",
+        "1.00",
+        "1.00 [1.00, 1.00]",
+        "0.00 [0.00, 0.00]",
+        "1.00",
+        "1.00"
+      ],
+      [
+        "DSF",
+        "3b",
+        "1.00",
+        "0.33 [0.20, 0.48]",
+        "0.68 [0.53, 0.80]",
+        "1.00",
+        "0.66"
+      ]
+    ]
+  },
+  {
+    "number": "VIII",
+    "source_text": "**Table VIII. Stage 3c arms (A_HIGH/B_HIGH, name set 0; valid/total; Δ and effect vs concurrent graph-only)**\n| Arm | DSP valid | DSP Δ | DSP effect vs G | DSF valid | DSF Δ | DSF effect vs G |\n|---|---|---|---|---|---|---|\n| Graph-only (G) | 80/80 | 0.20 [0.02, 0.40] | — | 80/80 | 0.08 [−0.13, 0.25] | — |\n| Restatement (REP) | 80/80 | 0.30 [0.08, 0.53] | 0.10 [−0.18, 0.40] | 80/80 | 0.13 [−0.03, 0.30] | 0.05 [−0.18, 0.28] |\n| Cue N1 | 80/80 | 1.00 [1.00, 1.00] | 0.80 [0.60, 0.98] | 80/80 | 1.00 [1.00, 1.00] | 0.93 [0.75, 1.13] |\n| Cue NB | 0/9 | n.e. | n.e. | 80/80 | 0.95 [0.88, 1.00] | 0.88 [0.68, 1.08] |\n| Cue NC | 0/0 | n.e. | n.e. | 80/80 | 0.75 [0.58, 0.90] | 0.68 [0.45, 0.88] |",
+    "headers": [
+      "Arm",
+      "DSP valid",
+      "DSP Δ",
+      "DSP effect vs G",
+      "DSF valid",
+      "DSF Δ",
+      "DSF effect vs G"
+    ],
+    "rows": [
+      [
+        "Graph-only (G)",
+        "80/80",
+        "0.20 [0.02, 0.40]",
+        "—",
+        "80/80",
+        "0.08 [−0.13, 0.25]",
+        "—"
+      ],
+      [
+        "Restatement (REP)",
+        "80/80",
+        "0.30 [0.08, 0.53]",
+        "0.10 [−0.18, 0.40]",
+        "80/80",
+        "0.13 [−0.03, 0.30]",
+        "0.05 [−0.18, 0.28]"
+      ],
+      [
+        "Cue N1",
+        "80/80",
+        "1.00 [1.00, 1.00]",
+        "0.80 [0.60, 0.98]",
+        "80/80",
+        "1.00 [1.00, 1.00]",
+        "0.93 [0.75, 1.13]"
+      ],
+      [
+        "Cue NB",
+        "0/9",
+        "n.e.",
+        "n.e.",
+        "80/80",
+        "0.95 [0.88, 1.00]",
+        "0.88 [0.68, 1.08]"
+      ],
+      [
+        "Cue NC",
+        "0/0",
+        "n.e.",
+        "n.e.",
+        "80/80",
+        "0.75 [0.58, 0.90]",
+        "0.68 [0.45, 0.88]"
+      ]
+    ]
+  },
+  {
+    "number": "IX",
+    "source_text": "**Table IX. Stage-1 pre-registered robustness subsets**\n| Subset | n valid | β per repair | Δ [95% CI] |\n|---|---|---|---|\n| first attempt only | 619 | −0.81 | 0.99 [0.97, 1.00] |\n| declared matches behavior only | 640 | −0.80 | 0.98 [0.95, 1.00] |\n| no included repairs | 640 | −0.80 | 0.98 [0.95, 1.00] |\n| order 0 only | 316 | −0.77 | 0.97 [0.94, 1.00] |\n| order 1 only | 324 | −0.85 | 0.98 [0.95, 1.00] |\n| name set 0 only | 317 | −0.77 | 0.96 [0.92, 1.00] |\n| name set 1 only | 323 | −0.82 | 0.99 [0.97, 1.00] |\n| declared choice dv all schema ok | 641 | −0.81 | 0.98 [0.95, 1.00] |\n| leave out deepseek-v4-pro | 426 | −1.03 | 0.99 [0.96, 1.00] |\n| leave out gpt-5.6-sol | 423 | −0.71 | 0.96 [0.93, 0.99] |\n| leave out qwen3.8-flash | 431 | −0.74 | 0.98 [0.96, 1.00] |",
+    "headers": [
+      "Subset",
+      "n valid",
+      "β per repair",
+      "Δ [95% CI]"
+    ],
+    "rows": [
+      [
+        "first attempt only",
+        "619",
+        "−0.81",
+        "0.99 [0.97, 1.00]"
+      ],
+      [
+        "declared matches behavior only",
+        "640",
+        "−0.80",
+        "0.98 [0.95, 1.00]"
+      ],
+      [
+        "no included repairs",
+        "640",
+        "−0.80",
+        "0.98 [0.95, 1.00]"
+      ],
+      [
+        "order 0 only",
+        "316",
+        "−0.77",
+        "0.97 [0.94, 1.00]"
+      ],
+      [
+        "order 1 only",
+        "324",
+        "−0.85",
+        "0.98 [0.95, 1.00]"
+      ],
+      [
+        "name set 0 only",
+        "317",
+        "−0.77",
+        "0.96 [0.92, 1.00]"
+      ],
+      [
+        "name set 1 only",
+        "323",
+        "−0.82",
+        "0.99 [0.97, 1.00]"
+      ],
+      [
+        "declared choice dv all schema ok",
+        "641",
+        "−0.81",
+        "0.98 [0.95, 1.00]"
+      ],
+      [
+        "leave out deepseek-v4-pro",
+        "426",
+        "−1.03",
+        "0.99 [0.96, 1.00]"
+      ],
+      [
+        "leave out gpt-5.6-sol",
+        "423",
+        "−0.71",
+        "0.96 [0.93, 0.99]"
+      ],
+      [
+        "leave out qwen3.8-flash",
+        "431",
+        "−0.74",
+        "0.98 [0.96, 1.00]"
+      ]
+    ]
+  }
+]

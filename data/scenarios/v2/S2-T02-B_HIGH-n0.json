@@ -1,0 +1,317 @@
+{
+ "scenario_id": "S2-T02-B_HIGH-n0",
+ "template_id": "T02",
+ "condition": "B_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "tree",
+ "a_kind": "location",
+ "b_kind": "act",
+ "a_type": "npc",
+ "b_type": "item",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_the_glass_pilgrim",
+   "type": "quest",
+   "name": "The Glass Pilgrim",
+   "act": 1,
+   "location": "loc_thornwatch_keep",
+   "requires_any": [
+    "npc_sister_calla",
+    "item_iron_seal"
+   ],
+   "description": "Completed by talking to Sister Calla or by presenting the Iron Seal at the chapel."
+  },
+  {
+   "id": "npc_sister_calla",
+   "type": "npc",
+   "name": "Sister Calla",
+   "act": 1,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "item_iron_seal",
+   "type": "item",
+   "name": "Iron Seal",
+   "act": 2,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "loc_thornwatch_keep",
+   "type": "location",
+   "name": "Thornwatch Keep",
+   "act": 1
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 1
+  },
+  {
+   "id": "loc_owl_ridge",
+   "type": "location",
+   "name": "Owl Ridge",
+   "act": 2
+  },
+  {
+   "id": "loc_copper_coast",
+   "type": "location",
+   "name": "Copper Coast",
+   "act": 2
+  },
+  {
+   "id": "loc_varn_hollow",
+   "type": "location",
+   "name": "Varn Hollow",
+   "act": 3
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 1,
+   "location": "loc_thornwatch_keep"
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 2,
+   "location": "loc_owl_ridge"
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 2,
+   "location": "loc_copper_coast"
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 3,
+   "location": "loc_varn_hollow"
+  },
+  {
+   "id": "quest_ashes_of_the_mill",
+   "type": "quest",
+   "name": "Ashes of the Mill",
+   "act": 2,
+   "location": "loc_copper_coast",
+   "requires_all": [
+    "enc_warden_of_thorns"
+   ]
+  },
+  {
+   "id": "quest_smoke_over_hollin",
+   "type": "quest",
+   "name": "Smoke over Hollin",
+   "act": 3,
+   "location": "loc_varn_hollow",
+   "unlocked_by": "enc_iron_sentinel"
+  },
+  {
+   "id": "dep_sister_calla_1",
+   "type": "map_marker",
+   "name": "World-map marker for Sister Calla",
+   "mirrors": "npc_sister_calla.location",
+   "value": "loc_owl_ridge",
+   "update": "manual"
+  },
+  {
+   "id": "dep_sister_calla_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: World-map marker for Sister Calla",
+   "mirrors": "dep_sister_calla_1.value",
+   "value": "loc_owl_ridge",
+   "update": "manual"
+  },
+  {
+   "id": "dep_sister_calla_2",
+   "type": "codex_entry",
+   "name": "Codex page on Sister Calla",
+   "mirrors": "npc_sister_calla.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Codex page on Sister Calla",
+   "mirrors": "dep_sister_calla_2.value",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_3",
+   "type": "npc_dialogue",
+   "name": "Archivist Jory's dialogue line about Sister Calla",
+   "mirrors": "npc_sister_calla.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Archivist Jory's dialogue line about Sister Calla",
+   "mirrors": "dep_sister_calla_3.value",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_4",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Sister Calla",
+   "mirrors": "npc_sister_calla.location",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_sister_calla_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Innkeeper Bel's shop line about Sister Calla",
+   "mirrors": "dep_sister_calla_4.value",
+   "value": "loc_owl_ridge",
+   "update": "engine"
+  },
+  {
+   "id": "dep_iron_seal_1",
+   "type": "codex_entry",
+   "name": "Codex page on Iron Seal",
+   "mirrors": "item_iron_seal.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Codex page on Iron Seal",
+   "mirrors": "dep_iron_seal_1.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_2",
+   "type": "companion_bark",
+   "name": "Companion remark about Iron Seal",
+   "mirrors": "item_iron_seal.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Companion remark about Iron Seal",
+   "mirrors": "dep_iron_seal_2.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_3",
+   "type": "vendor_line",
+   "name": "Bard Lisel's shop line about Iron Seal",
+   "mirrors": "item_iron_seal.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Bard Lisel's shop line about Iron Seal",
+   "mirrors": "dep_iron_seal_3.value",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_4",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Iron Seal",
+   "mirrors": "item_iron_seal.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Cutscene cue referencing Iron Seal",
+   "mirrors": "dep_iron_seal_4.value",
+   "value": 2,
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "quest_the_glass_pilgrim",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "npc_sister_calla",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_owl_ridge",
+   "kind": "location",
+   "text": "Sister Calla must remain located in Owl Ridge."
+  },
+  "B": {
+   "node": "item_iron_seal",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Iron Seal must remain an Act 2 element."
+  }
+ },
+ "editable": [
+  {
+   "node": "npc_sister_calla",
+   "field": "location",
+   "domain": [
+    "loc_thornwatch_keep",
+    "loc_kingsfall_ruins",
+    "loc_owl_ridge",
+    "loc_copper_coast",
+    "loc_varn_hollow"
+   ]
+  },
+  {
+   "node": "item_iron_seal",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"The Glass Pilgrim\" completable in Act 1.",
+ "entity_names": {
+  "T": "The Glass Pilgrim",
+  "A": "Sister Calla",
+  "B": "Iron Seal",
+  "L1a": "Thornwatch Keep",
+  "L1b": "Kingsfall Ruins",
+  "L2a": "Owl Ridge",
+  "L2b": "Copper Coast",
+  "L3": "Varn Hollow",
+  "E1": "Frost Matron",
+  "E2a": "Bandit Chief Corvo",
+  "E2b": "Warden of Thorns",
+  "E3": "Iron Sentinel",
+  "D1": "Ashes of the Mill",
+  "D2": "Smoke over Hollin"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "69ba01f651f16e49"
+}

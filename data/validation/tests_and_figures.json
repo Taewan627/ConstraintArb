@@ -1,0 +1,11 @@
+{
+  "public_core_tests": 44,
+  "elapsed_seconds": 51.83,
+  "network_calls_to_paid_API": 0,
+  "figure_png_hash_match": {
+    "fig1_pipeline.png": true,
+    "fig2_forced_sacrifice.png": true,
+    "fig3_explicit_graph.png": true,
+    "fig4_controls_cues.png": true
+  }
+}

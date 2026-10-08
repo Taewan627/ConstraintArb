@@ -1,0 +1,91 @@
+# Stage 3c configurations per docs/stage3c_change_spec.md.
+experiment: consequence_aware_constraint_arbitration_stage3c
+scenario_dir: data/scenarios/v2
+handbuilt_dir: data/scenarios/handbuilt
+info_condition: graph_only
+format_retry_cap: 2
+concurrency: 4
+base_seed: 20261009
+max_cost_usd_without_confirm: 20
+
+phases:
+  S3C_SMOKE_REP:
+    source: generated
+    task: decision
+    info_condition: graph_only_rep
+    templates: [T01, T02, T03]
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]
+  S3C_SMOKE_NB:
+    source: generated
+    task: decision
+    info_condition: graph_only_nudge_b
+    templates: [T01, T02, T03]
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]
+  S3C_SMOKE_NC:
+    source: generated
+    task: decision
+    info_condition: graph_only_nudge_c
+    templates: [T01, T02, T03]
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]
+  S3C_G:
+    source: generated
+    task: decision
+    info_condition: graph_only
+    templates: all
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]
+  S3C_REP:
+    source: generated
+    task: decision
+    info_condition: graph_only_rep
+    templates: all
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]
+  S3C_N1:
+    source: generated
+    task: decision
+    info_condition: graph_only_nudge
+    templates: all
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]
+  S3C_NB:
+    source: generated
+    task: decision
+    info_condition: graph_only_nudge_b
+    templates: all
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]
+  S3C_NC:
+    source: generated
+    task: decision
+    info_condition: graph_only_nudge_c
+    templates: all
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro, deepseek-v4.1-flash]

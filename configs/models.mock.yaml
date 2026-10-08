@@ -1,0 +1,9 @@
+# Test doubles ONLY — for harness validation and parameter recovery. Never report as results.
+roles:
+  frontier: mock-cost-sensitive
+  nonoa: mock-noisy
+  cheap: mock-cost-blind
+models:
+  - {name: mock-cost-sensitive, provider: mock, model: mock, behaviour: cost_sensitive, p_follow: 0.85, p_label1: 0.5}
+  - {name: mock-noisy, provider: mock, model: mock, behaviour: noisy, p_follow: 0.75, p_malformed: 0.15, p_invalid_edit: 0.08, p_recog_error: 0.05}
+  - {name: mock-cost-blind, provider: mock, model: mock, behaviour: cost_blind, p_label1: 0.65}

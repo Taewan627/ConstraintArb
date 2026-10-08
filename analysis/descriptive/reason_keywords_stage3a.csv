@@ -1,0 +1,3 @@
+run_id,model,n_trials,n_citing,share
+20261006-125239_S3A_G,deepseek-v4-pro,240,10,0.042
+20261006-133841_S3A_N,deepseek-v4-pro,240,165,0.688

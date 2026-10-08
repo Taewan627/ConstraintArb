@@ -1,0 +1,317 @@
+{
+ "scenario_id": "S2-T19-B_HIGH-n1",
+ "template_id": "T19",
+ "condition": "B_HIGH",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "fan",
+ "a_kind": "unlocked_by",
+ "b_kind": "act",
+ "a_type": "recipe",
+ "b_type": "npc",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "achievement_friend_of_the_marsh",
+   "type": "achievement",
+   "name": "Friend of the Marsh",
+   "act": 1,
+   "location": "loc_cinder_quarry",
+   "requires_any": [
+    "recipe_recipe_iron_polish",
+    "npc_ottilie_crane"
+   ],
+   "description": "Earned by mastering the Recipe: Iron Polish or by earning Ottilie Crane's trust."
+  },
+  {
+   "id": "recipe_recipe_iron_polish",
+   "type": "recipe",
+   "name": "Recipe: Iron Polish",
+   "act": 1,
+   "location": "loc_cinder_quarry",
+   "unlocked_by": "enc_cinder_golem"
+  },
+  {
+   "id": "npc_ottilie_crane",
+   "type": "npc",
+   "name": "Ottilie Crane",
+   "act": 2,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "loc_cinder_quarry",
+   "type": "location",
+   "name": "Cinder Quarry",
+   "act": 1
+  },
+  {
+   "id": "loc_gull_s_rest",
+   "type": "location",
+   "name": "Gull's Rest",
+   "act": 1
+  },
+  {
+   "id": "loc_glasswood",
+   "type": "location",
+   "name": "Glasswood",
+   "act": 2
+  },
+  {
+   "id": "loc_millbrook_village",
+   "type": "location",
+   "name": "Millbrook Village",
+   "act": 2
+  },
+  {
+   "id": "loc_ferrow_fields",
+   "type": "location",
+   "name": "Ferrow Fields",
+   "act": 3
+  },
+  {
+   "id": "enc_warden_of_thorns",
+   "type": "encounter",
+   "name": "Warden of Thorns",
+   "act": 1,
+   "location": "loc_cinder_quarry"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 2,
+   "location": "loc_glasswood"
+  },
+  {
+   "id": "enc_the_ash_wyrm",
+   "type": "encounter",
+   "name": "The Ash Wyrm",
+   "act": 2,
+   "location": "loc_millbrook_village"
+  },
+  {
+   "id": "enc_marsh_hydra",
+   "type": "encounter",
+   "name": "Marsh Hydra",
+   "act": 3,
+   "location": "loc_ferrow_fields"
+  },
+  {
+   "id": "quest_salt_and_iron",
+   "type": "quest",
+   "name": "Salt and Iron",
+   "act": 2,
+   "location": "loc_millbrook_village",
+   "requires_all": [
+    "enc_the_ash_wyrm"
+   ]
+  },
+  {
+   "id": "quest_wolves_at_dunmere",
+   "type": "quest",
+   "name": "Wolves at Dunmere",
+   "act": 3,
+   "location": "loc_ferrow_fields",
+   "unlocked_by": "enc_marsh_hydra"
+  },
+  {
+   "id": "dep_recipe_iron_polish_1",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_2",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "manual"
+  },
+  {
+   "id": "dep_recipe_iron_polish_3",
+   "type": "companion_bark",
+   "name": "Companion remark about Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_4",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_5",
+   "type": "map_marker",
+   "name": "World-map marker for Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_6",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_7",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_recipe_iron_polish_8",
+   "type": "npc_dialogue",
+   "name": "Merchant Royce's dialogue line about Recipe: Iron Polish",
+   "mirrors": "recipe_recipe_iron_polish.unlocked_by",
+   "value": "enc_cinder_golem",
+   "update": "engine"
+  },
+  {
+   "id": "dep_ottilie_crane_1",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_2",
+   "type": "codex_entry",
+   "name": "Codex page on Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_3",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_4",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_5",
+   "type": "vendor_line",
+   "name": "Guard Tomas's shop line about Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_6",
+   "type": "map_marker",
+   "name": "World-map marker for Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_7",
+   "type": "npc_dialogue",
+   "name": "Stablehand Fay's dialogue line about Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_ottilie_crane_8",
+   "type": "companion_bark",
+   "name": "Companion remark about Ottilie Crane",
+   "mirrors": "npc_ottilie_crane.act",
+   "value": 2,
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "achievement_friend_of_the_marsh",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "recipe_recipe_iron_polish",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_cinder_golem",
+   "kind": "unlocked_by",
+   "text": "Do not make Recipe: Iron Polish available before Cinder Golem has been defeated."
+  },
+  "B": {
+   "node": "npc_ottilie_crane",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Do not move Ottilie Crane out of Act 2."
+  }
+ },
+ "editable": [
+  {
+   "node": "recipe_recipe_iron_polish",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_warden_of_thorns",
+    "enc_cinder_golem",
+    "enc_the_ash_wyrm",
+    "enc_marsh_hydra"
+   ]
+  },
+  {
+   "node": "npc_ottilie_crane",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Friend of the Marsh\" completable in Act 1.",
+ "entity_names": {
+  "T": "Friend of the Marsh",
+  "A": "Recipe: Iron Polish",
+  "B": "Ottilie Crane",
+  "L1a": "Cinder Quarry",
+  "L1b": "Gull's Rest",
+  "L2a": "Glasswood",
+  "L2b": "Millbrook Village",
+  "L3": "Ferrow Fields",
+  "E1": "Warden of Thorns",
+  "E2a": "Cinder Golem",
+  "E2b": "The Ash Wyrm",
+  "E3": "Marsh Hydra",
+  "D1": "Salt and Iron",
+  "D2": "Wolves at Dunmere"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 1,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "50aa15ec203d8c58"
+}

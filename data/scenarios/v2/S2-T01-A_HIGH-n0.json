@@ -1,0 +1,319 @@
+{
+ "scenario_id": "S2-T01-A_HIGH-n0",
+ "template_id": "T01",
+ "condition": "A_HIGH",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "fan",
+ "a_kind": "location",
+ "b_kind": "unlocked_by",
+ "a_type": "item",
+ "b_type": "npc",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_roots_beneath_varn",
+   "type": "quest",
+   "name": "Roots Beneath Varn",
+   "act": 1,
+   "location": "loc_millbrook_village",
+   "requires_any": [
+    "item_iron_seal",
+    "npc_pell_the_scout"
+   ],
+   "description": "Completed by recovering the Iron Seal or by persuading Pell the Scout to open the flooded gate."
+  },
+  {
+   "id": "item_iron_seal",
+   "type": "item",
+   "name": "Iron Seal",
+   "act": 1,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "npc_pell_the_scout",
+   "type": "npc",
+   "name": "Pell the Scout",
+   "act": 1,
+   "location": "loc_owl_ridge",
+   "unlocked_by": "enc_rat_swarm"
+  },
+  {
+   "id": "loc_millbrook_village",
+   "type": "location",
+   "name": "Millbrook Village",
+   "act": 1
+  },
+  {
+   "id": "loc_owl_ridge",
+   "type": "location",
+   "name": "Owl Ridge",
+   "act": 1
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 2
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 2
+  },
+  {
+   "id": "loc_briar_hollow",
+   "type": "location",
+   "name": "Briar Hollow",
+   "act": 3
+  },
+  {
+   "id": "enc_bog_troll",
+   "type": "encounter",
+   "name": "Bog Troll",
+   "act": 1,
+   "location": "loc_millbrook_village"
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 2,
+   "location": "loc_kingsfall_ruins"
+  },
+  {
+   "id": "enc_rat_swarm",
+   "type": "encounter",
+   "name": "Rat Swarm",
+   "act": 2,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 3,
+   "location": "loc_briar_hollow"
+  },
+  {
+   "id": "quest_the_ferryman_s_coin",
+   "type": "quest",
+   "name": "The Ferryman's Coin",
+   "act": 2,
+   "location": "loc_bitter_marsh",
+   "requires_all": [
+    "enc_rat_swarm"
+   ]
+  },
+  {
+   "id": "quest_the_silent_bellfry",
+   "type": "quest",
+   "name": "The Silent Bellfry",
+   "act": 3,
+   "location": "loc_briar_hollow",
+   "unlocked_by": "enc_frost_matron"
+  },
+  {
+   "id": "dep_iron_seal_1",
+   "type": "map_marker",
+   "name": "World-map marker for Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_2",
+   "type": "npc_dialogue",
+   "name": "Archivist Jory's dialogue line about Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_3",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_4",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_5",
+   "type": "vendor_line",
+   "name": "Blacksmith Doran's shop line about Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_6",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_7",
+   "type": "companion_bark",
+   "name": "Companion remark about Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_iron_seal_8",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Iron Seal",
+   "mirrors": "item_iron_seal.location",
+   "value": "loc_kingsfall_ruins",
+   "update": "manual"
+  },
+  {
+   "id": "dep_pell_the_scout_1",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pell_the_scout_2",
+   "type": "map_marker",
+   "name": "World-map marker for Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pell_the_scout_3",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pell_the_scout_4",
+   "type": "npc_dialogue",
+   "name": "Guard Tomas's dialogue line about Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pell_the_scout_5",
+   "type": "codex_entry",
+   "name": "Codex page on Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "manual"
+  },
+  {
+   "id": "dep_pell_the_scout_6",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pell_the_scout_7",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  },
+  {
+   "id": "dep_pell_the_scout_8",
+   "type": "vendor_line",
+   "name": "Archivist Jory's shop line about Pell the Scout",
+   "mirrors": "npc_pell_the_scout.unlocked_by",
+   "value": "enc_rat_swarm",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "quest_roots_beneath_varn",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "item_iron_seal",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_kingsfall_ruins",
+   "kind": "location",
+   "text": "Iron Seal must remain located in Kingsfall Ruins."
+  },
+  "B": {
+   "node": "npc_pell_the_scout",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_rat_swarm",
+   "kind": "unlocked_by",
+   "text": "Pell the Scout must remain locked until Rat Swarm has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "item_iron_seal",
+   "field": "location",
+   "domain": [
+    "loc_millbrook_village",
+    "loc_owl_ridge",
+    "loc_kingsfall_ruins",
+    "loc_bitter_marsh",
+    "loc_briar_hollow"
+   ]
+  },
+  {
+   "node": "npc_pell_the_scout",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_bog_troll",
+    "enc_bandit_chief_corvo",
+    "enc_rat_swarm",
+    "enc_frost_matron"
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Roots Beneath Varn\" completable in Act 1.",
+ "entity_names": {
+  "T": "Roots Beneath Varn",
+  "A": "Iron Seal",
+  "B": "Pell the Scout",
+  "L1a": "Millbrook Village",
+  "L1b": "Owl Ridge",
+  "L2a": "Kingsfall Ruins",
+  "L2b": "Bitter Marsh",
+  "L3": "Briar Hollow",
+  "E1": "Bog Troll",
+  "E2a": "Bandit Chief Corvo",
+  "E2b": "Rat Swarm",
+  "E3": "Frost Matron",
+  "D1": "The Ferryman's Coin",
+  "D2": "The Silent Bellfry"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 8,
+  "b_downstream_repairs": 1,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "cb3173253fdbe8e8"
+}

@@ -1,0 +1,110 @@
+{
+  "model": "deepseek-v4-pro",
+  "seed": 20261007,
+  "bootstrap_replicates": 2000,
+  "n_trials": {
+    "G": 240,
+    "N": 240,
+    "REC": 120,
+    "S2_G": 240
+  },
+  "n_valid": {
+    "G": 240,
+    "N": 240,
+    "S2_G": 235
+  },
+  "integrity": {
+    "valid_rate_by_arm": {
+      "G": 1.0,
+      "N": 1.0
+    },
+    "valid_templates_by_arm": {
+      "G": 20,
+      "N": 20
+    }
+  },
+  "delta_g": {
+    "estimate": 0.15000000000000002,
+    "ci95": [
+      -0.012499999999999956,
+      0.32499999999999996
+    ]
+  },
+  "delta_n": {
+    "estimate": 1.0,
+    "ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  "nudge_effect": {
+    "estimate": 0.85,
+    "ci95": [
+      0.675,
+      1.0125
+    ]
+  },
+  "delta_s2g": {
+    "estimate": 0.12155144433625442,
+    "ci95": [
+      -0.0063311688311688385,
+      0.2583900316455696
+    ]
+  },
+  "recognition": {
+    "n_total": 120,
+    "n_parsed": 120,
+    "parse_rate": 1.0,
+    "parse_rate_wilson95": [
+      0.9689797289440706,
+      1.0
+    ],
+    "n_unequal_parsed": 80,
+    "n_correct_unequal_parsed": 80,
+    "accuracy_unequal_parsed": 1.0,
+    "accuracy_wilson95": [
+      0.954180263735425,
+      1.0
+    ]
+  },
+  "linked_measure_s3a_g": {
+    "n": 80,
+    "p_chose_lower_given_recognised": 0.625
+  },
+  "served_provider_counts_by_phase": {
+    "S3A_G": {
+      "Relace": 245
+    },
+    "S3A_N": {
+      "Relace": 248
+    },
+    "S3A_REC": {
+      "Relace": 120
+    },
+    "S2_G": {
+      "Alibaba": 22,
+      "AtlasCloud": 6,
+      "Baidu": 4,
+      "Cloudflare": 3,
+      "CoreWeave": 4,
+      "DeepInfra": 2,
+      "DigitalOcean": 7,
+      "GMICloud": 8,
+      "Ionstream": 83,
+      "NextBit": 11,
+      "Novita": 11,
+      "Phala": 6,
+      "Relace": 74,
+      "SiliconFlow": 6,
+      "StreamLake": 27,
+      "Together": 3,
+      "Venice": 2,
+      "Wafer": 21
+    }
+  },
+  "auto_classification": {
+    "label": "Gap replicated",
+    "elicitation": "Elicitable",
+    "mapping": "GO Stage 3b (pre-registered model-breadth replication)."
+  }
+}

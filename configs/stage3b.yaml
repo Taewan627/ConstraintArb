@@ -1,0 +1,61 @@
+# Stage 3b configurations per docs/stage3b_change_spec.md.
+experiment: consequence_aware_constraint_arbitration_stage3b
+scenario_dir: data/scenarios/v2
+handbuilt_dir: data/scenarios/handbuilt
+info_condition: graph_only
+format_retry_cap: 2
+concurrency: 4
+base_seed: 20261008
+max_cost_usd_without_confirm: 30
+
+phases:
+  S3B_SMOKE:
+    source: generated
+    task: decision
+    info_condition: graph_only
+    templates: [T01, T02, T03]
+    conditions: all
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4.1-flash, gemini-3.8-flash, glm-5.3, claude-sonnet-5.5]
+  S3B_G:
+    source: generated
+    task: decision
+    info_condition: graph_only
+    templates: all
+    conditions: all
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4.1-flash, gemini-3.8-flash, glm-5.3, claude-sonnet-5.5]
+  S3B_X:
+    source: generated
+    task: decision
+    info_condition: explicit
+    templates: all
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4.1-flash, gemini-3.8-flash, glm-5.3, claude-sonnet-5.5]
+  S3B_REC:
+    source: generated
+    task: recognition
+    info_condition: graph_only
+    templates: all
+    conditions: [A_HIGH, B_HIGH]
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4.1-flash, gemini-3.8-flash, glm-5.3, claude-sonnet-5.5]
+  S3B_CTRL:
+    source: generated
+    task: decision
+    info_condition: graph_only_ctrl
+    templates: all
+    conditions: all
+    name_sets: [0]
+    orders: [0, 1]
+    reps: 1
+    models: [deepseek-v4-pro]

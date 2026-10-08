@@ -1,0 +1,318 @@
+{
+ "scenario_id": "T08-A_HIGH-n1",
+ "template_id": "T08",
+ "condition": "A_HIGH",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "tree",
+ "a_kind": "unlocked_by",
+ "b_kind": "unlocked_by",
+ "a_type": "route",
+ "b_type": "waypoint",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "objective_calm_the_stampede",
+   "type": "objective",
+   "name": "Calm the Stampede",
+   "act": 1,
+   "location": "loc_ashen_spire",
+   "requires_any": [
+    "route_root_bridge",
+    "waypoint_old_signal_stone"
+   ],
+   "description": "Done by crossing the Root Bridge or by lighting the Old Signal Stone."
+  },
+  {
+   "id": "route_root_bridge",
+   "type": "route",
+   "name": "Root Bridge",
+   "act": 1,
+   "location": "loc_ashen_spire",
+   "unlocked_by": "enc_bandit_ambush"
+  },
+  {
+   "id": "waypoint_old_signal_stone",
+   "type": "waypoint",
+   "name": "Old Signal Stone",
+   "act": 1,
+   "location": "loc_briar_hollow",
+   "unlocked_by": "enc_tide_serpent"
+  },
+  {
+   "id": "loc_ashen_spire",
+   "type": "location",
+   "name": "Ashen Spire",
+   "act": 1
+  },
+  {
+   "id": "loc_briar_hollow",
+   "type": "location",
+   "name": "Briar Hollow",
+   "act": 1
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 2
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 2
+  },
+  {
+   "id": "loc_copper_coast",
+   "type": "location",
+   "name": "Copper Coast",
+   "act": 3
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 1,
+   "location": "loc_ashen_spire"
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 2,
+   "location": "loc_stonewake_hills"
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 2,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "enc_bandit_chief_corvo",
+   "type": "encounter",
+   "name": "Bandit Chief Corvo",
+   "act": 3,
+   "location": "loc_copper_coast"
+  },
+  {
+   "id": "quest_roots_beneath_varn",
+   "type": "quest",
+   "name": "Roots Beneath Varn",
+   "act": 2,
+   "location": "loc_bitter_marsh",
+   "requires_all": [
+    "enc_tide_serpent"
+   ]
+  },
+  {
+   "id": "quest_the_crooked_ledger",
+   "type": "quest",
+   "name": "The Crooked Ledger",
+   "act": 3,
+   "location": "loc_copper_coast",
+   "unlocked_by": "enc_bandit_chief_corvo"
+  },
+  {
+   "id": "dep_root_bridge_1",
+   "type": "npc_dialogue",
+   "name": "Merchant Royce's dialogue line about Root Bridge",
+   "mirrors": "route_root_bridge.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Merchant Royce's dialogue line about Root Bridge",
+   "mirrors": "dep_root_bridge_1.value",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_2",
+   "type": "map_marker",
+   "name": "World-map marker for Root Bridge",
+   "mirrors": "route_root_bridge.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: World-map marker for Root Bridge",
+   "mirrors": "dep_root_bridge_2.value",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_3",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Root Bridge",
+   "mirrors": "route_root_bridge.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Tutorial pop-up about Root Bridge",
+   "mirrors": "dep_root_bridge_3.value",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_4",
+   "type": "vendor_line",
+   "name": "Guard Tomas's shop line about Root Bridge",
+   "mirrors": "route_root_bridge.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Guard Tomas's shop line about Root Bridge",
+   "mirrors": "dep_root_bridge_4.value",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_old_signal_stone_1",
+   "type": "codex_entry",
+   "name": "Codex page on Old Signal Stone",
+   "mirrors": "waypoint_old_signal_stone.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_signal_stone_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Codex page on Old Signal Stone",
+   "mirrors": "dep_old_signal_stone_1.value",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_signal_stone_2",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Old Signal Stone",
+   "mirrors": "waypoint_old_signal_stone.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_signal_stone_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Cutscene cue referencing Old Signal Stone",
+   "mirrors": "dep_old_signal_stone_2.value",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_signal_stone_3",
+   "type": "map_marker",
+   "name": "World-map marker for Old Signal Stone",
+   "mirrors": "waypoint_old_signal_stone.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_signal_stone_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: World-map marker for Old Signal Stone",
+   "mirrors": "dep_old_signal_stone_3.value",
+   "value": "enc_tide_serpent",
+   "update": "engine"
+  },
+  {
+   "id": "dep_old_signal_stone_4",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Old Signal Stone",
+   "mirrors": "waypoint_old_signal_stone.unlocked_by",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  },
+  {
+   "id": "dep_old_signal_stone_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Quest-log entry describing Old Signal Stone",
+   "mirrors": "dep_old_signal_stone_4.value",
+   "value": "enc_tide_serpent",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "objective_calm_the_stampede",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "route_root_bridge",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_bandit_ambush",
+   "kind": "unlocked_by",
+   "text": "Do not make Root Bridge available before Bandit Ambush has been defeated."
+  },
+  "B": {
+   "node": "waypoint_old_signal_stone",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_tide_serpent",
+   "kind": "unlocked_by",
+   "text": "Do not make Old Signal Stone available before Tide Serpent has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "route_root_bridge",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_frost_matron",
+    "enc_bandit_ambush",
+    "enc_tide_serpent",
+    "enc_bandit_chief_corvo"
+   ]
+  },
+  {
+   "node": "waypoint_old_signal_stone",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_frost_matron",
+    "enc_bandit_ambush",
+    "enc_tide_serpent",
+    "enc_bandit_chief_corvo"
+   ]
+  }
+ ],
+ "request_text": "Players get stuck in Act 1 with no progress. Make the objective \"Calm the Stampede\" completable in Act 1.",
+ "entity_names": {
+  "T": "Calm the Stampede",
+  "A": "Root Bridge",
+  "B": "Old Signal Stone",
+  "L1a": "Ashen Spire",
+  "L1b": "Briar Hollow",
+  "L2a": "Stonewake Hills",
+  "L2b": "Bitter Marsh",
+  "L3": "Copper Coast",
+  "E1": "Frost Matron",
+  "E2a": "Bandit Ambush",
+  "E2b": "Tide Serpent",
+  "E3": "Bandit Chief Corvo",
+  "D1": "Roots Beneath Varn",
+  "D2": "The Crooked Ledger"
+ },
+ "expected": {
+  "a_downstream_repairs": 8,
+  "b_downstream_repairs": 2,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "d8b380639005dd78"
+}

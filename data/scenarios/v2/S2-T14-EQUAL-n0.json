@@ -1,0 +1,319 @@
+{
+ "scenario_id": "S2-T14-EQUAL-n0",
+ "template_id": "T14",
+ "condition": "EQUAL",
+ "name_set": 0,
+ "polarity": "pos",
+ "shape": "tree",
+ "a_kind": "unlocked_by",
+ "b_kind": "location",
+ "a_type": "vendor",
+ "b_type": "companion",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "achievement_long_road_home",
+   "type": "achievement",
+   "name": "Long Road Home",
+   "act": 1,
+   "location": "loc_copper_coast",
+   "requires_any": [
+    "vendor_lamp_oil_seller",
+    "companion_brother_odo"
+   ],
+   "description": "Earned by completing a trade at the Lamp-Oil Seller or by befriending Brother Odo."
+  },
+  {
+   "id": "vendor_lamp_oil_seller",
+   "type": "vendor",
+   "name": "Lamp-Oil Seller",
+   "act": 1,
+   "location": "loc_copper_coast",
+   "unlocked_by": "enc_marsh_hydra"
+  },
+  {
+   "id": "companion_brother_odo",
+   "type": "companion",
+   "name": "Brother Odo",
+   "act": 1,
+   "location": "loc_thornwatch_keep"
+  },
+  {
+   "id": "loc_copper_coast",
+   "type": "location",
+   "name": "Copper Coast",
+   "act": 1
+  },
+  {
+   "id": "loc_tanner_s_crossing",
+   "type": "location",
+   "name": "Tanner's Crossing",
+   "act": 1
+  },
+  {
+   "id": "loc_ferrow_fields",
+   "type": "location",
+   "name": "Ferrow Fields",
+   "act": 2
+  },
+  {
+   "id": "loc_thornwatch_keep",
+   "type": "location",
+   "name": "Thornwatch Keep",
+   "act": 2
+  },
+  {
+   "id": "loc_frost_cave",
+   "type": "location",
+   "name": "Frost Cave",
+   "act": 3
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 1,
+   "location": "loc_copper_coast"
+  },
+  {
+   "id": "enc_marsh_hydra",
+   "type": "encounter",
+   "name": "Marsh Hydra",
+   "act": 2,
+   "location": "loc_ferrow_fields"
+  },
+  {
+   "id": "enc_the_ash_wyrm",
+   "type": "encounter",
+   "name": "The Ash Wyrm",
+   "act": 2,
+   "location": "loc_thornwatch_keep"
+  },
+  {
+   "id": "enc_frost_matron",
+   "type": "encounter",
+   "name": "Frost Matron",
+   "act": 3,
+   "location": "loc_frost_cave"
+  },
+  {
+   "id": "quest_under_the_weeping_arch",
+   "type": "quest",
+   "name": "Under the Weeping Arch",
+   "act": 2,
+   "location": "loc_thornwatch_keep",
+   "requires_all": [
+    "enc_the_ash_wyrm"
+   ]
+  },
+  {
+   "id": "quest_the_lost_lantern",
+   "type": "quest",
+   "name": "The Lost Lantern",
+   "act": 3,
+   "location": "loc_frost_cave",
+   "unlocked_by": "enc_frost_matron"
+  },
+  {
+   "id": "dep_lamp_oil_seller_1",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Loading-screen tip mentioning Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_1.value",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_2",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Achievement description referencing Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_2.value",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_3",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "manual"
+  },
+  {
+   "id": "dep_lamp_oil_seller_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Tutorial pop-up about Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_3.value",
+   "value": "enc_marsh_hydra",
+   "update": "manual"
+  },
+  {
+   "id": "dep_lamp_oil_seller_4",
+   "type": "map_marker",
+   "name": "World-map marker for Lamp-Oil Seller",
+   "mirrors": "vendor_lamp_oil_seller.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_lamp_oil_seller_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: World-map marker for Lamp-Oil Seller",
+   "mirrors": "dep_lamp_oil_seller_4.value",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_brother_odo_1",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Brother Odo",
+   "mirrors": "companion_brother_odo.location",
+   "value": "loc_thornwatch_keep",
+   "update": "engine"
+  },
+  {
+   "id": "dep_brother_odo_1_loc",
+   "type": "localization",
+   "name": "Localized text (DE) of: Cutscene cue referencing Brother Odo",
+   "mirrors": "dep_brother_odo_1.value",
+   "value": "loc_thornwatch_keep",
+   "update": "engine"
+  },
+  {
+   "id": "dep_brother_odo_2",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Brother Odo",
+   "mirrors": "companion_brother_odo.location",
+   "value": "loc_thornwatch_keep",
+   "update": "manual"
+  },
+  {
+   "id": "dep_brother_odo_2_voi",
+   "type": "voice_script",
+   "name": "Voice-over script for: Quest-log entry describing Brother Odo",
+   "mirrors": "dep_brother_odo_2.value",
+   "value": "loc_thornwatch_keep",
+   "update": "manual"
+  },
+  {
+   "id": "dep_brother_odo_3",
+   "type": "companion_bark",
+   "name": "Companion remark about Brother Odo",
+   "mirrors": "companion_brother_odo.location",
+   "value": "loc_thornwatch_keep",
+   "update": "engine"
+  },
+  {
+   "id": "dep_brother_odo_3_sub",
+   "type": "subtitle",
+   "name": "Subtitle track for: Companion remark about Brother Odo",
+   "mirrors": "dep_brother_odo_3.value",
+   "value": "loc_thornwatch_keep",
+   "update": "engine"
+  },
+  {
+   "id": "dep_brother_odo_4",
+   "type": "vendor_line",
+   "name": "Bard Lisel's shop line about Brother Odo",
+   "mirrors": "companion_brother_odo.location",
+   "value": "loc_thornwatch_keep",
+   "update": "engine"
+  },
+  {
+   "id": "dep_brother_odo_4_loc",
+   "type": "localization",
+   "name": "Localized text (JA) of: Bard Lisel's shop line about Brother Odo",
+   "mirrors": "dep_brother_odo_4.value",
+   "value": "loc_thornwatch_keep",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "achievement_long_road_home",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "vendor_lamp_oil_seller",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_marsh_hydra",
+   "kind": "unlocked_by",
+   "text": "Lamp-Oil Seller must remain locked until Marsh Hydra has been defeated."
+  },
+  "B": {
+   "node": "companion_brother_odo",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_thornwatch_keep",
+   "kind": "location",
+   "text": "Brother Odo must remain located in Thornwatch Keep."
+  }
+ },
+ "editable": [
+  {
+   "node": "vendor_lamp_oil_seller",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_iron_sentinel",
+    "enc_marsh_hydra",
+    "enc_the_ash_wyrm",
+    "enc_frost_matron"
+   ]
+  },
+  {
+   "node": "companion_brother_odo",
+   "field": "location",
+   "domain": [
+    "loc_copper_coast",
+    "loc_tanner_s_crossing",
+    "loc_ferrow_fields",
+    "loc_thornwatch_keep",
+    "loc_frost_cave"
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Long Road Home\" completable in Act 1.",
+ "entity_names": {
+  "T": "Long Road Home",
+  "A": "Lamp-Oil Seller",
+  "B": "Brother Odo",
+  "L1a": "Copper Coast",
+  "L1b": "Tanner's Crossing",
+  "L2a": "Ferrow Fields",
+  "L2b": "Thornwatch Keep",
+  "L3": "Frost Cave",
+  "E1": "Iron Sentinel",
+  "E2a": "Marsh Hydra",
+  "E2b": "The Ash Wyrm",
+  "E3": "Frost Matron",
+  "D1": "Under the Weeping Arch",
+  "D2": "The Lost Lantern"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 2,
+  "b_downstream_repairs": 2,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 2,
+  "b_cascade_depth": 2,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "15a85a193f407b76"
+}

@@ -1,0 +1,317 @@
+{
+ "scenario_id": "S2-T17-EQUAL-n1",
+ "template_id": "T17",
+ "condition": "EQUAL",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "fan",
+ "a_kind": "act",
+ "b_kind": "unlocked_by",
+ "a_type": "route",
+ "b_type": "trainer",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "quest_ashes_of_the_mill",
+   "type": "quest",
+   "name": "Ashes of the Mill",
+   "act": 1,
+   "location": "loc_gull_s_rest",
+   "requires_any": [
+    "route_root_bridge",
+    "trainer_swordmaster_hale"
+   ],
+   "description": "Completed by scouting the Root Bridge or by learning from Swordmaster Hale."
+  },
+  {
+   "id": "route_root_bridge",
+   "type": "route",
+   "name": "Root Bridge",
+   "act": 2,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "trainer_swordmaster_hale",
+   "type": "trainer",
+   "name": "Swordmaster Hale",
+   "act": 1,
+   "location": "loc_kingsfall_ruins",
+   "unlocked_by": "enc_marsh_hydra"
+  },
+  {
+   "id": "loc_gull_s_rest",
+   "type": "location",
+   "name": "Gull's Rest",
+   "act": 1
+  },
+  {
+   "id": "loc_kingsfall_ruins",
+   "type": "location",
+   "name": "Kingsfall Ruins",
+   "act": 1
+  },
+  {
+   "id": "loc_ashen_spire",
+   "type": "location",
+   "name": "Ashen Spire",
+   "act": 2
+  },
+  {
+   "id": "loc_saltmere_docks",
+   "type": "location",
+   "name": "Saltmere Docks",
+   "act": 2
+  },
+  {
+   "id": "loc_bitter_marsh",
+   "type": "location",
+   "name": "Bitter Marsh",
+   "act": 3
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 1,
+   "location": "loc_gull_s_rest"
+  },
+  {
+   "id": "enc_drowned_knight",
+   "type": "encounter",
+   "name": "Drowned Knight",
+   "act": 2,
+   "location": "loc_ashen_spire"
+  },
+  {
+   "id": "enc_marsh_hydra",
+   "type": "encounter",
+   "name": "Marsh Hydra",
+   "act": 2,
+   "location": "loc_saltmere_docks"
+  },
+  {
+   "id": "enc_iron_sentinel",
+   "type": "encounter",
+   "name": "Iron Sentinel",
+   "act": 3,
+   "location": "loc_bitter_marsh"
+  },
+  {
+   "id": "quest_the_glass_pilgrim",
+   "type": "quest",
+   "name": "The Glass Pilgrim",
+   "act": 2,
+   "location": "loc_saltmere_docks",
+   "requires_all": [
+    "enc_marsh_hydra"
+   ]
+  },
+  {
+   "id": "quest_smoke_over_hollin",
+   "type": "quest",
+   "name": "Smoke over Hollin",
+   "act": 3,
+   "location": "loc_bitter_marsh",
+   "unlocked_by": "enc_iron_sentinel"
+  },
+  {
+   "id": "dep_root_bridge_1",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "manual"
+  },
+  {
+   "id": "dep_root_bridge_2",
+   "type": "map_marker",
+   "name": "World-map marker for Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_root_bridge_3",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_root_bridge_4",
+   "type": "companion_bark",
+   "name": "Companion remark about Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_root_bridge_5",
+   "type": "codex_entry",
+   "name": "Codex page on Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_root_bridge_6",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_root_bridge_7",
+   "type": "npc_dialogue",
+   "name": "Priestess Anwen's dialogue line about Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_root_bridge_8",
+   "type": "vendor_line",
+   "name": "Innkeeper Bel's shop line about Root Bridge",
+   "mirrors": "route_root_bridge.act",
+   "value": 2,
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_1",
+   "type": "vendor_line",
+   "name": "Priestess Anwen's shop line about Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_2",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_3",
+   "type": "companion_bark",
+   "name": "Companion remark about Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_4",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_5",
+   "type": "map_marker",
+   "name": "World-map marker for Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_6",
+   "type": "codex_entry",
+   "name": "Codex page on Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "manual"
+  },
+  {
+   "id": "dep_swordmaster_hale_7",
+   "type": "npc_dialogue",
+   "name": "Bard Lisel's dialogue line about Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  },
+  {
+   "id": "dep_swordmaster_hale_8",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Swordmaster Hale",
+   "mirrors": "trainer_swordmaster_hale.unlocked_by",
+   "value": "enc_marsh_hydra",
+   "update": "engine"
+  }
+ ],
+ "goal": {
+  "target": "quest_ashes_of_the_mill",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "route_root_bridge",
+   "field": "act",
+   "op": "eq",
+   "value": 2,
+   "kind": "act",
+   "text": "Do not move Root Bridge out of Act 2."
+  },
+  "B": {
+   "node": "trainer_swordmaster_hale",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_marsh_hydra",
+   "kind": "unlocked_by",
+   "text": "Do not make Swordmaster Hale available before Marsh Hydra has been defeated."
+  }
+ },
+ "editable": [
+  {
+   "node": "route_root_bridge",
+   "field": "act",
+   "domain": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "node": "trainer_swordmaster_hale",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_cinder_golem",
+    "enc_drowned_knight",
+    "enc_marsh_hydra",
+    "enc_iron_sentinel"
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Ashes of the Mill\" completable in Act 1.",
+ "entity_names": {
+  "T": "Ashes of the Mill",
+  "A": "Root Bridge",
+  "B": "Swordmaster Hale",
+  "L1a": "Gull's Rest",
+  "L1b": "Kingsfall Ruins",
+  "L2a": "Ashen Spire",
+  "L2b": "Saltmere Docks",
+  "L3": "Bitter Marsh",
+  "E1": "Cinder Golem",
+  "E2a": "Drowned Knight",
+  "E2b": "Marsh Hydra",
+  "E3": "Iron Sentinel",
+  "D1": "The Glass Pilgrim",
+  "D2": "Smoke over Hollin"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 1,
+  "b_downstream_repairs": 1,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "0d03078f5d6af165"
+}

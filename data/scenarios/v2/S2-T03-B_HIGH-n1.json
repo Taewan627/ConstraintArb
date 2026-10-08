@@ -1,0 +1,319 @@
+{
+ "scenario_id": "S2-T03-B_HIGH-n1",
+ "template_id": "T03",
+ "condition": "B_HIGH",
+ "name_set": 1,
+ "polarity": "neg",
+ "shape": "fan",
+ "a_kind": "unlocked_by",
+ "b_kind": "location",
+ "a_type": "route",
+ "b_type": "mount",
+ "generator_version": "scenario_generator/1.0",
+ "nodes": [
+  {
+   "id": "achievement_friend_of_the_marsh",
+   "type": "achievement",
+   "name": "Friend of the Marsh",
+   "act": 1,
+   "location": "loc_copper_coast",
+   "requires_any": [
+    "route_rope_ferry_crossing",
+    "mount_saltwind_glider"
+   ],
+   "description": "Earned by travelling via the Rope Ferry Crossing or by riding the Saltwind Glider across the valley."
+  },
+  {
+   "id": "route_rope_ferry_crossing",
+   "type": "route",
+   "name": "Rope Ferry Crossing",
+   "act": 1,
+   "location": "loc_copper_coast",
+   "unlocked_by": "enc_bandit_ambush"
+  },
+  {
+   "id": "mount_saltwind_glider",
+   "type": "mount",
+   "name": "Saltwind Glider",
+   "act": 1,
+   "location": "loc_saltmere_docks"
+  },
+  {
+   "id": "loc_copper_coast",
+   "type": "location",
+   "name": "Copper Coast",
+   "act": 1
+  },
+  {
+   "id": "loc_gull_s_rest",
+   "type": "location",
+   "name": "Gull's Rest",
+   "act": 1
+  },
+  {
+   "id": "loc_cinder_quarry",
+   "type": "location",
+   "name": "Cinder Quarry",
+   "act": 2
+  },
+  {
+   "id": "loc_saltmere_docks",
+   "type": "location",
+   "name": "Saltmere Docks",
+   "act": 2
+  },
+  {
+   "id": "loc_stonewake_hills",
+   "type": "location",
+   "name": "Stonewake Hills",
+   "act": 3
+  },
+  {
+   "id": "enc_tide_serpent",
+   "type": "encounter",
+   "name": "Tide Serpent",
+   "act": 1,
+   "location": "loc_copper_coast"
+  },
+  {
+   "id": "enc_bandit_ambush",
+   "type": "encounter",
+   "name": "Bandit Ambush",
+   "act": 2,
+   "location": "loc_cinder_quarry"
+  },
+  {
+   "id": "enc_cinder_golem",
+   "type": "encounter",
+   "name": "Cinder Golem",
+   "act": 2,
+   "location": "loc_saltmere_docks"
+  },
+  {
+   "id": "enc_ghoul_packmaster",
+   "type": "encounter",
+   "name": "Ghoul Packmaster",
+   "act": 3,
+   "location": "loc_stonewake_hills"
+  },
+  {
+   "id": "quest_under_the_weeping_arch",
+   "type": "quest",
+   "name": "Under the Weeping Arch",
+   "act": 2,
+   "location": "loc_saltmere_docks",
+   "requires_all": [
+    "enc_cinder_golem"
+   ]
+  },
+  {
+   "id": "quest_the_crooked_ledger",
+   "type": "quest",
+   "name": "The Crooked Ledger",
+   "act": 3,
+   "location": "loc_stonewake_hills",
+   "unlocked_by": "enc_ghoul_packmaster"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_1",
+   "type": "map_marker",
+   "name": "World-map marker for Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "manual"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_2",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "engine"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_3",
+   "type": "npc_dialogue",
+   "name": "Blacksmith Doran's dialogue line about Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "engine"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_4",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "engine"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_5",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "engine"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_6",
+   "type": "codex_entry",
+   "name": "Codex page on Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "engine"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_7",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "engine"
+  },
+  {
+   "id": "dep_rope_ferry_crossing_8",
+   "type": "achievement_text",
+   "name": "Achievement description referencing Rope Ferry Crossing",
+   "mirrors": "route_rope_ferry_crossing.unlocked_by",
+   "value": "enc_bandit_ambush",
+   "update": "engine"
+  },
+  {
+   "id": "dep_saltwind_glider_1",
+   "type": "map_marker",
+   "name": "World-map marker for Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwind_glider_2",
+   "type": "tutorial_popup",
+   "name": "Tutorial pop-up about Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwind_glider_3",
+   "type": "cutscene_cue",
+   "name": "Cutscene cue referencing Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwind_glider_4",
+   "type": "companion_bark",
+   "name": "Companion remark about Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwind_glider_5",
+   "type": "quest_log",
+   "name": "Quest-log entry describing Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwind_glider_6",
+   "type": "loading_tip",
+   "name": "Loading-screen tip mentioning Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwind_glider_7",
+   "type": "vendor_line",
+   "name": "Scout Ilka's shop line about Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  },
+  {
+   "id": "dep_saltwind_glider_8",
+   "type": "npc_dialogue",
+   "name": "Stablehand Fay's dialogue line about Saltwind Glider",
+   "mirrors": "mount_saltwind_glider.location",
+   "value": "loc_saltmere_docks",
+   "update": "manual"
+  }
+ ],
+ "goal": {
+  "target": "achievement_friend_of_the_marsh",
+  "max_act": 1
+ },
+ "constraints": {
+  "A": {
+   "node": "route_rope_ferry_crossing",
+   "field": "unlocked_by",
+   "op": "eq",
+   "value": "enc_bandit_ambush",
+   "kind": "unlocked_by",
+   "text": "Do not make Rope Ferry Crossing available before Bandit Ambush has been defeated."
+  },
+  "B": {
+   "node": "mount_saltwind_glider",
+   "field": "location",
+   "op": "eq",
+   "value": "loc_saltmere_docks",
+   "kind": "location",
+   "text": "Do not move Saltwind Glider out of Saltmere Docks."
+  }
+ },
+ "editable": [
+  {
+   "node": "route_rope_ferry_crossing",
+   "field": "unlocked_by",
+   "domain": [
+    "enc_tide_serpent",
+    "enc_bandit_ambush",
+    "enc_cinder_golem",
+    "enc_ghoul_packmaster"
+   ]
+  },
+  {
+   "node": "mount_saltwind_glider",
+   "field": "location",
+   "domain": [
+    "loc_copper_coast",
+    "loc_gull_s_rest",
+    "loc_cinder_quarry",
+    "loc_saltmere_docks",
+    "loc_stonewake_hills"
+   ]
+  }
+ ],
+ "request_text": "Playtest feedback: Act 1 ends too early. Make \"Friend of the Marsh\" completable in Act 1.",
+ "entity_names": {
+  "T": "Friend of the Marsh",
+  "A": "Rope Ferry Crossing",
+  "B": "Saltwind Glider",
+  "L1a": "Copper Coast",
+  "L1b": "Gull's Rest",
+  "L2a": "Cinder Quarry",
+  "L2b": "Saltmere Docks",
+  "L3": "Stonewake Hills",
+  "E1": "Tide Serpent",
+  "E2a": "Bandit Ambush",
+  "E2b": "Cinder Golem",
+  "E3": "Ghoul Packmaster",
+  "D1": "Under the Weeping Arch",
+  "D2": "The Crooked Ledger"
+ },
+ "scenario_version": 2,
+ "expected": {
+  "a_downstream_repairs": 1,
+  "b_downstream_repairs": 8,
+  "a_immediate_edit_count": 1,
+  "b_immediate_edit_count": 1,
+  "a_cascade_depth": 1,
+  "b_cascade_depth": 1,
+  "valid_for_pilot": true
+ },
+ "scenario_hash": "d6083d72e18bc18b"
+}

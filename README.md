@@ -99,8 +99,8 @@ Taewan Kim and Taehoon Kim. *ConstraintArb: Diagnosing Recognition--Use Dissocia
 
 ## License
 
-No license has been approved; no LICENSE file is supplied. Public access does not grant general reuse, modification, or redistribution permissions. Third-party dependencies are installed separately under their respective licenses and are not vendored. Contact the corresponding author for permissions.
+No license has been approved; no LICENSE file is supplied. Public access does not grant general reuse, modification, or redistribution permissions. Third-party dependencies are installed separately under their respective licenses and are not vendored. Send permission inquiries to the repository contact listed below.
 
 ## Contact
 
-Taehoon Kim, Graduate School of Virtual Convergence, Sogang University, Seoul 04107, Republic of Korea. Corresponding author: taehoonkim@sogang.ac.kr.
+Taewan Kim, Graduate School of Virtual Convergence, Sogang University, Seoul 04107, Republic of Korea. Repository contact: [zzmind@naver.com](mailto:zzmind@naver.com).

@@ -119,3 +119,9 @@ artifacts. The existing Zenodo concept DOI is
 [10.5281/zenodo.23274398](https://doi.org/10.5281/zenodo.23274398); it represents
 all versions and must be distinguished from a version-specific DOI. The old
 v1.0.0 DOI, 10.5281/zenodo.23274399, identifies the historical two-author archive.
+
+The verified v1.0.1 version DOI is [10.5281/zenodo.23277796](https://doi.org/10.5281/zenodo.23277796). Cite:
+Taewan Kim (2026), *ConstraintArb reproducibility artifacts*, version v1.0.1,
+Zenodo, https://doi.org/10.5281/zenodo.23277796.
+The DOI was issued after archival; it is now recorded in the living citation
+metadata. The immutable v1.0.1 source archive remains at its release commit.

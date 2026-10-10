@@ -1,6 +1,6 @@
 # ConstraintArb
 
-Reproducibility artifacts for ConstraintArb, a research manuscript prepared for journal submission. The paper diagnoses recognition--use dissociation in consequence-aware constraint arbitration by large language models. No acceptance, publication, or DOI is claimed.
+Reproducibility artifacts for ConstraintArb, a research manuscript prepared for journal submission. The paper diagnoses recognition--use dissociation in consequence-aware constraint arbitration by large language models. No journal acceptance, journal publication, or article DOI is claimed.
 
 ## Research Question
 
@@ -95,11 +95,11 @@ Included: benchmark/scoring/analysis source, authored scenarios, saved scored ob
 
 ## Citation
 
-Taewan Kim and Taehoon Kim. *ConstraintArb: Diagnosing Recognition--Use Dissociation in Consequence-Aware Constraint Arbitration by Large Language Models*. Research manuscript prepared for journal submission, 2026. Use `CITATION.cff` for software-artifact citation. No journal acceptance or DOI is asserted.
+Taewan Kim and Taehoon Kim. *ConstraintArb: Diagnosing Recognition--Use Dissociation in Consequence-Aware Constraint Arbitration by Large Language Models*. Research manuscript prepared for journal submission, 2026. Use `CITATION.cff` for software-artifact citation. No journal acceptance or article DOI is asserted.
 
 ## License
 
-No license has been approved; no LICENSE file is supplied. Public access does not grant general reuse, modification, or redistribution permissions. Third-party dependencies are installed separately under their respective licenses and are not vendored. Send permission inquiries to the repository contact listed below.
+The authors approved Creative Commons Attribution 4.0 International (CC BY 4.0) for the project-authored reproducibility artifacts on 10 October 2026. See [LICENSE](LICENSE) for the grant and attribution terms and [RELEASE_RIGHTS.md](RELEASE_RIGHTS.md) for its scope. Third-party dependencies are installed separately, are not vendored, and retain their respective licenses. The historical license field in the frozen export provenance describes the earlier export state and is superseded for v1.0.0 by this approved release declaration.
 
 ## Contact
 

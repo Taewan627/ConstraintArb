@@ -95,12 +95,27 @@ Included: benchmark/scoring/analysis source, authored scenarios, saved scored ob
 
 ## Citation
 
-Taewan Kim and Taehoon Kim. *ConstraintArb: Diagnosing Recognition--Use Dissociation in Consequence-Aware Constraint Arbitration by Large Language Models*. Research manuscript prepared for journal submission, 2026. Use `CITATION.cff` for software-artifact citation. No journal acceptance or article DOI is asserted.
+Taewan Kim. *ConstraintArb: Diagnosing Recognition--Use Dissociation in Consequence-Aware Constraint Arbitration by Large Language Models*. Research manuscript prepared for journal submission, 2026. Use `CITATION.cff` for software-artifact citation. No journal acceptance or article DOI is asserted.
 
 ## License
 
-The authors approved Creative Commons Attribution 4.0 International (CC BY 4.0) for the project-authored reproducibility artifacts on 10 October 2026. See [LICENSE](LICENSE) for the grant and attribution terms and [RELEASE_RIGHTS.md](RELEASE_RIGHTS.md) for its scope. Third-party dependencies are installed separately, are not vendored, and retain their respective licenses. The historical license field in the frozen export provenance describes the earlier export state and is superseded for v1.0.0 by this approved release declaration.
+The author approved Creative Commons Attribution 4.0 International (CC BY 4.0) for the project-authored reproducibility artifacts on 10 October 2026. See [LICENSE](LICENSE) for the grant and attribution terms and [RELEASE_RIGHTS.md](RELEASE_RIGHTS.md) for its scope. Third-party dependencies are installed separately, are not vendored, and retain their respective licenses. The historical license field in the frozen export provenance describes the earlier export state and is superseded by the approved release rights declaration.
 
 ## Contact
 
 Taewan Kim, Graduate School of Virtual Convergence, Sogang University, Seoul 04107, Republic of Korea. Repository contact: [zzmind@naver.com](mailto:zzmind@naver.com).
+
+## Attribution correction (v1.0.1)
+
+Taewan Kim is the sole research author, corresponding author, and author of the
+project software, based on his definitive contribution declaration. Earlier
+v1.0.0 metadata listed Taewan Kim and Taehoon Kim. This is an author-initiated
+attribution correction; the previous tag, release and archive remain traceable.
+No scientific data, saved trials, methods, results or third-party attribution
+have changed. See [the correction note](AUTHORSHIP_ATTRIBUTION_CORRECTION.md).
+
+Use version v1.0.1 and the sole-author `CITATION.cff` when citing the corrected
+artifacts. The existing Zenodo concept DOI is
+[10.5281/zenodo.23274398](https://doi.org/10.5281/zenodo.23274398); it represents
+all versions and must be distinguished from a version-specific DOI. The old
+v1.0.0 DOI, 10.5281/zenodo.23274399, identifies the historical two-author archive.

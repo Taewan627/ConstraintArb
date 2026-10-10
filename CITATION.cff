@@ -5,10 +5,10 @@ title: "ConstraintArb reproducibility artifacts"
 authors:
   - family-names: Kim
     given-names: Taewan
-  - family-names: Kim
-    given-names: Taehoon
-abstract: "Offline reproducibility artifacts for a manuscript on recognition--use dissociation in consequence-aware constraint arbitration."
-version: 1.0.0
+    affiliation: "Graduate School of Virtual Convergence, Sogang University, Seoul 04107, Republic of Korea"
+    email: "zzmind@naver.com"
+abstract: "Offline reproducibility artifacts for a manuscript on recognition--use dissociation in consequence-aware constraint arbitration. Version 1.0.1 is an author-initiated attribution correction to Taewan Kim as sole research and software author, based on his declared contributions. The historical v1.0.0 archive remains traceable; scientific evidence is unchanged."
+version: 1.0.1
 license: CC-BY-4.0
 date-released: "2026-10-10"
 repository-code: "https://github.com/Taewan627/ConstraintArb"

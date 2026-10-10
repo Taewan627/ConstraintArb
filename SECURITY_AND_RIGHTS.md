@@ -25,4 +25,6 @@ Pattern checks alone cannot prove universal absence of secrets. The whitelist ex
 
 ## License state
 
-On 10 October 2026 the authors explicitly approved CC BY 4.0 for the project-authored public reproducibility artifacts. LICENSE and RELEASE_RIGHTS.md record the grant and scope. Third-party dependencies are not redistributed and retain their own licenses. Frozen export provenance retains its historical pre-release rights field; the current release grant supersedes that historical state without changing any scientific evidence.
+On 10 October 2026 the author explicitly approved CC BY 4.0 for the project-authored public reproducibility artifacts. LICENSE and RELEASE_RIGHTS.md record the grant and scope. Third-party dependencies are not redistributed and retain their own licenses. Frozen export provenance retains its historical pre-release rights field; the current release grant supersedes that historical state without changing any scientific evidence.
+
+Current sole-author attribution is documented in AUTHORSHIP_ATTRIBUTION_CORRECTION.md; historical publication records are preserved.
